@@ -58,9 +58,23 @@ Este documento sirve como guía para la generación de activos visuales faltante
 - **Nombre**: `grua-canastilla.webp`
   - **Ubicación**: `public/images/solutions/servicios/`
   - **Descripción**: Grúa de canastilla de IT VIAL realizando mantenimiento a una luminaria o cámara ITS a 12 metros de altura.
-- **Nombre**: `taller-fabricacion.webp`
-  - **Ubicación**: `public/images/about/`
-  - **Descripción**: Vista panorámica del taller de IT VIAL con soldadores trabajando en estructuras de pórticos.
+- [ ] **Nombre**: `taller-fabricacion.webp`
+   - **Ubicación**: `public/images/about/`
+   - **Descripción**: Vista panorámica del taller de IT VIAL con soldadores trabajando en estructuras de pórticos.
+
+### Nuevos Conceptos Estratégicos (Rediseño Soluciones)
+- **Nombre**: `smart-work-zone-concept.webp`
+  - **Ubicación**: `public/images/solutions/its/`
+  - **Descripción**: Concepto de "Zona de Obra Inteligente" mostrando una carretera con conos conectados, PMV móvil y un radar, todo enviando datos a una nube esquemática.
+- **Nombre**: `centro-control-its.webp`
+  - **Ubicación**: `public/images/solutions/its/`
+  - **Descripción**: Sala de control moderna con videowall mostrando mapas de tráfico y datos en tiempo real (para ilustrar "Integración Operativa").
+- **Nombre**: `tunel-inteligente.webp`
+  - **Ubicación**: `public/images/solutions/its/`
+  - **Descripción**: Interior de un túnel moderno con iluminación LED, ventiladores jet-fans y señalización electrónica de carril.
+- **Nombre**: `electrolinera-publica.webp`
+  - **Ubicación**: `public/images/solutions/electromovilidad/`
+  - **Descripción**: Estación de carga para vehículos eléctricos moderna en un espacio público, con branding sutil de IT VIAL.
 
 ## 🚀 Instrucciones de Implementación
 
