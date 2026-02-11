@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, Download, ArrowRight } from "lucide-react";
+import AddToQuoteButton from "@/components/AddToQuoteButton";
 
 const structuralEquipment = [
     {
@@ -569,8 +570,8 @@ export default function AuscultacionPage() {
                                         <div className="grid md:grid-cols-3 gap-3">
                                             {equipment.interpretation.map((interp, i) => (
                                                 <div key={i} className={`rounded-lg p-4 border-2 ${interp.color === 'primary' ? 'border-primary/20 bg-primary/5' :
-                                                        interp.color === 'accent' ? 'border-accent/20 bg-accent/5' :
-                                                            'border-red-500/20 bg-red-500/5'
+                                                    interp.color === 'accent' ? 'border-accent/20 bg-accent/5' :
+                                                        'border-red-500/20 bg-red-500/5'
                                                     }`}>
                                                     <div className="font-bold mb-1">{interp.sfc}</div>
                                                     <div className="text-sm text-muted-foreground">{interp.status}</div>

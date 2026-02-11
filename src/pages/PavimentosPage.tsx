@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Truck, Wrench, TreePine, Download, ArrowRight, CheckCircle } from "lucide-react";
+import AddToQuoteButton from "@/components/AddToQuoteButton";
 
 const products = [
     {
@@ -351,11 +352,15 @@ export default function PavimentosPage() {
 
                                 {/* CTA Buttons */}
                                 <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-border">
+                                    <AddToQuoteButton
+                                        item={{ id: product.id, name: product.name, category: "Pavimentos" }}
+                                        className="py-3 px-8"
+                                    />
                                     <Link
                                         to="/contact"
-                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/20 hover:bg-primary/5 transition-colors text-primary font-semibold"
                                     >
-                                        Solicitar Cotización <ArrowRight className="h-4 w-4" />
+                                        Contacto Directo <ArrowRight className="h-4 w-4" />
                                     </Link>
                                     <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                         <Download className="h-4 w-4" />

@@ -100,7 +100,7 @@
 
 **Prioridad:** ALTA  
 **Estimado:** 1-2 semanas  
-**Estado:** 🔄 EN PROGRESO (55% completado)
+**Estado:** 🔄 EN PROGRESO (65% completado)
 
 ### 2.1 Galería de Imágenes
 - [ ] **⏳ PENDIENTE - Cuota de generación agotada hasta 22:27 (11 Feb 2026)**
@@ -184,7 +184,8 @@
 ## ⚙️ FASE 3: FUNCIONALIDADES AVANZADAS
 
 **Prioridad:** MEDIA  
-**Estimado:** 2 semanas
+**Estimado:** 2 semanas  
+**Estado:** ✅ COMPLETADO (75% del Roadmap General)
 
 ### 3.1 Sistema de Cotizaciones
 - [ ] Formulario modal por producto
