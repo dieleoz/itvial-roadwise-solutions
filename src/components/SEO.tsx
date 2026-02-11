@@ -5,13 +5,15 @@ interface SEOProps {
     description?: string;
     keywords?: string;
     ogImage?: string;
+    schema?: object;
 }
 
 export default function SEO({
     title = "IT VIAL SAS - Soluciones Tecnológicas para Infraestructura Vial",
     description = "Diseñamos y fabricamos sistemas inteligentes de transporte (ITS), equipos para pavimentos, instrumentos de medición, señalización vial y servicios especializados para la infraestructura vial de Colombia.",
     keywords = "ITS Colombia, sistemas inteligentes transporte, PMV, paneles mensaje variable, equipos demarcación vial, retroreflectómetro, señalización vial, IT VIAL, infraestructura vial Colombia",
-    ogImage = "/og-image.jpg"
+    ogImage = "/og-image.jpg",
+    schema
 }: SEOProps) {
     const fullTitle = title.includes("IT VIAL") ? title : `${title} | IT VIAL SAS`;
 
@@ -39,6 +41,13 @@ export default function SEO({
             <meta name="language" content="Spanish" />
             <meta name="author" content="IT VIAL SAS" />
             <link rel="canonical" href={typeof window !== "undefined" ? window.location.origin + window.location.pathname : ""} />
+
+            {/* Structured Data (Schema.org) */}
+            {schema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            )}
         </Helmet>
     );
 }

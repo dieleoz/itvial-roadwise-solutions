@@ -136,11 +136,28 @@ export default function PavimentosPage() {
         return () => resetWAMessage();
     }, []);
 
+    const pavimentosSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Equipos para Pavimentos",
+        "description": "Equipos de demarcación vial, máquinas autopropulsadas y selladoras de fisuras de fabricación nacional.",
+        "brand": {
+            "@type": "Brand",
+            "name": "IT VIAL"
+        },
+        "category": "Infraestructura Vial / Maquinaria",
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "IT VIAL SAS"
+        }
+    };
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="Equipos para Pavimentos | IT VIAL SAS"
                 description="Líderes en equipos de demarcación vial, selladoras de fisuras y reciclaje de asfaltos en Colombia."
+                schema={pavimentosSchema}
             />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">

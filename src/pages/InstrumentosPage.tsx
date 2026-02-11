@@ -82,11 +82,28 @@ export default function InstrumentosPage() {
         return () => resetWAMessage();
     }, []);
 
+    const instrumentosSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Instrumentos para las Vías",
+        "description": "Equipos de medición de retroreflectividad horizontal y vertical con integración IoT.",
+        "brand": {
+            "@type": "Brand",
+            "name": "IT VIAL"
+        },
+        "category": "Infraestructura Vial / Instrumentación",
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "IT VIAL SAS"
+        }
+    };
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="Instrumentos de Medición IoT | IT VIAL SAS"
                 description="Retroreflectómetros horizontales y verticales con tecnología IoT para control de calidad en señalización vial."
+                schema={instrumentosSchema}
             />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">

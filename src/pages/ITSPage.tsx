@@ -182,11 +182,28 @@ export default function ITSPage() {
         return () => resetWAMessage();
     }, []);
 
+    const itsSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Sistemas Inteligentes de Tráfico (ITS)",
+        "description": "Tecnología IoT para mejorar la operación y seguridad del tráfico: PMV, radares y estaciones meteorológicas.",
+        "brand": {
+            "@type": "Brand",
+            "name": "IT VIAL"
+        },
+        "category": "Infraestructura Vial / Tecnología",
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "IT VIAL SAS"
+        }
+    };
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="ITS y Seguridad Vial | IT VIAL SAS"
                 description="Sistemas inteligentes de transporte: PMV, radares y estaciones meteorológicas de fabricación nacional."
+                schema={itsSchema}
             />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">

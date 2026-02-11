@@ -183,11 +183,28 @@ export default function SenalizacionPage() {
         return () => resetWAMessage();
     }, []);
 
+    const senalizacionSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Señalización Vial Integral",
+        "description": "Diseño, fabricación e instalación de señalización vertical, horizontal y elevada con cumplimiento NTC.",
+        "brand": {
+            "@type": "Brand",
+            "name": "IT VIAL"
+        },
+        "category": "Infraestructura Vial / Señalización",
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "IT VIAL SAS"
+        }
+    };
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="Señalización Vial Integral | IT VIAL SAS"
                 description="Especialistas en señalización vertical, horizontal y elevada. Diseño, fabricación e instalación con normativa INVIAS."
+                schema={senalizacionSchema}
             />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">

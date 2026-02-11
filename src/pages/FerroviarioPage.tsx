@@ -156,11 +156,28 @@ export default function FerroviarioPage() {
         return () => resetWAMessage();
     }, []);
 
+    const ferroviarioSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Soluciones Ferroviarias",
+        "description": "Tecnología para infraestructura ferroviaria: equipos portátiles, vehículos de mantenimiento y sistemas Hi-Rail.",
+        "brand": {
+            "@type": "Brand",
+            "name": "IT VIAL"
+        },
+        "category": "Infraestructura Ferroviaria",
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "IT VIAL SAS"
+        }
+    };
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="Soluciones Ferroviarias | IT VIAL SAS"
                 description="Instrumentación y vehículos de auscultación para infraestructura ferroviaria. Tecnología de precisión fabricada en Colombia."
+                schema={ferroviarioSchema}
             />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">

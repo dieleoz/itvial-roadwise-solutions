@@ -271,11 +271,28 @@ export default function AuscultacionPage() {
         return () => resetWAMessage();
     }, []);
 
+    const auscultacionSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Auscultación de Pavimentos",
+        "description": "Equipos de medición estructural y funcional: FWD, GPR, IRI y sistemas de inspección láser.",
+        "brand": {
+            "@type": "Brand",
+            "name": "IT VIAL"
+        },
+        "category": "Infraestructura Vial / Consultoría Técnica",
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "IT VIAL SAS"
+        }
+    };
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="Auscultación de Pavimentos | IT VIAL SAS"
                 description="Tecnología avanzada para auscultación vial: deflectómetros, georradares y perfilómetros para gestión de infraestructura."
+                schema={auscultacionSchema}
             />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
