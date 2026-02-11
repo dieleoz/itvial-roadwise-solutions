@@ -421,7 +421,7 @@ export default function ServiciosPage() {
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
                                     >
-                                        {service.id === "grua" ? "Reservar Grúa" : "Solicitar Cotización"} <ArrowRight className="h-4 w-4" />
+                                        {service.id === "grua" ? "Reservar Grúa" : "Solicitar Asesoría Técnica"} <ArrowRight className="h-4 w-4" />
                                     </Link>
                                     <a
                                         href="tel:+573001234567"
@@ -510,7 +510,7 @@ export default function ServiciosPage() {
                             to="/contact"
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-accent text-accent-foreground font-semibold shadow-glow-accent hover:opacity-90 transition-opacity"
                         >
-                            Solicitar Cotización <ArrowRight className="h-5 w-5" />
+                            Solicitar Propuesta Técnica <ArrowRight className="h-5 w-5" />
                         </Link>
                         <a
                             href="tel:+573001234567"

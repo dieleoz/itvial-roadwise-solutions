@@ -97,12 +97,12 @@ export default function TestimonialsSection() {
                     <p className="text-muted-foreground mb-4">
                         ¿Quiere ser parte de nuestros casos de éxito?
                     </p>
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                     >
-                        Solicitar Cotización
-                    </a>
+                        Solicitar Asesoría Técnica
+                    </Link>
                 </motion.div>
             </div>
         </section>
