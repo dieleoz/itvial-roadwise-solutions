@@ -12,54 +12,54 @@ const products = [
     {
         id: "atenuador-remolcable",
         name: "Atenuador de Impacto Remolcable",
-        description: "Sistema de proteccion montado en remolque que absorbe la energia de impactos vehiculares, protegiendo a los trabajadores y conductores en zonas de trabajo vial.",
+        description: "Sistema de protección montado en remolque que absorbe la energía de impactos vehiculares, protegiendo a los trabajadores y conductores en zonas de trabajo vial.",
         specs: [
             { label: "Tipo", value: "Remolcable TL-3 / TL-2" },
             { label: "Velocidad de impacto certificada", value: "Hasta 100 km/h (TL-3)" },
             { label: "Peso del sistema", value: "~900 kg (con lastre)" },
             { label: "Longitud", value: "4.5 m - 6.0 m" },
             { label: "Ancho", value: "2.4 m desplegado" },
-            { label: "Certificacion", value: "NCHRP 350 / MASH" },
-            { label: "Material de absorcion", value: "Celdas de aluminio deformable" },
-            { label: "Restauracion", value: "Modulos reemplazables" },
+            { label: "Certificación", value: "NCHRP 350 / MASH" },
+            { label: "Material de absorción", value: "Celdas de aluminio deformable" },
+            { label: "Restauración", value: "Módulos reemplazables" },
         ],
         features: [
-            "Absorcion progresiva de energia mediante celdas deformables",
-            "Proteccion para impactos frontales y angulares",
-            "Sistema de senalizacion luminica integrado (flechas LED)",
-            "Facil despliegue y plegado para transporte",
-            "Modulos de absorcion reemplazables tras impacto",
-            "Compatible con diferentes tipos de vehiculo remolcador",
-            "Reflectivos de alta intensidad en todo el perimetro",
+            "Absorción progresiva de energía mediante celdas deformables",
+            "Protección para impactos frontales y angulares",
+            "Sistema de señalización lumínica integrado (flechas LED)",
+            "Fácil despliegue y plegado para transporte",
+            "Módulos de absorción reemplazables tras impacto",
+            "Compatible con diferentes tipos de vehículo remolcador",
+            "Reflectivos de alta intensidad en todo el perímetro",
             "Panel de mensaje variable opcional integrado"
         ],
         applications: [
             "Zonas de trabajo en carreteras y autopistas",
-            "Proteccion de vehiculos de mantenimiento en movimiento",
+            "Protección de vehículos de mantenimiento en movimiento",
             "Cierre de carriles por obras o accidentes",
-            "Operaciones de demarcacion vial",
-            "Proteccion de equipos de inspeccion de pavimentos",
-            "Eventos y operaciones especiales en via"
+            "Operaciones de demarcación vial",
+            "Protección de equipos de inspección de pavimentos",
+            "Eventos y operaciones especiales en vía"
         ]
     },
     {
         id: "atenuador-montado",
-        name: "Atenuador Montado en Vehiculo (TMA)",
-        description: "Sistema de atenuacion de impacto instalado directamente en la parte trasera de camiones de trabajo, proporcionando proteccion movil continua durante operaciones en carretera.",
+        name: "Atenuador Montado en Vehículo (TMA)",
+        description: "Sistema de atenuación de impacto instalado directamente en la parte trasera de camiones de trabajo, proporcionando protección móvil continua durante operaciones en carretera.",
         specs: [
             { label: "Tipo", value: "TMA TL-3" },
             { label: "Montaje", value: "Directo en chasis de camion" },
             { label: "Velocidad de impacto certificada", value: "Hasta 100 km/h" },
             { label: "Peso del sistema", value: "~650 kg" },
-            { label: "Elevacion", value: "Hidraulica o manual" },
-            { label: "Certificacion", value: "MASH TL-3" },
+            { label: "Elevación", value: "Hidráulica o manual" },
+            { label: "Certificación", value: "MASH TL-3" },
         ],
         features: [
             "Montaje permanente en vehiculos de mantenimiento",
-            "Mecanismo de elevacion para transporte en via urbana",
+            "Mecanismo de elevación para transporte en vía urbana",
             "Panel de flechas LED de alta visibilidad",
-            "Estructura de aluminio para reduccion de peso",
-            "Facil acceso para reemplazo de modulos de absorcion",
+            "Estructura de aluminio para reducción de peso",
+            "Fácil acceso para reemplazo de módulos de absorción",
             "Compatible con camiones de 3.5 toneladas en adelante"
         ],
         applications: [
@@ -76,23 +76,23 @@ const products = [
 const benefits = [
     {
         icon: Shield,
-        title: "Proteccion Certificada",
+        title: "Protección Certificada",
         description: "Cumplimiento de normas internacionales NCHRP 350 y MASH para atenuar impactos vehiculares."
     },
     {
         icon: TrendingUp,
-        title: "Reduccion de Fatalidades",
-        description: "Reduccion comprobada de hasta un 80% en lesiones graves en zonas de trabajo vial."
+        title: "Reducción de Fatalidades",
+        description: "Reducción comprobada de hasta un 80% en lesiones graves en zonas de trabajo vial."
     },
     {
         icon: Award,
-        title: "Facil Restauracion",
-        description: "Modulos de absorcion reemplazables que permiten restaurar el atenuador sin cambiar todo el sistema."
+        title: "Fácil Restauración",
+        description: "Módulos de absorción reemplazables que permiten restaurar el atenuador sin cambiar todo el sistema."
     },
     {
         icon: Eye,
         title: "Alta Visibilidad",
-        description: "Senalizacion luminica LED integrada y reflectivos de alta intensidad para maxima visibilidad."
+        description: "Señalización lumínica LED integrada y reflectivos de alta intensidad para máxima visibilidad."
     },
 ];
 
@@ -100,7 +100,7 @@ export default function AtenuadoresPage() {
     const { setWAMessage, resetWAMessage } = useWhatsApp();
 
     useEffect(() => {
-        setWAMessage("Hola, estoy interesado en los atenuadores de impacto remolcables de IT VIAL. Quisiera recibir informacion tecnica y cotizacion.");
+        setWAMessage("Hola, estoy interesado en los atenuadores de impacto remolcables de IT VIAL. Quisiera recibir información técnica y cotización.");
         return () => resetWAMessage();
     }, []);
 
@@ -114,7 +114,7 @@ export default function AtenuadoresPage() {
                     "@context": "https://schema.org",
                     "@type": "Product",
                     "name": "Atenuadores de Impacto IT VIAL",
-                    "description": "Sistemas de atenuacion de impacto para proteccion en zonas de trabajo vial",
+                    "description": "Sistemas de atenuación de impacto para protección en zonas de trabajo vial",
                     "brand": { "@type": "Brand", "name": "IT VIAL SAS" }
                 }}
             />
@@ -138,7 +138,7 @@ export default function AtenuadoresPage() {
                                 to="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                             >
-                                Solicitar Cotizacion <ArrowRight className="h-5 w-5" />
+                                Solicitar Cotización <ArrowRight className="h-5 w-5" />
                             </Link>
                         </div>
                     </motion.div>
@@ -190,7 +190,7 @@ export default function AtenuadoresPage() {
 
                                 {/* Specs Table */}
                                 <div className="mb-8">
-                                    <h4 className="font-semibold text-primary mb-4">Especificaciones Tecnicas:</h4>
+                                    <h4 className="font-semibold text-primary mb-4">Especificaciones Técnicas:</h4>
                                     <div className="overflow-x-auto">
                                         <table className="w-full text-sm">
                                             <tbody>
@@ -207,7 +207,7 @@ export default function AtenuadoresPage() {
 
                                 {/* Features */}
                                 <div className="mb-8">
-                                    <h4 className="font-semibold text-primary mb-4">Caracteristicas:</h4>
+                                    <h4 className="font-semibold text-primary mb-4">Características:</h4>
                                     <ul className="grid md:grid-cols-2 gap-3">
                                         {product.features.map((f, idx) => (
                                             <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -257,20 +257,20 @@ export default function AtenuadoresPage() {
                         <div>
                             <h3 className="font-display text-xl font-bold mb-3">Normativa de Seguridad en Zonas de Trabajo</h3>
                             <p className="text-muted-foreground text-sm mb-4">
-                                Segun la normativa colombiana y las recomendaciones del Manual de Senalizacion Vial, las zonas de trabajo en carreteras nacionales deben contar con dispositivos de proteccion para trabajadores y usuarios. Los atenuadores de impacto son un componente esencial de la seguridad en zonas de obra.
+                                Según la normativa colombiana y las recomendaciones del Manual de Señalización Vial, las zonas de trabajo en carreteras nacionales deben contar con dispositivos de protección para trabajadores y usuarios. Los atenuadores de impacto son un componente esencial de la seguridad en zonas de obra.
                             </p>
                             <ul className="space-y-2 text-sm text-muted-foreground">
                                 <li className="flex items-start gap-2">
                                     <CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />
-                                    Resolucion 1885 de 2015 - Senalizacion de zonas de trabajo
+                                    Resolución 1885 de 2015 - Señalización de zonas de trabajo
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />
-                                    Manual de Senalizacion Vial - Capitulo de dispositivos de proteccion
+                                    Manual de Señalización Vial - Capítulo de dispositivos de protección
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />
-                                    NCHRP 350 / MASH - Estandares internacionales de certificacion
+                                    NCHRP 350 / MASH - Estándares internacionales de certificación
                                 </li>
                             </ul>
                         </div>
@@ -285,16 +285,16 @@ export default function AtenuadoresPage() {
                     className="mt-12 text-center glass-card rounded-2xl p-12"
                 >
                     <h3 className="font-display text-2xl font-bold mb-4">
-                        Proteja a Sus <span className="text-gradient-primary">Trabajadores</span> en Via
+                        Proteja a Sus <span className="text-gradient-primary">Trabajadores</span> en Vía
                     </h3>
                     <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                        Contactenos para recibir asesoria tecnica sobre la solucion de atenuacion adecuada para sus operaciones
+                        Contáctenos para recibir asesoría técnica sobre la solución de atenuación adecuada para sus operaciones
                     </p>
                     <Link
                         to="/contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-accent text-accent-foreground font-semibold shadow-glow-accent hover:opacity-90 transition-opacity"
                     >
-                        Solicitar Asesoria Tecnica <ArrowRight className="h-5 w-5" />
+                        Solicitar Asesoría Técnica <ArrowRight className="h-5 w-5" />
                     </Link>
                 </motion.div>
             </div>

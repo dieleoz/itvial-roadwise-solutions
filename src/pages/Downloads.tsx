@@ -273,8 +273,8 @@ export default function Downloads() {
                       {/* Download Button */}
                       <button
                         onClick={() => {
-                          toast("Documento en preparacion", {
-                            description: "Contactenos para solicitar este archivo: contactenos@itvial.com",
+                          toast("Documento en preparación", {
+                            description: "Contáctenos para solicitar este archivo: contactenos@itvial.com",
                             action: {
                               label: "Contactar",
                               onClick: () => window.location.href = "/contact",

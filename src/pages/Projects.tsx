@@ -235,8 +235,8 @@ export default function Projects() {
   return (
     <div className="pt-20 lg:pt-24 pb-24">
       <SEO
-        title="Proyectos y Casos de Exito | IT VIAL SAS"
-        description="Conozca nuestros proyectos de infraestructura vial en Colombia: ITS, senalizacion, demarcacion y semaforizacion en las principales carreteras del pais."
+        title="Proyectos y Casos de Éxito | IT VIAL SAS"
+        description="Conozca nuestros proyectos de infraestructura vial en Colombia: ITS, señalización, demarcación y semaforización en las principales carreteras del país."
       />
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -281,8 +281,8 @@ export default function Projects() {
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${selectedCategory === cat
-                  ? "bg-primary text-primary-foreground shadow-glow-primary"
-                  : "bg-secondary/50 text-muted-foreground hover:bg-secondary"
+                ? "bg-primary text-primary-foreground shadow-glow-primary"
+                : "bg-secondary/50 text-muted-foreground hover:bg-secondary"
                 }`}
             >
               {cat}

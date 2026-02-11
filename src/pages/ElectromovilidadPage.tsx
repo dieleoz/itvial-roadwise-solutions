@@ -11,23 +11,23 @@ import SEO from "@/components/SEO";
 const products = [
     {
         id: "cargadores-ev",
-        name: "Cargadores para Vehiculos Electricos",
+        name: "Cargadores para Vehículos Eléctricos",
         icon: BatteryCharging,
-        description: "Estaciones de carga para vehiculos electricos con tecnologia de ultima generacion, compatibles con los principales estandares internacionales.",
+        description: "Estaciones de carga para vehículos eléctricos con tecnología de última generación, compatibles con los principales estándares internacionales.",
         types: [
             {
                 title: "Cargadores AC (Nivel 2)",
-                description: "Carga semi-rapida para estacionamientos, centros comerciales y flotas corporativas. Potencia de 7 a 22 kW.",
+                description: "Carga semi-rápida para estacionamientos, centros comerciales y flotas corporativas. Potencia de 7 a 22 kW.",
                 features: [
                     "Compatibilidad con conectores Tipo 1 y Tipo 2",
-                    "Gestion remota via plataforma cloud",
-                    "Sistema de autenticacion RFID y app movil",
-                    "Medicion de energia integrada",
-                    "Proteccion IP54 para instalacion exterior",
+                    "Gestión remota vía plataforma cloud",
+                    "Sistema de autenticación RFID y app móvil",
+                    "Medición de energía integrada",
+                    "Protección IP54 para instalación exterior",
                     "Cumplimiento norma IEC 61851"
                 ],
                 applications: [
-                    "Estacionamientos publicos y privados",
+                    "Estacionamientos públicos y privados",
                     "Centros comerciales y supermercados",
                     "Flotas corporativas y gubernamentales",
                     "Hoteles y centros de convenciones",
@@ -35,22 +35,22 @@ const products = [
                 ]
             },
             {
-                title: "Cargadores DC (Carga Rapida)",
-                description: "Estaciones de carga rapida con potencia de 50 a 150 kW para corredores viales y estaciones de servicio.",
+                title: "Cargadores DC (Carga Rápida)",
+                description: "Estaciones de carga rápida con potencia de 50 a 150 kW para corredores viales y estaciones de servicio.",
                 features: [
                     "Conectores CCS2 y CHAdeMO",
                     "Potencia de 50 kW a 150 kW",
-                    "Pantalla tactil interactiva",
+                    "Pantalla táctil interactiva",
                     "Sistema de pago integrado (tarjeta, QR, app)",
-                    "Monitoreo remoto y diagnostico",
-                    "Proteccion contra sobretensiones"
+                    "Monitoreo remoto y diagnóstico",
+                    "Protección contra sobretensiones"
                 ],
                 applications: [
                     "Corredores viales y autopistas",
                     "Estaciones de servicio",
                     "Electrolineras dedicadas",
                     "Terminales de transporte",
-                    "Puntos estrategicos urbanos"
+                    "Puntos estratégicos urbanos"
                 ]
             }
         ]
@@ -59,48 +59,48 @@ const products = [
         id: "infraestructura-carga",
         name: "Infraestructura de Carga",
         icon: Plug,
-        description: "Soluciones integrales de infraestructura electrica para redes de carga de vehiculos electricos, desde el diseno hasta la puesta en marcha.",
+        description: "Soluciones integrales de infraestructura eléctrica para redes de carga de vehículos eléctricos, desde el diseño hasta la puesta en marcha.",
         features: [
-            "Diseno e ingenieria de redes de carga",
-            "Tableros de distribucion electrica dedicados",
-            "Sistemas de gestion de energia (EMS)",
+            "Diseño e ingeniería de redes de carga",
+            "Tableros de distribución eléctrica dedicados",
+            "Sistemas de gestión de energía (EMS)",
             "Cableado y canalizaciones especializadas",
             "Transformadores y subestaciones para alta demanda",
-            "Senalizacion y demarcacion de puntos de carga"
+            "Señalización y demarcación de puntos de carga"
         ],
         advantages: [
-            "Diseno personalizado segun demanda proyectada",
+            "Diseño personalizado según demanda proyectada",
             "Escalabilidad para crecimiento futuro",
-            "Integracion con energias renovables",
+            "Integración con energías renovables",
             "Cumplimiento normativo colombiano RETIE",
-            "Soporte tecnico post-instalacion"
+            "Soporte técnico post-instalación"
         ]
     },
     {
         id: "estaciones-solares",
         name: "Estaciones de Carga Solar",
         icon: Sun,
-        description: "Estaciones de carga alimentadas con energia solar fotovoltaica, ideales para zonas rurales, parques y corredores viales sostenibles.",
+        description: "Estaciones de carga alimentadas con energía solar fotovoltaica, ideales para zonas rurales, parques y corredores viales sostenibles.",
         features: [
             "Paneles solares de alta eficiencia",
-            "Sistema de almacenamiento con baterias de litio",
-            "Estructura tipo pergola o marquesina solar",
-            "Operacion autonoma sin conexion a red electrica",
-            "Monitoreo de generacion y consumo en tiempo real",
-            "Iluminacion LED integrada"
+            "Sistema de almacenamiento con baterías de litio",
+            "Estructura tipo pérgola o marquesina solar",
+            "Operación autónoma sin conexión a red eléctrica",
+            "Monitoreo de generación y consumo en tiempo real",
+            "Iluminación LED integrada"
         ],
         advantages: [
-            "Cero emisiones de CO2 en la operacion",
-            "Reduccion de costos operativos",
-            "Independencia de la red electrica",
+            "Cero emisiones de CO2 en la operación",
+            "Reducción de costos operativos",
+            "Independencia de la red eléctrica",
             "Ideal para zonas rurales y remotas",
             "Imagen de sostenibilidad corporativa"
         ],
         applications: [
-            "Parques y areas recreativas",
-            "Zonas rurales sin cobertura electrica",
+            "Parques y áreas recreativas",
+            "Zonas rurales sin cobertura eléctrica",
             "Estaciones de peaje",
-            "Centros de atencion al usuario en carreteras",
+            "Centros de atención al usuario en carreteras",
             "Campus corporativos y universitarios"
         ]
     },
@@ -108,55 +108,55 @@ const products = [
         id: "parqueo-inteligente",
         name: "Parqueo Inteligente",
         icon: ParkingSquare,
-        description: "Sistemas inteligentes de gestion de estacionamientos con sensores IoT, senalizacion dinamica y plataformas de monitoreo en tiempo real para optimizar la ocupacion y mejorar la experiencia del usuario.",
+        description: "Sistemas inteligentes de gestión de estacionamientos con sensores IoT, señalización dinámica y plataformas de monitoreo en tiempo real para optimizar la ocupación y mejorar la experiencia del usuario.",
         features: [
-            "Sensores de deteccion de ocupacion por plaza (magneticos, ultrasonicos o vision)",
-            "Senalizacion LED dinamica de disponibilidad por nivel y zona",
-            "Plataforma cloud de monitoreo y analitica en tiempo real",
-            "App movil para localizacion de plazas disponibles",
-            "Integracion con sistemas de cobro automatico y tarifas dinamicas",
+            "Sensores de detección de ocupación por plaza (magnéticos, ultrasónicos o visión)",
+            "Señalización LED dinámica de disponibilidad por nivel y zona",
+            "Plataforma cloud de monitoreo y analítica en tiempo real",
+            "App móvil para localización de plazas disponibles",
+            "Integración con sistemas de cobro automático y tarifas dinámicas",
             "Conteo vehicular en accesos y salidas"
         ],
         advantages: [
-            "Reduccion de hasta un 30% en tiempo de busqueda de estacionamiento",
+            "Reducción de hasta un 30% en tiempo de búsqueda de estacionamiento",
             "Mejora del flujo vehicular en zonas urbanas",
-            "Datos de ocupacion para planificacion urbana",
-            "Reduccion de emisiones por menor circulacion",
-            "Incremento de ingresos por tarifas dinamicas"
+            "Datos de ocupación para planificación urbana",
+            "Reducción de emisiones por menor circulación",
+            "Incremento de ingresos por tarifas dinámicas"
         ],
         applications: [
             "Centros comerciales y grandes superficies",
             "Aeropuertos y terminales de transporte",
-            "Zonas de estacionamiento en via publica",
+            "Zonas de estacionamiento en vía pública",
             "Edificios corporativos y hospitalarios",
             "Estaciones de transporte masivo (park & ride)"
         ]
     },
     {
         id: "iluminacion-led",
-        name: "Iluminacion LED Solar",
+        name: "Iluminación LED Solar",
         icon: Lightbulb,
-        description: "Sistemas de iluminacion vial y urbana con tecnologia LED de alta eficiencia alimentados por paneles solares, ideales para zonas sin red electrica o como complemento de eficiencia energetica.",
+        description: "Sistemas de iluminación vial y urbana con tecnología LED de alta eficiencia alimentados por paneles solares, ideales para zonas sin red eléctrica o como complemento de eficiencia energética.",
         features: [
-            "Luminarias LED de 30W a 150W con optica vial certificada",
+            "Luminarias LED de 30W a 150W con óptica vial certificada",
             "Panel solar monocristalino de alta eficiencia",
-            "Bateria de litio-fosfato de hierro (LiFePO4) de larga vida",
-            "Controlador inteligente con programacion crepuscular",
+            "Batería de litio-fosfato de hierro (LiFePO4) de larga vida",
+            "Controlador inteligente con programación crepuscular",
             "Estructura de poste en acero galvanizado",
-            "Autonomia de 3 a 5 noches consecutivas sin sol"
+            "Autonomía de 3 a 5 noches consecutivas sin sol"
         ],
         advantages: [
-            "Cero costo de energia electrica",
-            "Instalacion sin cableado ni obras civiles mayores",
-            "Vida util superior a 50,000 horas (LED)",
-            "Mantenimiento minimo",
-            "Reduccion de huella de carbono"
+            "Cero costo de energía eléctrica",
+            "Instalación sin cableado ni obras civiles mayores",
+            "Vida útil superior a 50,000 horas (LED)",
+            "Mantenimiento mínimo",
+            "Reducción de huella de carbono"
         ],
         applications: [
-            "Vias rurales y terciarias sin red electrica",
+            "Vías rurales y terciarias sin red eléctrica",
             "Parques, senderos peatonales y ciclorrutas",
             "Estacionamientos y zonas de carga EV",
-            "Accesos a tuneles y puentes",
+            "Accesos a túneles y puentes",
             "Zonas escolares y residenciales",
             "Alumbrado de emergencia en carreteras"
         ]
@@ -164,7 +164,7 @@ const products = [
 ];
 
 const stats = [
-    { value: "100%", label: "Energia Limpia", icon: Leaf },
+    { value: "100%", label: "Energía Limpia", icon: Leaf },
     { value: "24/7", label: "Monitoreo Remoto", icon: Globe },
     { value: "IEC 61851", label: "Normativa Internacional", icon: Shield },
     { value: "+50%", label: "Ahorro vs Combustible", icon: TrendingUp },
@@ -174,7 +174,7 @@ export default function ElectromovilidadPage() {
     const { setWAMessage, resetWAMessage } = useWhatsApp();
 
     useEffect(() => {
-        setWAMessage("Hola, estoy interesado en las soluciones de electromovilidad de IT VIAL. Quisiera recibir informacion sobre cargadores EV e infraestructura de carga.");
+        setWAMessage("Hola, estoy interesado en las soluciones de electromovilidad de IT VIAL. Quisiera recibir información sobre cargadores EV e infraestructura de carga.");
         return () => resetWAMessage();
     }, []);
 
@@ -182,8 +182,8 @@ export default function ElectromovilidadPage() {
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
                 title="Electromovilidad | IT VIAL SAS"
-                description="Soluciones de electromovilidad: cargadores EV, infraestructura de carga y estaciones solares para la transicion energetica del transporte en Colombia."
-                keywords="electromovilidad Colombia, cargadores vehiculos electricos, estaciones carga EV, infraestructura carga electrica, estaciones solares, IT VIAL"
+                description="Soluciones de electromovilidad: cargadores EV, infraestructura de carga y estaciones solares para la transición energética del transporte en Colombia."
+                keywords="electromovilidad Colombia, cargadores vehículos eléctricos, estaciones carga EV, infraestructura carga eléctrica, estaciones solares, IT VIAL"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "Product",
@@ -208,14 +208,14 @@ export default function ElectromovilidadPage() {
                             <span className="text-gradient-primary">Electromovilidad</span>
                         </h1>
                         <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                            Infraestructura de carga para vehiculos electricos y soluciones de energia sostenible para la transicion energetica del transporte
+                            Infraestructura de carga para vehículos eléctricos y soluciones de energía sostenible para la transición energética del transporte
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link
                                 to="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                             >
-                                Solicitar Asesoria <ArrowRight className="h-5 w-5" />
+                                Solicitar Asesoría <ArrowRight className="h-5 w-5" />
                             </Link>
                         </div>
                     </motion.div>
@@ -305,7 +305,7 @@ export default function ElectromovilidadPage() {
                                 {/* Features (for simple products) */}
                                 {product.features && !product.types && (
                                     <div className="mb-8">
-                                        <h4 className="font-semibold text-primary mb-4">Caracteristicas:</h4>
+                                        <h4 className="font-semibold text-primary mb-4">Características:</h4>
                                         <ul className="grid md:grid-cols-2 gap-3">
                                             {product.features.map((f, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -369,16 +369,16 @@ export default function ElectromovilidadPage() {
                     className="mt-20 text-center glass-card rounded-2xl p-12"
                 >
                     <h3 className="font-display text-2xl font-bold mb-4">
-                        Impulse la <span className="text-gradient-primary">Transicion Energetica</span>
+                        Impulse la <span className="text-gradient-primary">Transición Energética</span>
                     </h3>
                     <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                        Contactenos para disenar la solucion de electromovilidad ideal para su proyecto
+                        Contáctenos para diseñar la solución de electromovilidad ideal para su proyecto
                     </p>
                     <Link
                         to="/contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-accent text-accent-foreground font-semibold shadow-glow-accent hover:opacity-90 transition-opacity"
                     >
-                        Solicitar Propuesta Tecnica <ArrowRight className="h-5 w-5" />
+                        Solicitar Propuesta Técnica <ArrowRight className="h-5 w-5" />
                     </Link>
                 </motion.div>
             </div>

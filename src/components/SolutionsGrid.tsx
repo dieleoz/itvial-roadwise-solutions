@@ -13,19 +13,19 @@ const solutions = [
   {
     icon: TrafficCone,
     title: "ITS y Seguridad Vial",
-    description: "Paneles de mensaje variable, sistemas inteligentes de trafico, semaforizacion y mas.",
+    description: "Paneles de mensaje variable, sistemas inteligentes de tráfico, semaforización y más.",
     path: "/solutions/its",
   },
   {
     icon: Landmark,
     title: "Equipos para Pavimentos",
-    description: "Demarcacion vial, selladoras de fisuras y equipos de reciclaje de asfaltos.",
+    description: "Demarcación vial, selladoras de fisuras y equipos de reciclaje de asfaltos.",
     path: "/solutions/pavimentos",
   },
   {
     icon: Gauge,
-    title: "Instrumentacion y Medicion",
-    description: "Retroreflectometros, auscultacion de pavimentos y equipos ferroviarios especializados.",
+    title: "Instrumentación y Medición",
+    description: "Retroreflectómetros, auscultación de pavimentos y equipos ferroviarios especializados.",
     path: "/solutions/instrumentos",
   },
   {
@@ -36,14 +36,14 @@ const solutions = [
   },
   {
     icon: Mountain,
-    title: "Senalizacion Vial",
-    description: "Senalizacion elevada, vertical y demarcacion horizontal cumpliendo normativa colombiana.",
+    title: "Señalización Vial",
+    description: "Señalización elevada, vertical y demarcación horizontal cumpliendo normativa colombiana.",
     path: "/solutions/senalizacion",
   },
   {
     icon: Puzzle,
-    title: "Mas Soluciones",
-    description: "Ferroviario, auscultacion de pavimentos, delineadores, atenuadores y servicios adicionales.",
+    title: "Más Soluciones",
+    description: "Ferroviario, auscultación de pavimentos, delineadores, atenuadores y servicios adicionales.",
     path: "/solutions",
   },
 ];
@@ -62,7 +62,7 @@ export default function SolutionsGrid() {
             Nuestras <span className="text-gradient-accent">Soluciones</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Tecnologia integral para cada aspecto de la infraestructura vial moderna
+            Tecnología integral para cada aspecto de la infraestructura vial moderna
           </p>
         </motion.div>
 
@@ -89,7 +89,7 @@ export default function SolutionsGrid() {
                   {sol.description}
                 </p>
                 <span className="inline-block mt-4 text-xs font-semibold text-primary group-hover:translate-x-1 transition-transform">
-                  Conocer mas →
+                  Conocer más →
                 </span>
               </Link>
             </motion.div>

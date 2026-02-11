@@ -31,10 +31,10 @@ const NotFound = () => {
             404
           </h1>
           <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
-            Pagina No Encontrada
+            Página No Encontrada
           </h2>
           <p className="text-muted-foreground mb-2">
-            La pagina que busca no existe o ha sido movida.
+            La página que busca no existe o ha sido movida.
           </p>
           <p className="text-sm text-muted-foreground mb-10">
             Ruta solicitada: <code className="px-2 py-1 rounded bg-secondary text-xs">{location.pathname}</code>

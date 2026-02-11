@@ -12,14 +12,14 @@ const products = [
     {
         id: "delineador-flexible",
         name: "Delineador Flexible Rebotable",
-        description: "Delineador vial fabricado en poliuretano de alta resistencia que se recupera tras el impacto vehicular, manteniendo la senalizacion activa y reduciendo costos de mantenimiento.",
+        description: "Delineador vial fabricado en poliuretano de alta resistencia que se recupera tras el impacto vehicular, manteniendo la señalización activa y reduciendo costos de mantenimiento.",
         specs: [
             { label: "Altura", value: "75 cm / 90 cm / 120 cm" },
             { label: "Material", value: "Poliuretano flexible" },
             { label: "Retroreflectividad", value: "Tipo XI ASTM D4956" },
             { label: "Base", value: "Empotrada o adhesiva" },
-            { label: "Temperatura de operacion", value: "-30C a +70C" },
-            { label: "Recuperacion tras impacto", value: "> 95%" },
+            { label: "Temperatura de operación", value: "-30C a +70C" },
+            { label: "Recuperación tras impacto", value: "> 95%" },
         ],
         features: [
             "Recuperacion total tras impactos a velocidades de hasta 80 km/h",
@@ -33,7 +33,7 @@ const products = [
         ],
         applications: [
             "Separacion de carriles y calzadas",
-            "Canalizacion en zonas de obra",
+            "Canalización en zonas de obra",
             "Isletas y medianas",
             "Curvas peligrosas",
             "Zonas escolares y hospitalarias",
@@ -45,30 +45,30 @@ const products = [
     {
         id: "delineador-tubular",
         name: "Delineador Tubular",
-        description: "Dispositivo tubular de senalizacion vertical fabricado en polietileno de alta densidad, disenado para canalizacion de trafico en zonas urbanas e interurbanas.",
+        description: "Dispositivo tubular de señalización vertical fabricado en polietileno de alta densidad, diseñado para canalización de tráfico en zonas urbanas e interurbanas.",
         specs: [
             { label: "Altura", value: "45 cm / 75 cm" },
             { label: "Material", value: "Polietileno de alta densidad" },
-            { label: "Diametro", value: "8 cm" },
+            { label: "Diámetro", value: "8 cm" },
             { label: "Retroreflectividad", value: "2 bandas HIP" },
-            { label: "Fijacion", value: "Base adhesiva o empotrada" },
+            { label: "Fijación", value: "Base adhesiva o empotrada" },
             { label: "Peso", value: "~500 g" },
         ],
         features: [
-            "Diseno de perfil bajo para zonas urbanas",
+            "Diseño de perfil bajo para zonas urbanas",
             "Resistencia a impactos repetidos",
             "Bandas retroreflectivas visibles a 360 grados",
-            "Instalacion rapida sin herramientas especiales",
+            "Instalación rápida sin herramientas especiales",
             "Compatible con bases existentes",
             "Colores: naranja, amarillo, blanco, verde"
         ],
         applications: [
-            "Separacion de ciclorrutas",
-            "Canalizacion en intersecciones",
+            "Separación de ciclorrutas",
+            "Canalización en intersecciones",
             "Zonas de trabajo temporal",
             "Estacionamientos y parqueaderos",
             "Plataformas de transporte masivo",
-            "Delimitacion de zonas peatonales"
+            "Delimitación de zonas peatonales"
         ]
     },
     {
@@ -84,19 +84,19 @@ const products = [
             { label: "Resistencia al viento", value: "Hasta 120 km/h" },
         ],
         features: [
-            "Alta visibilidad nocturna gracias a laminas retroreflectivas",
-            "Resistencia a condiciones climaticas extremas",
-            "Facil reposicion en caso de dano",
+            "Alta visibilidad nocturna gracias a láminas retroreflectivas",
+            "Resistencia a condiciones climáticas extremas",
+            "Fácil reposición en caso de daño",
             "Bajo costo de mantenimiento",
-            "Cumplimiento normativa INVIAS y Manual de Senalizacion",
+            "Cumplimiento normativa INVIAS y Manual de Señalización",
             "Opciones con captafaro integrado"
         ],
         applications: [
             "Bordes de carreteras y autopistas",
             "Curvas y zonas de riesgo",
             "Puentes y viaductos",
-            "Zonas de montana",
-            "Accesos a tuneles",
+            "Zonas de montaña",
+            "Accesos a túneles",
             "Medianas y separadores centrales"
         ]
     }
@@ -106,7 +106,7 @@ export default function DelineadoresPage() {
     const { setWAMessage, resetWAMessage } = useWhatsApp();
 
     useEffect(() => {
-        setWAMessage("Hola, estoy interesado en los delineadores rebotables de IT VIAL. Quisiera recibir una cotizacion.");
+        setWAMessage("Hola, estoy interesado en los delineadores rebotables de IT VIAL. Quisiera recibir una cotización.");
         return () => resetWAMessage();
     }, []);
 
@@ -120,7 +120,7 @@ export default function DelineadoresPage() {
                     "@context": "https://schema.org",
                     "@type": "Product",
                     "name": "Delineadores Rebotables IT VIAL",
-                    "description": "Delineadores flexibles para canalizacion y seguridad vial",
+                    "description": "Delineadores flexibles para canalización y seguridad vial",
                     "brand": { "@type": "Brand", "name": "IT VIAL SAS" }
                 }}
             />
@@ -137,14 +137,14 @@ export default function DelineadoresPage() {
                             Delineadores <span className="text-gradient-primary">Rebotables</span>
                         </h1>
                         <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                            Dispositivos de canalizacion y delineacion vial flexibles, disenados para recuperarse tras el impacto y mantener la seguridad activa en la via
+                            Dispositivos de canalización y delineación vial flexibles, diseñados para recuperarse tras el impacto y mantener la seguridad activa en la vía
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link
                                 to="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                             >
-                                Solicitar Cotizacion <ArrowRight className="h-5 w-5" />
+                                Solicitar Cotización <ArrowRight className="h-5 w-5" />
                             </Link>
                         </div>
                     </motion.div>
@@ -177,7 +177,7 @@ export default function DelineadoresPage() {
 
                                 {/* Specs Table */}
                                 <div className="mb-8">
-                                    <h4 className="font-semibold text-primary mb-4">Especificaciones Tecnicas:</h4>
+                                    <h4 className="font-semibold text-primary mb-4">Especificaciones Técnicas:</h4>
                                     <div className="overflow-x-auto">
                                         <table className="w-full text-sm">
                                             <tbody>
@@ -194,7 +194,7 @@ export default function DelineadoresPage() {
 
                                 {/* Features */}
                                 <div className="mb-8">
-                                    <h4 className="font-semibold text-primary mb-4">Caracteristicas:</h4>
+                                    <h4 className="font-semibold text-primary mb-4">Características:</h4>
                                     <ul className="grid md:grid-cols-2 gap-3">
                                         {product.features.map((f, idx) => (
                                             <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -224,7 +224,7 @@ export default function DelineadoresPage() {
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
                                     >
-                                        Solicitar Cotizacion <ArrowRight className="h-4 w-4" />
+                                        Solicitar Cotización <ArrowRight className="h-4 w-4" />
                                     </Link>
                                 </div>
                             </div>
@@ -240,16 +240,16 @@ export default function DelineadoresPage() {
                     className="mt-20 text-center glass-card rounded-2xl p-12"
                 >
                     <h3 className="font-display text-2xl font-bold mb-4">
-                        Proteja las Vias con <span className="text-gradient-primary">Delineacion Flexible</span>
+                        Proteja las Vías con <span className="text-gradient-primary">Delineación Flexible</span>
                     </h3>
                     <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                        Contactenos para recibir asesoria tecnica y cotizacion de delineadores para su proyecto vial
+                        Contáctenos para recibir asesoría técnica y cotización de delineadores para su proyecto vial
                     </p>
                     <Link
                         to="/contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-accent text-accent-foreground font-semibold shadow-glow-accent hover:opacity-90 transition-opacity"
                     >
-                        Solicitar Asesoria Tecnica <ArrowRight className="h-5 w-5" />
+                        Solicitar Asesoría Técnica <ArrowRight className="h-5 w-5" />
                     </Link>
                 </motion.div>
             </div>

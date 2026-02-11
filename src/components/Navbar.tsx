@@ -78,27 +78,37 @@ const solutionsMenu: SolutionMenuCategory[] = [
     title: "Servicios Adicionales",
     path: "/solutions/servicios",
     items: [
-      { label: "Alquiler de Grua de Canastilla", hash: "grua" },
-      { label: "Aplicacion de Marcas Viales", hash: "demarcacion-servicio" },
+      { label: "Alquiler de Grúa de Canastilla", hash: "grua" },
+      { label: "Aplicación de Marcas Viales", hash: "demarcacion-servicio" },
     ],
   },
   {
     title: "Electromovilidad",
     path: "/solutions/electromovilidad",
     items: [
-      { label: "Cargadores para Vehiculos Electricos", hash: "cargadores-ev" },
+      { label: "Cargadores para Vehículos Eléctricos", hash: "cargadores-ev" },
       { label: "Infraestructura de Carga", hash: "infraestructura-carga" },
       { label: "Estaciones de Carga Solar", hash: "estaciones-solares" },
     ],
     badge: "NUEVO"
   },
   {
-    title: "Seguridad en Zona de Trabajo",
+    title: "Delineadores Rebotables",
     path: "/solutions/delineadores",
     items: [
-      { label: "Delineadores Rebotables", hash: "delineador-flexible" },
-      { label: "Atenuadores de Impacto", hash: "" },
+      { label: "Delineadores Flexibles", hash: "delineador-flexible" },
+      { label: "Delineadores Tubulares", hash: "delineador-tubular" },
+      { label: "Hitos Delineadores", hash: "delineador-vial" },
     ],
+  },
+  {
+    title: "Atenuadores de Impacto",
+    path: "/solutions/atenuadores",
+    items: [
+      { label: "Atenuadores Remolcables", hash: "atenuador-remolcable" },
+      { label: "Atenuadores Montados en Vehículo", hash: "atenuador-montado" },
+    ],
+    badge: "NUEVO"
   },
 ];
 
