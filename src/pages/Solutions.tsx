@@ -148,6 +148,9 @@ const strategicBlocks: StrategicBlock[] = [
 ];
 
 export default function Solutions() {
+  // Debug log to verify deployment version
+  console.log("IT VIAL Solutions Page Loaded: v2.1 Strategic Blocks");
+
   return (
     <div className="pt-20 lg:pt-24 pb-24 bg-background">
       <SEO
