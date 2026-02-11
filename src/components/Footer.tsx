@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Award } from "lucide-react";
 
 const solutionLinks = [
-  "ITS y Seguridad Vial",
-  "Peajes",
-  "Túneles",
-  "Smart City",
-  "Instrumentación y Medición",
-  "Otras Soluciones",
+  { name: "ITS y Seguridad Vial", path: "/solutions/its" },
+  { name: "Equipos para Pavimentos", path: "/solutions/pavimentos" },
+  { name: "Instrumentos para las Vías", path: "/solutions/instrumentos" },
+  { name: "Señalización Vial", path: "/solutions/senalizacion" },
+  { name: "Servicios Adicionales", path: "/solutions/servicios" },
 ];
 
 const companyLinks = [
@@ -30,6 +29,12 @@ export default function Footer() {
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               Soluciones tecnológicas para la infraestructura vial de Colombia. Más de 15 años diseñando y fabricando sistemas inteligentes.
             </p>
+
+            {/* Certifications */}
+            <div className="mt-6 flex items-center gap-2">
+              <Award className="h-4 w-4 text-accent" />
+              <span className="text-xs text-muted-foreground">ISO 9001:2015</span>
+            </div>
           </div>
 
           {/* Soluciones */}
@@ -37,9 +42,9 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-foreground mb-4">Soluciones</h4>
             <ul className="space-y-2">
               {solutionLinks.map((link) => (
-                <li key={link}>
-                  <Link to="/solutions" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    {link}
+                <li key={link.name}>
+                  <Link to={link.path} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -70,11 +75,15 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary shrink-0" />
-                <span>+57 (1) 6940493</span>
+                <a href="tel:+5716940493" className="hover:text-primary transition-colors">
+                  +57 (1) 6940493
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
-                <span>contactenos@itvial.com</span>
+                <a href="mailto:contactenos@itvial.com" className="hover:text-primary transition-colors">
+                  contactenos@itvial.com
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-primary shrink-0" />
@@ -89,8 +98,8 @@ export default function Footer() {
             © {new Date().getFullYear()} IT VIAL SAS. Todos los derechos reservados.
           </p>
           <div className="flex gap-6 text-xs text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">Política de Privacidad</Link>
-            <Link to="/" className="hover:text-primary transition-colors">Términos y Condiciones</Link>
+            <Link to="/contact" className="hover:text-primary transition-colors">Política de Privacidad</Link>
+            <Link to="/contact" className="hover:text-primary transition-colors">Términos y Condiciones</Link>
           </div>
         </div>
       </div>
