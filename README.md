@@ -1,73 +1,360 @@
-# Welcome to your Lovable project
+# IT VIAL SAS - Sitio Web Corporativo
 
-## Project info
+## 🎯 Objetivo del Proyecto
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Crear una página web corporativa moderna y profesional para IT VIAL SAS, empresa colombiana líder en soluciones tecnológicas para infraestructura vial. El sitio replica la estructura y diseño de https://www.deviteck.com.co/, adaptado a los productos y servicios específicos de IT VIAL.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🏢 Sobre IT VIAL
 
-**Use Lovable**
+**IT VIAL SAS** es una empresa colombiana especializada en:
+- Sistemas Inteligentes de Tráfico (ITS)
+- Equipos para pavimentos y demarcación vial
+- Instrumentos de medición vial
+- Señalización vertical y horizontal
+- Servicios de instalación y mantenimiento
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**Ubicación:** Calle 75 #69h-33, Bogotá D.C., Colombia  
+**Contacto:** +57 (1) 6940493 | contactenos@itvial.com
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 📋 PROMPT COMPLETO DE IMPLEMENTACIÓN
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### CONTEXTO
+Ya existe una base del sitio web. Ahora necesitamos expandirlo con TODO el contenido del portafolio real de IT VIAL, manteniendo el diseño oscuro profesional estilo Deviteck.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📐 ESTRUCTURA DEL SITIO
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Navegación Principal
+```
+INICIO | CONÓZCANOS | SOLUCIONES ▾ | PROYECTOS | DESCARGABLES | CONTACTO
 ```
 
-**Edit a file directly in GitHub**
+### Submenú "SOLUCIONES"
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+#### 1. ITS Y SEGURIDAD VIAL
+- Paneles de Mensaje Variable (PMV Fijos y Móviles)
+- Radares Disuasivos
+- Radares de Conteo y Categorización
+- Estaciones Meteorológicas
+- Gálibos y Señales Ocultas
+- Sistemas SOS
+- Estructuras Metálicas (Pórticos, Banderas, Gabinetes)
+- Semaforización Convencional
 
-**Use GitHub Codespaces**
+#### 2. EQUIPOS PARA PAVIMENTOS
+- Equipos para Demarcación Vial
+- Selladoras de Fisuras
+- Equipos de Reciclaje de Asfaltos
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+#### 3. INSTRUMENTOS PARA LAS VÍAS
+- Retroreflectómetros Horizontales
+- Retroreflectómetros Verticales
 
-## What technologies are used for this project?
+#### 4. SEÑALIZACIÓN VIAL
+- Señalización Elevada
+- Señalización Vertical
+- Demarcación Horizontal
 
-This project is built with:
+#### 5. SERVICIOS ADICIONALES
+- Alquiler de Grúa de Canastilla
+- Aplicación de Marcas Viales
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🎨 DISEÑO VISUAL
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Paleta de Colores
+- **Principales:** Grises oscuros (#1a1a1a, #2d2d2d) y negros (#000000, #0d0d0d)
+- **Acentos:** Azul tecnológico (#0066cc, #0080ff) y naranja energético (#ff6600, #ff8c00)
+- **Fondo:** Negro/gris oscuro con secciones alternadas
+- **Texto:** Blanco y grises claros sobre fondos oscuros
 
-## Can I connect a custom domain to my Lovable project?
+### Tipografía
+- **Encabezados:** Space Grotesk, bold
+  - H1: 48-64px
+  - H2: 36-42px
+  - H3: 28-32px
+- **Cuerpo:** Inter, 16-18px
+- **Espaciado:** Generoso, con márgenes amplios entre secciones
 
-Yes, you can!
+### Estilo General
+- Diseño moderno tipo "dark mode" profesional
+- Tarjetas con glassmorphism y bordes sutiles
+- Efectos hover en botones y tarjetas
+- Animaciones suaves con Framer Motion
+- Imágenes de alta calidad con overlays oscuros
+- Iconos modernos de Lucide React
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📄 PÁGINAS PRINCIPALES
+
+### 1. INICIO (Index)
+- **Hero Section:** Video/imagen de autopista con overlay oscuro
+- **Sección Quiénes Somos:** Misión, Visión, Valores (3 columnas)
+- **Nuestros Números:** 4 estadísticas animadas
+  - 15+ años de experiencia
+  - 180+ parques recreativos
+  - 50+ proyectos viales
+  - 100% fabricación nacional
+- **Grid de Soluciones:** 6 categorías principales
+- **Casos de Éxito:** Proyectos destacados
+- **CTA Final**
+
+### 2. ITS Y SEGURIDAD VIAL
+#### PMV Fijos
+- Descripción completa
+- Características técnicas
+- Aplicaciones
+- Imágenes del portafolio
+- CTAs: Cotización + Ficha Técnica
+
+#### PMV Móviles
+- Especificaciones
+- Ideal para obras temporales
+- Autonomía energética
+
+#### Radares Disuasivos
+- Display "SU VELOCIDAD"
+- Resultados comprobados
+- Reducción de velocidad 15-25%
+
+#### Radares de Conteo
+- Aforo vehicular
+- Clasificación automática
+- Reportes IoT
+
+#### Estaciones Meteorológicas
+- Medición en tiempo real
+- Integración con PMV
+
+#### Gálibos
+- Detección de sobredimensionados
+- Protección de estructuras
+
+#### Sistemas SOS
+- Comunicación de emergencia
+- Video, audio, GPS
+
+#### Estructuras Metálicas
+- Pórticos y banderas
+- Diseño, fabricación, instalación
+- Galvanizado en caliente
+
+#### Semaforización
+- LED de alta eficiencia
+- Vehiculares y peatonales
+- Cuenta regresiva
+
+### 3. EQUIPOS PARA PAVIMENTOS
+#### Camiones Demarcadores
+- Líderes en Colombia
+- Sistema IT-V4.0
+- Cumplimiento NTC
+- Clientes: Neiva-Girardot, Pacífico Tres
+
+#### Máquinas Autopropulsadas
+- Para parqueaderos y vías urbanas
+- Operación por 1 persona
+
+#### Equipos Manuales
+- Portátiles
+- Trabajos pequeños
+
+#### Selladoras de Fisuras
+- Prevención de daños
+- Mantenimiento preventivo
+
+#### Reciclaje de Asfaltos
+- In situ o planta móvil
+- Sostenibilidad
+- Ahorro hasta 40%
+
+### 4. INSTRUMENTOS PARA LAS VÍAS
+#### Retroreflectómetro Horizontal (SAT-LUX)
+- Medición según ASTM E1710
+- Conectividad IoT
+- App móvil RTH_IoT
+- GPS + informes automáticos
+
+#### Retroreflectómetro Vertical
+- Evaluación de señales
+- Mantenimiento predictivo
+- Cumplimiento normativo
+
+### 5. SEÑALIZACIÓN VIAL
+#### Señalización Elevada
+- Diseño, fabricación, instalación
+- Pórticos y banderas
+- Proyectos realizados
+
+#### Señalización Vertical
+- Reglamentarias, preventivas, informativas
+- Láminas reflectivas Tipo I-IV
+- Cumplimiento Manual de Señalización
+
+#### Demarcación Horizontal
+- Líneas, símbolos, pasos peatonales
+- Pintura en frío y termoplástica
+- Equipos propios
+
+### 6. SERVICIOS ADICIONALES
+#### Grúa de Canastilla
+- Alcance 18 metros
+- Operador certificado
+- Disponibilidad 24/7
+
+---
+
+## 🛠️ TECNOLOGÍAS
+
+### Stack Principal
+- **Framework:** React 18.3.1
+- **Lenguaje:** TypeScript
+- **Build Tool:** Vite 5.4.19
+- **Routing:** React Router DOM 6.30.1
+- **Styling:** Tailwind CSS 3.4.17
+- **UI Components:** shadcn/ui (Radix UI)
+- **Animaciones:** Framer Motion 12.34.0
+- **Iconos:** Lucide React 0.462.0
+- **Validación:** Zod 3.25.76
+- **State Management:** TanStack Query 5.83.0
+
+### Herramientas de Desarrollo
+- **Testing:** Vitest + Testing Library
+- **Linting:** ESLint 9.32.0
+- **TypeScript:** 5.8.3
+
+---
+
+## 📱 FUNCIONALIDADES ESPECIALES
+
+### 1. Botón WhatsApp Flotante
+- Posición: Esquina inferior derecha
+- Color: Verde WhatsApp (#25D366)
+- Mensaje pre-configurado por producto
+
+### 2. Formulario de Cotización Rápida
+- Modal en productos
+- Producto pre-seleccionado
+- Validación con Zod
+
+### 3. Comparador de Productos
+- Hasta 3 productos
+- Tabla comparativa de características
+
+---
+
+## 🎯 ELEMENTOS VISUALES CRÍTICOS
+
+### Imágenes del Portafolio
+- PMV nocturno con mensaje activo
+- PMV móviles en plataforma
+- Radar "SU VELOCIDAD"
+- Estructuras metálicas en fabricación
+- Instalación de pórticos
+- Señales elevadas
+- Camión demarcador en operación
+- Controlador IT-V4.0
+- Retroreflectómetros
+- App RTH_IoT
+- Demarcación vial terminada
+- Grúa de canastilla
+
+---
+
+## 📊 SEO Y OPTIMIZACIÓN
+
+### Keywords Principales
+- Soluciones ITS Colombia
+- Sistemas inteligentes de tráfico
+- PMV Colombia
+- Equipos auscultación de pavimentos
+- Señalización vial Colombia
+- Demarcación vial
+- Retroreflectómetros
+
+### Optimización
+- Meta títulos y descripciones únicas
+- URLs amigables
+- Schema markup para productos
+- Sitemap XML
+- Lazy loading de imágenes
+- Compresión WebP
+
+---
+
+## 🚀 SCRIPTS DISPONIBLES
+
+```bash
+# Desarrollo
+npm run dev
+
+# Build producción
+npm run build
+
+# Preview build
+npm run preview
+
+# Tests
+npm test
+npm run test:watch
+
+# Linting
+npm run lint
+```
+
+---
+
+## 📞 INFORMACIÓN DE CONTACTO
+
+**Dirección:** Calle 75 #69h-33, Bogotá D.C., Colombia  
+**Teléfono:** +57 (1) 6940493  
+**Móvil:** +57 318 8200400  
+**Email:** contactenos@itvial.com  
+
+**Horarios:**
+- Lunes a Viernes: 7:00 AM - 5:00 PM
+- Sábados: 8:00 AM - 12:00 PM
+
+---
+
+## 📄 FOOTER ESTRUCTURA
+
+```
+[Logo IT VIAL]
+
+SOBRE NOSOTROS          SOLUCIONES               CONTACTO
+- Misión y Visión       • ITS                    📍 Dirección
+- Historia              • Pavimentos             📞 Teléfonos
+- Equipo                • Instrumentos           ✉️ Email
+- Certificaciones       • Señalización
+
+PROYECTOS              LEGAL
+- Casos de Éxito       • Política de Privacidad
+- Clientes             • Términos y Condiciones
+- Galería              • PQRSDF
+
+© 2025 IT VIAL SAS | Infraestructura y Tecnología Vial
+"Las mejores vías hacia el futuro no solo se construyen, 
+se iluminan con innovación."
+```
+
+---
+
+## 📝 LICENCIA
+
+© 2025 IT VIAL SAS. Todos los derechos reservados.
+
+---
+
+## 🤝 CONTRIBUCIÓN
+
+Este proyecto es desarrollado y mantenido por IT VIAL SAS.
+
+Para consultas técnicas o comerciales, contactar a: contactenos@itvial.com

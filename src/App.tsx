@@ -9,6 +9,9 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Solutions from "./pages/Solutions";
+import ITSPage from "./pages/ITSPage";
+import PavimentosPage from "./pages/PavimentosPage";
+import InstrumentosPage from "./pages/InstrumentosPage";
 import Projects from "./pages/Projects";
 import Downloads from "./pages/Downloads";
 import Contact from "./pages/Contact";
@@ -28,6 +31,9 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/solutions" element={<Solutions />} />
+            <Route path="/solutions/its" element={<ITSPage />} />
+            <Route path="/solutions/pavimentos" element={<PavimentosPage />} />
+            <Route path="/solutions/instrumentos" element={<InstrumentosPage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/contact" element={<Contact />} />
