@@ -10,6 +10,7 @@ import { WhatsAppProvider } from "./context/WhatsAppContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Solutions from "./pages/Solutions";
+import SmartWorkZonesPage from "./pages/SmartWorkZonesPage";
 import ITSPage from "./pages/ITSPage";
 import PavimentosPage from "./pages/PavimentosPage";
 import InstrumentosPage from "./pages/InstrumentosPage";
@@ -57,6 +58,7 @@ const App = () => (
                   <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
                   <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
                   <Route path="/solutions/servicios" element={<ServiciosPage />} />
+                  <Route path="/solutions/zonas-de-obra-inteligentes" element={<SmartWorkZonesPage />} />
                   <Route path="/solutions/electromovilidad" element={<ElectromovilidadPage />} />
                   <Route path="/solutions/delineadores" element={<DelineadoresPage />} />
                   <Route path="/solutions/atenuadores" element={<AtenuadoresPage />} />

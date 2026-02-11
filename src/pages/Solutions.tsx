@@ -49,7 +49,7 @@ const strategicBlocks: StrategicBlock[] = [
           data: "Entrega de API de estado y alertas"
         },
         key_message: "No vendemos señalización temporal. Entregamos seguridad operativa conectada.",
-        link: "/solutions/its"
+        link: "/solutions/zonas-de-obra-inteligentes"
       },
       {
         title: "Control Dinámico de Carga – WIM",
