@@ -47,6 +47,22 @@ const products = [
             "Alerta antes de que ocurra el accidente",
             "Valida el respeto a límites de velocidad de obra"
         ]
+    },
+    {
+        id: "semaforo-movil",
+        name: "Sistema de Semaforización Móvil IT VIAL",
+        icon: Zap, // Represents energy/active control
+        description: "Automatización de Paso Alternado. Ecosistema tecnológico diseñado para sustituir el control manual por una operación digital centralizada, eliminando el error humano y optimizando costos.",
+        features: [
+            "Alcance y Cobertura Crítica: Comunicación estable y sincronizada de hasta 800m (ideal para túneles/puentes)",
+            "Hardware Industrial Robusto: Semáforos móviles LED de alta visibilidad con autonomía solar",
+            "Actuación Adaptativa: Gestión vía botonera industrial, tablet o app según cobertura",
+            "Control de Vía Integrado: Gestión remota de tiempos de ciclo y cumplimiento de PMT vía IT-V4.0"
+        ],
+        benefits: [
+            "Reducción de Costos Directos: Reduce la cuadrilla a un solo operario (menor nómina y riesgo ARL)",
+            "Seguridad Operativa Conectada: Entrega datos de tráfico vía API al centro de control en tiempo real"
+        ]
     }
 ];
 
@@ -54,7 +70,7 @@ export default function SmartWorkZonesPage() {
     const { setWAMessage, resetWAMessage } = useWhatsApp();
 
     useEffect(() => {
-        setWAMessage("Hola, me interesa conocer más sobre las soluciones de Zonas de Obra Inteligentes (VIGÍA VIAL y CONO ALERTA).");
+        setWAMessage("Hola, me interesa conocer más sobre las soluciones de Zonas de Obra Inteligentes (Semaforización Móvil, VIGÍA VIAL y CONO ALERTA).");
         return () => resetWAMessage();
     }, []);
 
@@ -62,7 +78,7 @@ export default function SmartWorkZonesPage() {
         <div className="pt-20 lg:pt-24 pb-20 bg-background overflow-hidden">
             <SEO
                 title="Smart Work Zones | IT VIAL INTELIGENTE™"
-                description="Zonas de Obra Inteligentes con VIGÍA VIAL™ y CONO ALERTA PRO™. Tecnología IoT para protección activa y cumplimiento PMT."
+                description="Zonas de Obra Inteligentes con VIGÍA VIAL™, CONO ALERTA PRO™ y Semaforización Móvil. Tecnología IoT para protección activa y cumplimiento PMT."
             />
 
             {/* Hero Section */}
@@ -88,6 +104,15 @@ export default function SmartWorkZonesPage() {
                     <p className="text-xl text-muted-foreground mb-8 font-light max-w-2xl mx-auto">
                         Evolucionamos el control de obra tradicional hacia un modelo activo de monitoreo, detección y alerta basado en datos.
                     </p>
+
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 mb-12">
+                        <img
+                            src="/images/solutions/its/smart-work-zone-concept.webp"
+                            alt="Concepto de Zona de Obra Inteligente con dispositivos conectados"
+                            className="object-cover w-full h-full"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                    </div>
                 </motion.div>
             </section>
 
@@ -157,8 +182,27 @@ export default function SmartWorkZonesPage() {
                 </div>
             </section>
 
-            {/* Simple CTA */}
+            {/* Differentiator & CTA */}
             <section className="container mx-auto px-4 text-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mb-16 max-w-3xl mx-auto"
+                >
+                    <div className="relative p-8 rounded-2xl bg-gradient-dark-section border border-primary/20">
+                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-background px-4 text-primary">
+                            <Zap className="w-8 h-8" />
+                        </div>
+                        <h3 className="font-display text-xl md:text-2xl italic font-medium text-foreground/90">
+                            "No instalamos señales temporales; desplegamos una infraestructura industrial conectada que garantiza seguridad y ahorro operativo."
+                        </h3>
+                        <p className="mt-4 text-sm font-bold text-primary tracking-widest uppercase mb-0">
+                            Diferencial IT VIAL
+                        </p>
+                    </div>
+                </motion.div>
+
                 <div className="inline-block p-8 rounded-2xl bg-secondary/30 border border-border">
                     <h3 className="font-display text-2xl font-bold mb-4">¿Interesado en implementar?</h3>
                     <p className="text-muted-foreground mb-6">
