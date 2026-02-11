@@ -167,7 +167,7 @@ export default function Navbar() {
             to="/contact"
             className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-gradient-primary text-primary-foreground shadow-glow-primary hover:opacity-90 transition-opacity"
           >
-            Contactar Especialista
+            Solicitar Asesoría Técnica
           </Link>
         </div>
 
@@ -208,7 +208,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="block mt-4 px-5 py-3 text-center text-sm font-semibold rounded-lg bg-gradient-primary text-primary-foreground"
               >
-                Contactar Especialista
+                Solicitar Asesoría Técnica
               </Link>
             </div>
           </motion.div>
