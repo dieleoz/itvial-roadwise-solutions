@@ -5,14 +5,10 @@ import { Link } from "react-router-dom";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/hero-highway.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background" />
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary/20 to-background">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-grid-white/[0.02]" />
       </div>
 
       {/* Content */}
