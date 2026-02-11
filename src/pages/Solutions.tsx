@@ -103,10 +103,42 @@ const categories: SolutionCategory[] = [
     id: "servicios",
     title: "Servicios Adicionales",
     icon: Puzzle,
-    description: "Servicios especializados de alquiler de equipos y aplicación de marcas viales con personal técnico capacitado.",
+    description: "Servicios especializados de alquiler de equipos y aplicacion de marcas viales con personal tecnico capacitado.",
     products: [
-      { name: "Alquiler de Grúa de Canastilla", icon: CarFront },
-      { name: "Aplicación de Marcas Viales", icon: Truck },
+      { name: "Alquiler de Grua de Canastilla", icon: CarFront },
+      { name: "Aplicacion de Marcas Viales", icon: Truck },
+    ],
+  },
+  {
+    id: "electromovilidad",
+    title: "Electromovilidad",
+    icon: BatteryCharging,
+    description: "Infraestructura de carga para vehiculos electricos y soluciones de energia sostenible para la transicion energetica del transporte.",
+    products: [
+      { name: "Cargadores para Vehiculos Electricos (AC/DC)", icon: BatteryCharging },
+      { name: "Infraestructura de Carga", icon: Zap },
+      { name: "Estaciones de Carga Solar", icon: Lightbulb },
+    ],
+  },
+  {
+    id: "delineadores",
+    title: "Delineadores Rebotables",
+    icon: ShieldAlert,
+    description: "Dispositivos de canalizacion y delineacion vial flexibles para seguridad activa en carreteras y zonas urbanas.",
+    products: [
+      { name: "Delineador Flexible Rebotable", icon: ShieldAlert },
+      { name: "Delineador Tubular", icon: AlertTriangle },
+      { name: "Hito Delineador Vial", icon: Eye },
+    ],
+  },
+  {
+    id: "atenuadores",
+    title: "Atenuadores de Impacto",
+    icon: ShieldAlert,
+    description: "Sistemas certificados de proteccion vehicular para zonas de trabajo que salvan vidas en carreteras y autopistas.",
+    products: [
+      { name: "Atenuador de Impacto Remolcable", icon: Truck },
+      { name: "Atenuador Montado en Vehiculo (TMA)", icon: CarFront },
     ],
   },
 ];

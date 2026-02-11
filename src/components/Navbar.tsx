@@ -69,8 +69,26 @@ const solutionsMenu = [
     title: "Servicios Adicionales",
     path: "/solutions/servicios",
     items: [
-      "Alquiler de Grúa de Canastilla",
-      "Aplicación de Marcas Viales",
+      "Alquiler de Grua de Canastilla",
+      "Aplicacion de Marcas Viales",
+    ],
+  },
+  {
+    title: "Electromovilidad",
+    path: "/solutions/electromovilidad",
+    items: [
+      "Cargadores para Vehiculos Electricos",
+      "Infraestructura de Carga",
+      "Estaciones de Carga Solar",
+    ],
+    badge: "NUEVO"
+  },
+  {
+    title: "Seguridad en Zona de Trabajo",
+    path: "/solutions/delineadores",
+    items: [
+      "Delineadores Rebotables",
+      "Atenuadores de Impacto Remolcables",
     ],
   },
 ];

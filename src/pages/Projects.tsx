@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Calendar, CheckCircle, TrendingUp, Users, Award } from "lucide-react";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 
 interface Project {
   title: string;
@@ -233,6 +234,10 @@ export default function Projects() {
 
   return (
     <div className="pt-20 lg:pt-24 pb-24">
+      <SEO
+        title="Proyectos y Casos de Exito | IT VIAL SAS"
+        description="Conozca nuestros proyectos de infraestructura vial en Colombia: ITS, senalizacion, demarcacion y semaforizacion en las principales carreteras del pais."
+      />
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div

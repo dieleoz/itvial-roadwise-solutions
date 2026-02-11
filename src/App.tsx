@@ -17,6 +17,9 @@ import SenalizacionPage from "./pages/SenalizacionPage";
 import FerroviarioPage from "./pages/FerroviarioPage";
 import AuscultacionPage from "./pages/AuscultacionPage";
 import ServiciosPage from "./pages/ServiciosPage";
+import ElectromovilidadPage from "./pages/ElectromovilidadPage";
+import DelineadoresPage from "./pages/DelineadoresPage";
+import AtenuadoresPage from "./pages/AtenuadoresPage";
 import Projects from "./pages/Projects";
 import Downloads from "./pages/Downloads";
 import Contact from "./pages/Contact";
@@ -51,6 +54,9 @@ const App = () => (
                   <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
                   <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
                   <Route path="/solutions/servicios" element={<ServiciosPage />} />
+                  <Route path="/solutions/electromovilidad" element={<ElectromovilidadPage />} />
+                  <Route path="/solutions/delineadores" element={<DelineadoresPage />} />
+                  <Route path="/solutions/atenuadores" element={<AtenuadoresPage />} />
                   <Route path="/projects" element={<Projects />} />
                   <Route path="/downloads" element={<Downloads />} />
                   <Route path="/contact" element={<Contact />} />

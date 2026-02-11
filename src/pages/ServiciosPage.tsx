@@ -424,7 +424,7 @@ export default function ServiciosPage() {
                                         {service.id === "grua" ? "Reservar Grúa" : "Solicitar Asesoría Técnica"} <ArrowRight className="h-4 w-4" />
                                     </Link>
                                     <a
-                                        href="tel:+573001234567"
+                                        href="tel:+573188200400"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors"
                                     >
                                         <Phone className="h-4 w-4" />
@@ -513,7 +513,7 @@ export default function ServiciosPage() {
                             Solicitar Propuesta Técnica <ArrowRight className="h-5 w-5" />
                         </Link>
                         <a
-                            href="tel:+573001234567"
+                            href="tel:+573188200400"
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-colors"
                         >
                             <Phone className="h-5 w-5" />

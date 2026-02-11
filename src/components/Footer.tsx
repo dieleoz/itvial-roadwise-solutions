@@ -4,8 +4,11 @@ import { MapPin, Phone, Mail, Clock, Award } from "lucide-react";
 const solutionLinks = [
   { name: "ITS y Seguridad Vial", path: "/solutions/its" },
   { name: "Equipos para Pavimentos", path: "/solutions/pavimentos" },
-  { name: "Instrumentos para las Vías", path: "/solutions/instrumentos" },
-  { name: "Señalización Vial", path: "/solutions/senalizacion" },
+  { name: "Instrumentos para las Vias", path: "/solutions/instrumentos" },
+  { name: "Senalizacion Vial", path: "/solutions/senalizacion" },
+  { name: "Soluciones Ferroviarias", path: "/solutions/ferroviario" },
+  { name: "Auscultacion de Pavimentos", path: "/solutions/auscultacion" },
+  { name: "Electromovilidad", path: "/solutions/electromovilidad" },
   { name: "Servicios Adicionales", path: "/solutions/servicios" },
 ];
 

@@ -269,9 +269,18 @@ export default function Downloads() {
                       </div>
 
                       {/* Download Button */}
-                      <button className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all">
+                      <button
+                        onClick={() => {
+                          const toast = document.createElement('div');
+                          toast.className = 'fixed bottom-20 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-lg bg-card border border-border text-sm text-muted-foreground shadow-lg';
+                          toast.textContent = 'Documento en preparacion - Contactenos para solicitar este archivo';
+                          document.body.appendChild(toast);
+                          setTimeout(() => toast.remove(), 4000);
+                        }}
+                        className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all"
+                      >
                         <Download className="h-4 w-4" />
-                        Descargar
+                        Solicitar Documento
                       </button>
                     </motion.div>
                   ))}
