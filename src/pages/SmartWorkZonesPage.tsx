@@ -50,18 +50,48 @@ const products = [
     },
     {
         id: "semaforo-movil",
-        name: "Sistema de Semaforización Móvil IT VIAL",
-        icon: Zap, // Represents energy/active control
-        description: "Automatización de Paso Alternado. Ecosistema tecnológico diseñado para sustituir el control manual por una operación digital centralizada, eliminando el error humano y optimizando costos.",
+        name: "Semaforización Móvil Autónoma (Smart-Flow Dual)",
+        icon: Zap,
+        description: "Control de tráfico solar sincronizado para frentes de obra de alto rendimiento. Sistema compuesto por remolques gemelos que operan de forma independiente o sincronizada hasta 800m.",
         features: [
-            "Alcance y Cobertura Crítica: Comunicación estable y sincronizada de hasta 800m (ideal para túneles/puentes)",
-            "Hardware Industrial Robusto: Semáforos móviles LED de alta visibilidad con autonomía solar",
-            "Actuación Adaptativa: Gestión vía botonera industrial, tablet o app según cobertura",
-            "Control de Vía Integrado: Gestión remota de tiempos de ciclo y cumplimiento de PMT vía IT-V4.0"
+            "Autonomía Energética Total: Paneles solares y baterías de ciclo profundo para operación 24/7",
+            "Sincronización Inteligente: Enlace inalámbrico de 800m gestionado por controlador IT-V4.0",
+            "Infraestructura Robusta: Tráiler industrial antivandálico diseñado para terrenos difíciles",
+            "Modularidad Operativa: Funciona como semáforo individual (cierre total) o par sincronizado (paso alternado)"
         ],
         benefits: [
-            "Reducción de Costos Directos: Reduce la cuadrilla a un solo operario (menor nómina y riesgo ARL)",
-            "Seguridad Operativa Conectada: Entrega datos de tráfico vía API al centro de control en tiempo real"
+            "Reducción de Costos: Un solo operario gestiona el paso (menor nómina y riesgo)",
+            "Seguridad Conectada: Reporte de estado y alertas de intrusión vía API en tiempo real"
+        ]
+    }
+];
+
+const manufacturingProcess = [
+    {
+        title: "Capa Industrial (El Hierro)",
+        icon: Construction,
+        items: [
+            "Chasis en acero estructural antivandálico",
+            "Mástil plegable para transporte seguro",
+            "Ingeniería mecánica propia"
+        ]
+    },
+    {
+        title: "Capa Electrónica (La Integración)",
+        icon: Server,
+        items: [
+            "Ecosistema energético solar integrado",
+            "Cerebro IT-V4.0 con radiofrecuencia",
+            "Componentes de grado industrial"
+        ]
+    },
+    {
+        title: "Capa Digital (El Dato)",
+        icon: Wifi,
+        items: [
+            "Normalización de protocolos (NTCIP)",
+            "Habilitación de API para datos en vivo",
+            "Alertas en tiempo real"
         ]
     }
 ];
@@ -70,7 +100,7 @@ export default function SmartWorkZonesPage() {
     const { setWAMessage, resetWAMessage } = useWhatsApp();
 
     useEffect(() => {
-        setWAMessage("Hola, me interesa conocer más sobre las soluciones de Zonas de Obra Inteligentes (Semaforización Móvil, VIGÍA VIAL y CONO ALERTA).");
+        setWAMessage("Hola, me interesa conocer más sobre el sistema Smart-Flow Dual y las soluciones de Zonas de Obra Inteligentes.");
         return () => resetWAMessage();
     }, []);
 
@@ -78,7 +108,7 @@ export default function SmartWorkZonesPage() {
         <div className="pt-20 lg:pt-24 pb-20 bg-background overflow-hidden">
             <SEO
                 title="Smart Work Zones | IT VIAL INTELIGENTE™"
-                description="Zonas de Obra Inteligentes con VIGÍA VIAL™, CONO ALERTA PRO™ y Semaforización Móvil. Tecnología IoT para protección activa y cumplimiento PMT."
+                description="Zonas de Obra Inteligentes con VIGÍA VIAL™, CONO ALERTA PRO™ y Smart-Flow Dual. Tecnología IoT para protección activa y cumplimiento PMT."
             />
 
             {/* Hero Section */}
@@ -177,6 +207,41 @@ export default function SmartWorkZonesPage() {
                                     </div>
                                 </div>
                             </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </section>
+
+            {/* Manufacturing Process (How we generate it) */}
+            <section className="container mx-auto px-4 mb-20">
+                <div className="text-center mb-10">
+                    <h2 className="font-display text-3xl font-bold mb-4">Ingeniería y Fabricación <span className="text-gradient-primary">Integrada</span></h2>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                        Nuestro proceso de tres capas garantiza que el hardware industrial y la inteligencia digital operen como una sola unidad.
+                    </p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                    {manufacturingProcess.map((step, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className="bg-secondary/20 rounded-xl p-6 border border-white/5"
+                        >
+                            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 mx-auto">
+                                <step.icon className="w-6 h-6" />
+                            </div>
+                            <h3 className="font-display text-xl font-bold mb-4 text-center">{step.title}</h3>
+                            <ul className="space-y-2">
+                                {step.items.map((item, idx) => (
+                                    <li key={idx} className="text-sm text-muted-foreground text-center">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
                         </motion.div>
                     ))}
                 </div>
