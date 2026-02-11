@@ -57,6 +57,7 @@
   - [x] Instrumentos para las Vías (2 productos)
   - [x] Señalización Vial (3 categorías)
   - [x] Servicios Adicionales (2 servicios)
+  - [x] **Rediseño Estratégico Página Soluciones** (4 Bloques: Infraestructura, Integra, Especializada, Sostenible)
 
 ### 1.2 Mejoras en Home
 - [x] Sección "Nuestros Números" ya existe con 4 estadísticas animadas
