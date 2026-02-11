@@ -7,6 +7,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Index from "./pages/Index";
+import About from "./pages/About";
+import Solutions from "./pages/Solutions";
+import Projects from "./pages/Projects";
+import Downloads from "./pages/Downloads";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -22,8 +26,11 @@ const App = () => (
         <main className="min-h-screen">
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/downloads" element={<Downloads />} />
             <Route path="/contact" element={<Contact />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
