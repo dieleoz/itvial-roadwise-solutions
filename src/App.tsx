@@ -27,43 +27,47 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+import { HelmetProvider } from "react-helmet-async";
+
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <WhatsAppProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <div className="min-h-screen flex flex-col">
-            <Navbar />
-            <main className="flex-grow">
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/solutions" element={<Solutions />} />
-                <Route path="/solutions/its" element={<ITSPage />} />
-                <Route path="/solutions/pavimentos" element={<PavimentosPage />} />
-                <Route path="/solutions/instrumentos" element={<InstrumentosPage />} />
-                <Route path="/solutions/senalizacion" element={<SenalizacionPage />} />
-                <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
-                <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
-                <Route path="/solutions/servicios" element={<ServiciosPage />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/downloads" element={<Downloads />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/terms-conditions" element={<TermsConditions />} />
-                <Route path="/cookies-policy" element={<CookiesPolicy />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </main>
-            <Footer />
-            <WhatsAppButton />
-          </div>
-        </BrowserRouter>
-      </TooltipProvider>
-    </WhatsAppProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <WhatsAppProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <div className="min-h-screen flex flex-col">
+              <Navbar />
+              <main className="flex-grow">
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/solutions" element={<Solutions />} />
+                  <Route path="/solutions/its" element={<ITSPage />} />
+                  <Route path="/solutions/pavimentos" element={<PavimentosPage />} />
+                  <Route path="/solutions/instrumentos" element={<InstrumentosPage />} />
+                  <Route path="/solutions/senalizacion" element={<SenalizacionPage />} />
+                  <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
+                  <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
+                  <Route path="/solutions/servicios" element={<ServiciosPage />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/downloads" element={<Downloads />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                  <Route path="/terms-conditions" element={<TermsConditions />} />
+                  <Route path="/cookies-policy" element={<CookiesPolicy />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </main>
+              <Footer />
+              <WhatsAppButton />
+            </div>
+          </BrowserRouter>
+        </TooltipProvider>
+      </WhatsAppProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
