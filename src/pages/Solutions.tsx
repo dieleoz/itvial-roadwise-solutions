@@ -73,6 +73,32 @@ const categories: SolutionCategory[] = [
     ],
   },
   {
+    id: "ferroviario",
+    title: "Soluciones Ferroviarias",
+    icon: Train,
+    description: "Equipos de medición y mantenimiento para vías férreas, desde inspección manual hasta sistemas de alta velocidad.",
+    products: [
+      { name: "Auscultador de Geometría de Vía Portátil", icon: Ruler },
+      { name: "Carro de Medición del Perfil de Carril", icon: Gauge },
+      { name: "Vehículos M10/M100/M1200", icon: Train },
+      { name: "Conversión Hi-Rail", icon: Wrench },
+    ],
+  },
+  {
+    id: "auscultacion",
+    title: "Auscultación de Pavimentos",
+    icon: CarFront,
+    description: "Equipos de última generación para caracterización estructural y funcional de carreteras.",
+    products: [
+      { name: "Deflectómetro FWD / FastFWD", icon: Gauge },
+      { name: "Georradar GPR", icon: Radar },
+      { name: "Perfilómetro Láser (IRI)", icon: Ruler },
+      { name: "Sistema LCMS (Fisuras)", icon: Eye },
+      { name: "SCRIM (Fricción)", icon: AlertTriangle },
+      { name: "Sistemas WIM (Pesaje)", icon: Truck },
+    ],
+  },
+  {
     id: "servicios",
     title: "Servicios Adicionales",
     icon: Puzzle,

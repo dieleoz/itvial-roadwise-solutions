@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const solutionsMenu = [
   {
     title: "ITS y Seguridad Vial",
+    path: "/solutions/its",
     items: [
       "Paneles de Mensaje Variable (PMV Fijos y Móviles)",
       "Radares Disuasivos",
@@ -19,6 +20,7 @@ const solutionsMenu = [
   },
   {
     title: "Equipos para Pavimentos",
+    path: "/solutions/pavimentos",
     items: [
       "Equipos para Demarcación Vial",
       "Selladoras de Fisuras",
@@ -27,6 +29,7 @@ const solutionsMenu = [
   },
   {
     title: "Instrumentos para las Vías",
+    path: "/solutions/instrumentos",
     items: [
       "Retroreflectómetros Horizontales",
       "Retroreflectómetros Verticales",
@@ -34,6 +37,7 @@ const solutionsMenu = [
   },
   {
     title: "Señalización Vial",
+    path: "/solutions/senalizacion",
     items: [
       "Señalización Elevada",
       "Señalización Vertical",
@@ -41,13 +45,36 @@ const solutionsMenu = [
     ],
   },
   {
+    title: "Soluciones Ferroviarias",
+    path: "/solutions/ferroviario",
+    items: [
+      "Equipos Portátiles (Auscultador, Perfil Carril, Soldaduras)",
+      "Vehículos M10/M100/M1200",
+      "Remolques Adaptadores",
+      "Conversión Hi-Rail",
+    ],
+    badge: "NUEVO"
+  },
+  {
+    title: "Auscultación de Pavimentos",
+    path: "/solutions/auscultacion",
+    items: [
+      "Equipos Estructurales (FWD, FastFWD, GPR)",
+      "Equipos Funcionales (IRI, LCMS, SCRIM)",
+      "Sistemas WIM (Pesaje en Movimiento)",
+    ],
+    badge: "NUEVO"
+  },
+  {
     title: "Servicios Adicionales",
+    path: "/solutions/servicios",
     items: [
       "Alquiler de Grúa de Canastilla",
       "Aplicación de Marcas Viales",
     ],
   },
 ];
+
 
 const navLinks = [
   { name: "Inicio", path: "/" },
@@ -85,11 +112,10 @@ export default function Navbar() {
             >
               <Link
                 to={link.path}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors flex items-center gap-1 ${
-                  location.pathname === link.path
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors flex items-center gap-1 ${location.pathname === link.path
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 {link.name}
                 {link.hasMega && <ChevronDown className="h-3 w-3" />}
@@ -101,23 +127,28 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  className="absolute top-full left-1/2 -translate-x-1/2 w-[800px] mt-2 p-6 bg-card border border-border rounded-xl shadow-2xl"
+                  className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] mt-2 p-6 bg-card border border-border rounded-xl shadow-2xl"
                 >
                   <div className="grid grid-cols-3 gap-6">
-                    {solutionsMenu.map((category) => (
-                      <div key={category.title}>
-                        <h4 className="font-display font-semibold text-sm text-primary mb-2">
+                    {solutionsMenu.map((category, idx) => (
+                      <div key={idx} className="space-y-3">
+                        <Link
+                          to={category.path}
+                          className="font-semibold text-foreground hover:text-primary transition-colors flex items-center gap-2"
+                        >
                           {category.title}
-                        </h4>
-                        <ul className="space-y-1">
-                          {category.items.map((item) => (
-                            <li key={item}>
-                              <Link
-                                to="/solutions"
-                                className="text-xs text-muted-foreground hover:text-foreground transition-colors block py-1"
-                              >
+                          {category.badge && (
+                            <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold">
+                              {category.badge}
+                            </span>
+                          )}
+                        </Link>
+                        <ul className="space-y-2">
+                          {category.items.map((item, i) => (
+                            <li key={i}>
+                              <span className="text-xs text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
                                 {item}
-                              </Link>
+                              </span>
                             </li>
                           ))}
                         </ul>
@@ -164,11 +195,10 @@ export default function Navbar() {
                   key={link.name}
                   to={link.path}
                   onClick={() => setMobileOpen(false)}
-                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                    location.pathname === link.path
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                  }`}
+                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${location.pathname === link.path
+                    ? "text-primary bg-primary/10"
+                    : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                    }`}
                 >
                   {link.name}
                 </Link>

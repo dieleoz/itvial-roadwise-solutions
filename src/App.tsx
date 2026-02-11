@@ -13,6 +13,8 @@ import ITSPage from "./pages/ITSPage";
 import PavimentosPage from "./pages/PavimentosPage";
 import InstrumentosPage from "./pages/InstrumentosPage";
 import SenalizacionPage from "./pages/SenalizacionPage";
+import FerroviarioPage from "./pages/FerroviarioPage";
+import AuscultacionPage from "./pages/AuscultacionPage";
 import ServiciosPage from "./pages/ServiciosPage";
 import Projects from "./pages/Projects";
 import Downloads from "./pages/Downloads";
@@ -37,6 +39,8 @@ const App = () => (
             <Route path="/solutions/pavimentos" element={<PavimentosPage />} />
             <Route path="/solutions/instrumentos" element={<InstrumentosPage />} />
             <Route path="/solutions/senalizacion" element={<SenalizacionPage />} />
+            <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
+            <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
             <Route path="/solutions/servicios" element={<ServiciosPage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/downloads" element={<Downloads />} />
