@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, Download, ArrowRight } from "lucide-react";
+import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "@/context/WhatsAppContext";
@@ -505,9 +505,7 @@ export default function AuscultacionPage() {
                                     >
                                         Consultar Disponibilidad <ArrowRight className="h-4 w-4" />
                                     </Link>
-                                    <button className="px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                        Descargar Ficha Técnica
-                                    </button>
+
                                 </div>
                             </motion.div>
                         ))}
@@ -738,9 +736,7 @@ export default function AuscultacionPage() {
                                     >
                                         Solicitar Evaluación <ArrowRight className="h-4 w-4" />
                                     </Link>
-                                    <button className="px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                        Descargar Ficha Técnica
-                                    </button>
+
                                 </div>
                             </motion.div>
                         ))}

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
     Monitor, Radar, Radio, Wind, AlertTriangle, ShieldAlert,
-    TowerControl, TrafficCone, Download, FileText, ArrowRight
+    TowerControl, TrafficCone, FileText, ArrowRight
 } from "lucide-react";
 import { useEffect } from "react";
 import { useWhatsApp } from "@/context/WhatsAppContext";
@@ -405,10 +405,7 @@ export default function ITSPage() {
                                     >
                                         Contacto Directo <ArrowRight className="h-4 w-4" />
                                     </Link>
-                                    <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                        <Download className="h-4 w-4" />
-                                        Descargar Ficha Técnica
-                                    </button>
+
                                 </div>
                             </div>
                         </motion.section>

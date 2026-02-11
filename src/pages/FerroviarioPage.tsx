@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Train, Ruler, Camera, Wrench, CheckCircle, AlertTriangle, Download, ArrowRight } from "lucide-react";
+import { Train, Ruler, Camera, Wrench, CheckCircle, AlertTriangle, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "@/context/WhatsAppContext";
@@ -217,7 +217,7 @@ export default function FerroviarioPage() {
                         {[
                             { icon: CheckCircle, title: "Detección Temprana de Fallas", desc: "Identificación de problemas antes de que afecten seguridad" },
                             { icon: Train, title: "Optimización de Mantenimiento", desc: "Planificación basada en datos objetivos" },
-                            { icon: Download, title: "Reducción de Costos", desc: "Mantenimiento preventivo vs. correctivo" }
+                            { icon: CheckCircle, title: "Reducción de Costos", desc: "Mantenimiento preventivo vs. correctivo" }
                         ].map((benefit, i) => (
                             <motion.div
                                 key={i}
@@ -314,9 +314,7 @@ export default function FerroviarioPage() {
                                     >
                                         Solicitar Asesoría Técnica <ArrowRight className="h-4 w-4" />
                                     </Link>
-                                    <button className="px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                        Descargar Ficha Técnica
-                                    </button>
+
                                 </div>
                             </motion.div>
                         ))}
@@ -613,10 +611,7 @@ export default function FerroviarioPage() {
                             <a href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity">
                                 Solicitar Asesoría
                             </a>
-                            <a href="/downloads" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                <Download className="h-5 w-5" />
-                                Descargar Catálogos
-                            </a>
+
                         </div>
                     </motion.div>
                 </div>
