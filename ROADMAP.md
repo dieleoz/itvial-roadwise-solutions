@@ -230,9 +230,9 @@
 - [x] Páginas Legales obligatorias (Política de Datos, Términos, Cookies).
 - [x] SEO Técnico (Sitemap.xml, Robots.txt).
 - [x] Estabilidad de Producción (SPA Routing & Local Hydration).
-- [ ] Schema markup para:
-  - [ ] Organization
-  - [ ] Products
+- [x] Schema markup para:
+  - [x] Organization
+  - [x] Products
   - [ ] LocalBusiness
   - [ ] BreadcrumbList
 
