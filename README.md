@@ -16,9 +16,9 @@ Sitio web corporativo para **IT VIAL SAS**, empresa colombiana líder en solucio
 - ✅ **8 verticales de productos completas** cubriendo todo el portafolio de ingeniería
 - ✅ **Lead Generation Especializado** para capturar requerimientos técnicos (B2B)
 - ✅ **Arquitectura de 5 Capas** para robustez y mantenibilidad
-- ✅ **Optimización SEO Técnico** (Sitemap, Robots, Meta tags dinámicos)
+- ✅ **SEO Técnico & Estructurado** (Sitemap, Robots, Meta tags, JSON-LD Schema)
 - ✅ **Integración WhatsApp Contextual** según el producto/servicio
-- 🔄 **En progreso:** Generación de multimedia final y auditoría de performance
+- 🔄 **En progreso:** Generación de multimedia final y auditoría de performance (Fase 2)
 
 ---
 
