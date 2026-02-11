@@ -32,6 +32,8 @@ const queryClient = new QueryClient();
 
 import { HelmetProvider } from "react-helmet-async";
 
+import Analytics from "./components/Analytics";
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
@@ -40,6 +42,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <Analytics />
             <div className="min-h-screen flex flex-col">
               <Navbar />
               <main className="flex-grow">

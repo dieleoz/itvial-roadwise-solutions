@@ -24,6 +24,7 @@ const queryTypes = [
   "Análisis de Costos de Proyecto Integral",
   "Soporte y Garantías",
   "Alianza Comercial / Distribución",
+  "Radicación de PQRSDF",
   "Otro",
 ];
 

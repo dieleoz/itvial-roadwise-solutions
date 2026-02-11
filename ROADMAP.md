@@ -301,10 +301,10 @@
 - [ ] Copyright y tagline
 
 ### 6.2 Páginas Legales
-- [ ] Política de Privacidad
-- [ ] Términos y Condiciones
-- [ ] Política de Cookies
-- [ ] PQRSDF
+- [x] Política de Privacidad
+- [x] Términos y Condiciones
+- [x] Política de Cookies
+- [ ] PQRSDF (Canal en Contacto y Footer) <!-- En Implementación -->
 
 ---
 
