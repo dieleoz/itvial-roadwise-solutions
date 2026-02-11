@@ -213,23 +213,24 @@
 - [ ] Mensaje pre-configurado por producto
 - [ ] Tracking de conversiones
 
-### 3.5 Google Maps
-- [ ] Embeber mapa en página de contacto
-- [ ] Marcador en ubicación de IT VIAL
+### 3.5 Google Maps ✅
+- [x] Embeber mapa en página de contacto
+- [x] Marcador en ubicación de IT VIAL
 
 ---
 
-## 🔍 FASE 4: SEO Y OPTIMIZACIÓN
+## 🔍 FASE 4: SEO Y OPTIMIZACIÓN (En Progreso 🔄)
 
 **Prioridad:** MEDIA  
-**Estimado:** 1 semana
+**Estimado:** 1 semana  
+**Estado:** 🔄 EN PROGRESO (80% completado)
 
-### 4.1 SEO On-Page
-- [ ] Meta títulos únicos por página
-- [ ] Meta descripciones optimizadas
-- [ ] Heading structure (H1, H2, H3)
+### 4.1 SEO On-Page ✅
+- [x] Meta títulos únicos por página
+- [x] Meta descripciones optimizadas
+- [x] Heading structure (H1, H2, H3)
 - [ ] Alt text descriptivo en imágenes
-- [ ] URLs amigables (slugs)
+- [x] URLs amigables (slugs)
 
 ### 4.2 SEO Técnico
 - [ ] Sitemap.xml

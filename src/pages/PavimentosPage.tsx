@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Truck, Wrench, TreePine, Download, ArrowRight, CheckCircle } from "lucide-react";
 import AddToQuoteButton from "@/components/AddToQuoteButton";
+import SEO from "@/components/SEO";
 
 const products = [
     {
@@ -129,6 +130,10 @@ const products = [
 export default function PavimentosPage() {
     return (
         <div className="pt-20 lg:pt-24 pb-24">
+            <SEO
+                title="Equipos para Pavimentos | IT VIAL SAS"
+                description="Líderes en equipos de demarcación vial, selladoras de fisuras y reciclaje de asfaltos en Colombia."
+            />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
                 <div className="container mx-auto px-4">

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FileText, Download, FileCheck, BookOpen, Newspaper, Award } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const categories = [
   {
@@ -187,6 +188,10 @@ const categories = [
 export default function Downloads() {
   return (
     <div className="pt-20 lg:pt-24 pb-24">
+      <SEO
+        title="Centro de Descargables | IT VIAL SAS"
+        description="Descargue catálogos, fichas técnicas y certificaciones de nuestros productos ITS, pavimentos y señalización vial."
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
         <div className="container mx-auto px-4">

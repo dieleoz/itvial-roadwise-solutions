@@ -9,6 +9,7 @@ import {
   Ruler, Train, CarFront, MapPin, Wrench,
   TreePine, BatteryCharging, TowerControl
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 interface SubProduct {
   name: string;
@@ -113,6 +114,10 @@ const categories: SolutionCategory[] = [
 export default function Solutions() {
   return (
     <div className="pt-20 lg:pt-24 pb-24">
+      <SEO
+        title="Soluciones y Productos | IT VIAL SAS"
+        description="Catálogo integral de soluciones para infraestructura vial: ITS, Pavimentos, Instrumentación y más."
+      />
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">

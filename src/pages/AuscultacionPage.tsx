@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, Download, ArrowRight } from "lucide-react";
 import AddToQuoteButton from "@/components/AddToQuoteButton";
+import SEO from "@/components/SEO";
 
 const structuralEquipment = [
     {
@@ -263,6 +264,10 @@ const functionalEquipment = [
 export default function AuscultacionPage() {
     return (
         <div className="pt-20 lg:pt-24 pb-24">
+            <SEO
+                title="Auscultación de Pavimentos | IT VIAL SAS"
+                description="Tecnología avanzada para auscultación vial: deflectómetros, georradares y perfilómetros para gestión de infraestructura."
+            />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
                 <div className="container mx-auto px-4">

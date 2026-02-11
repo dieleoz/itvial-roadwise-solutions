@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Train, Ruler, Camera, Wrench, CheckCircle, AlertTriangle, Download, ArrowRight } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const portableEquipment = [
     {
@@ -147,6 +148,10 @@ const hiRailAnalysis = {
 export default function FerroviarioPage() {
     return (
         <div className="pt-20 lg:pt-24 pb-24">
+            <SEO
+                title="Soluciones Ferroviarias | IT VIAL SAS"
+                description="Instrumentación y vehículos de auscultación para infraestructura ferroviaria. Tecnología de precisión fabricada en Colombia."
+            />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
                 <div className="container mx-auto px-4">

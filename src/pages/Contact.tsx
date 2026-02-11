@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { z } from "zod";
+import SEO from "@/components/SEO";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Nombre requerido").max(100),
@@ -56,6 +57,10 @@ export default function Contact() {
 
   return (
     <div className="pt-20 lg:pt-24 pb-24">
+      <SEO
+        title="Contáctenos | IT VIAL SAS"
+        description="Estamos listos para asesorarlo en sus proyectos de infraestructura vial. Sede principal en Bogotá y cobertura nacional."
+      />
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -190,6 +195,32 @@ export default function Contact() {
             )}
           </motion.div>
         </div>
+
+        {/* Map Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-20"
+        >
+          <div className="glass-card rounded-2xl overflow-hidden shadow-2xl border border-primary/20 h-[450px]">
+            <iframe
+              title="Ubicación IT VIAL SAS"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5458694435!2d-74.08865672403683!3d4.674722895300063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ba931c81e3d%3A0x8e8e78e1c6e6e6e6!2sCl.%2075%20%2369h-33%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1710000000000!5m2!1ses!2sco"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) contrast(90%) brightness(90%)" }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <MapPin className="h-4 w-4 text-primary" />
+            <span>Sede Principal Bogotá: Calle 75 #69h-33, Barrios Unidos</span>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

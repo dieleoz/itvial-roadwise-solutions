@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Target, Telescope, Shield, Users, Award, Wrench, Building2, Factory, Globe2, CheckCircle2, FlaskConical, ArrowRight } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const timeline = [
   {
@@ -57,6 +58,10 @@ const certifications = [
 export default function About() {
   return (
     <div className="pt-20 lg:pt-24 pb-24">
+      <SEO
+        title="Sobre Nosotros | IT VIAL SAS"
+        description="Trayectoria, misión y compromiso de IT VIAL. Fabricamos tecnología 100% colombiana para la seguridad y eficiencia vial."
+      />
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <motion.div

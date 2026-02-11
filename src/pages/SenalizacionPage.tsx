@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { TowerControl, SignpostBig, DiscAlbum, Download, ArrowRight, CheckCircle, FileText } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const products = [
     {
@@ -175,6 +176,10 @@ const products = [
 export default function SenalizacionPage() {
     return (
         <div className="pt-20 lg:pt-24 pb-24">
+            <SEO
+                title="Señalización Vial Integral | IT VIAL SAS"
+                description="Especialistas en señalización vertical, horizontal y elevada. Diseño, fabricación e instalación con normativa INVIAS."
+            />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
                 <div className="container mx-auto px-4">

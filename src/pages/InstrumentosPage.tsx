@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Ruler, Eye, Download, ArrowRight, Smartphone, MapPin, FileText } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const products = [
     {
@@ -74,6 +75,10 @@ const products = [
 export default function InstrumentosPage() {
     return (
         <div className="pt-20 lg:pt-24 pb-24">
+            <SEO
+                title="Instrumentos de Medición IoT | IT VIAL SAS"
+                description="Retroreflectómetros horizontales y verticales con tecnología IoT para control de calidad en señalización vial."
+            />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
                 <div className="container mx-auto px-4">

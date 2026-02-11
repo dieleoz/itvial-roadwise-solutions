@@ -5,6 +5,7 @@ import {
     TowerControl, TrafficCone, Download, FileText, ArrowRight
 } from "lucide-react";
 import AddToQuoteButton from "@/components/AddToQuoteButton";
+import SEO from "@/components/SEO";
 
 const products = [
     {
@@ -175,6 +176,10 @@ const products = [
 export default function ITSPage() {
     return (
         <div className="pt-20 lg:pt-24 pb-24">
+            <SEO
+                title="ITS y Seguridad Vial | IT VIAL SAS"
+                description="Sistemas inteligentes de transporte: PMV, radares y estaciones meteorológicas de fabricación nacional."
+            />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
                 <div className="container mx-auto px-4">
