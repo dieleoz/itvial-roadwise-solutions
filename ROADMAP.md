@@ -151,11 +151,16 @@
   - [x] Certificación ISO 9001:2015
 - [x] **Componente SEO** creado (meta tags, Open Graph, Twitter Cards)
 - [x] **Walkthrough actualizado** con progreso de Fase 2
-- [ ] Expandir casos de éxito con galerías (6-8 imágenes cada uno)
-- [ ] Agregar más proyectos:
-  - [ ] Autopista al Mar
-  - [ ] Vías departamentales
-  - [ ] Proyectos municipales
+- [x] **Casos de éxito expandidos** (8 proyectos detallados)
+  - [x] Autopista al Mar 1 ($2.8M USD)
+  - [x] Ruta del Sol ($1.9M USD)
+  - [x] Vía Bogotá-Villavicencio
+  - [x] Gobernación de Cundinamarca
+  - [x] Alcaldía de Bogotá (Semaforización)
+  - [x] Gobernación de Antioquia (Vías Terciarias)
+  - [x] Concesión Neiva-Girardot ($3.2M USD)
+  - [x] Túneles de Oriente (Medellín)
+- [ ] Agregar más proyectos (pendientes según cliente)
 
 ### 2.6 Nuevas Secciones de Soluciones ✅
 - [x] **Soluciones Ferroviarias** (FerroviarioPage.tsx - 650 líneas)
