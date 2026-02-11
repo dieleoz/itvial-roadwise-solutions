@@ -346,7 +346,7 @@ export default function AuscultacionPage() {
                                 </div>
 
                                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-                                    {Object.entries(equipment.specs).map(([key, value]) => (
+                                    {equipment.specs && Object.entries(equipment.specs).map(([key, value]) => (
                                         <div key={key} className="bg-secondary/30 rounded-lg p-4">
                                             <div className="text-xs text-muted-foreground mb-1 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
                                             <div className="font-semibold text-sm">{value}</div>

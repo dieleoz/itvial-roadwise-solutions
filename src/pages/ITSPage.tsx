@@ -165,7 +165,7 @@ const products = [
             "Diseño delgado y moderno",
             "Brazos anti-rotación"
         ],
-        types: [
+        products: [
             "Semáforos vehiculares (3-4 caras)",
             "Semáforos peatonales (estáticos/dinámicos)",
             "Cuenta regresiva digital",
@@ -232,7 +232,7 @@ export default function ITSPage() {
                                 </div>
 
                                 {/* Product Types (for PMV) */}
-                                {product.types && (
+                                {product.types && product.types.length > 0 && (
                                     <div className="space-y-8 mb-8">
                                         {product.types.map((type, i) => (
                                             <div key={i} className="border-l-4 border-primary pl-6">
@@ -243,7 +243,7 @@ export default function ITSPage() {
                                                     <div>
                                                         <h4 className="font-semibold text-primary mb-3">Características:</h4>
                                                         <ul className="space-y-2">
-                                                            {type.features.map((feature, idx) => (
+                                                            {type.features?.map((feature, idx) => (
                                                                 <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                                     <span className="text-primary mt-1">✓</span>
                                                                     {feature}
@@ -254,7 +254,7 @@ export default function ITSPage() {
                                                     <div>
                                                         <h4 className="font-semibold text-accent mb-3">Aplicaciones:</h4>
                                                         <ul className="space-y-2">
-                                                            {type.applications.map((app, idx) => (
+                                                            {type.applications?.map((app, idx) => (
                                                                 <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                                     <span className="text-accent mt-1">→</span>
                                                                     {app}

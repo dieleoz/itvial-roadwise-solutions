@@ -281,7 +281,7 @@ export default function FerroviarioPage() {
                                     <div>
                                         <h4 className="font-semibold mb-3">Cumplimiento Normativo</h4>
                                         <div className="flex flex-wrap gap-2">
-                                            {equipment.compliance.map((norm, i) => (
+                                            {equipment.compliance?.map((norm, i) => (
                                                 <span key={i} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
                                                     {norm}
                                                 </span>
