@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { TowerControl, SignpostBig, DiscAlbum, Download, ArrowRight, CheckCircle, FileText } from "lucide-react";
+import { TowerControl, SignpostBig, DiscAlbum, ArrowRight, CheckCircle, FileText } from "lucide-react";
 import { useEffect } from "react";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
@@ -472,10 +472,7 @@ export default function SenalizacionPage() {
                                     >
                                         Solicitar Asesoría Técnica <ArrowRight className="h-4 w-4" />
                                     </Link>
-                                    <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                        <Download className="h-4 w-4" />
-                                        Descargar Catálogo
-                                    </button>
+
                                     {product.id === "horizontal" && (
                                         <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                             <FileText className="h-4 w-4" />

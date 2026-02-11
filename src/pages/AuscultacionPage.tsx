@@ -823,10 +823,7 @@ export default function AuscultacionPage() {
                             <a href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity">
                                 Solicitar Asesoría
                             </a>
-                            <a href="/downloads" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border hover:bg-secondary transition-colors">
-                                <Download className="h-5 w-5" />
-                                Descargar Catálogos
-                            </a>
+
                         </div>
                     </motion.div>
                 </div>
