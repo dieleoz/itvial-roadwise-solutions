@@ -200,7 +200,7 @@ export default function PavimentosPage() {
                                                         <div>
                                                             <h4 className="font-semibold text-primary mb-3">Especificaciones:</h4>
                                                             <ul className="space-y-2">
-                                                                {type.features.map((feature, idx) => (
+                                                                {type.features?.map((feature, idx) => (
                                                                     <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                                         <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                                                                         {feature}
@@ -214,7 +214,7 @@ export default function PavimentosPage() {
                                                         <div>
                                                             <h4 className="font-semibold text-accent mb-3">Capacidades:</h4>
                                                             <ul className="space-y-2">
-                                                                {type.capabilities.map((cap, idx) => (
+                                                                {type.capabilities?.map((cap, idx) => (
                                                                     <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                                         <span className="text-accent mt-1">→</span>
                                                                         {cap}
@@ -228,7 +228,7 @@ export default function PavimentosPage() {
                                                         <div>
                                                             <h4 className="font-semibold text-primary mb-3">Ideal para:</h4>
                                                             <ul className="space-y-2">
-                                                                {type.ideal.map((item, idx) => (
+                                                                {type.ideal?.map((item, idx) => (
                                                                     <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                                         <span className="text-primary mt-1">•</span>
                                                                         {item}
@@ -242,7 +242,7 @@ export default function PavimentosPage() {
                                                         <div>
                                                             <h4 className="font-semibold text-accent mb-3">Ventajas:</h4>
                                                             <ul className="space-y-2">
-                                                                {type.advantages.map((adv, idx) => (
+                                                                {type.advantages?.map((adv, idx) => (
                                                                     <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                                         <CheckCircle className="h-4 w-4 text-accent shrink-0 mt-0.5" />
                                                                         {adv}
@@ -256,7 +256,7 @@ export default function PavimentosPage() {
                                                         <div className="md:col-span-2">
                                                             <h4 className="font-semibold text-primary mb-3">Aplicaciones:</h4>
                                                             <div className="flex flex-wrap gap-2">
-                                                                {type.applications.map((app, idx) => (
+                                                                {type.applications?.map((app, idx) => (
                                                                     <span key={idx} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">
                                                                         {app}
                                                                     </span>
@@ -270,7 +270,7 @@ export default function PavimentosPage() {
                                                     <div className="mt-6 pt-6 border-t border-border">
                                                         <h4 className="font-semibold mb-3">Clientes Destacados:</h4>
                                                         <div className="flex flex-wrap gap-3">
-                                                            {type.clients.map((client, idx) => (
+                                                            {type.clients?.map((client, idx) => (
                                                                 <span key={idx} className="px-4 py-2 rounded-lg bg-accent/10 text-accent text-sm font-medium">
                                                                     ✓ {client}
                                                                 </span>
@@ -300,7 +300,7 @@ export default function PavimentosPage() {
                                         <div>
                                             <h4 className="font-semibold text-accent mb-4">Proceso:</h4>
                                             <ol className="space-y-2">
-                                                {product.process.map((step, idx) => (
+                                                {product.process?.map((step, idx) => (
                                                     <li key={idx} className="flex items-start gap-3 text-sm text-muted-foreground">
                                                         <span className="flex items-center justify-center w-6 h-6 rounded-full bg-accent/10 text-accent font-semibold text-xs shrink-0">
                                                             {idx + 1}
@@ -334,7 +334,7 @@ export default function PavimentosPage() {
                                             <div key={idx} className="border border-border rounded-lg p-6">
                                                 <h4 className="font-semibold text-lg mb-4">{option.title}</h4>
                                                 <ul className="space-y-2">
-                                                    {option.features.map((feature, i) => (
+                                                    {option.features?.map((feature, i) => (
                                                         <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                                                             <span className="text-primary mt-1">•</span>
                                                             {feature}
