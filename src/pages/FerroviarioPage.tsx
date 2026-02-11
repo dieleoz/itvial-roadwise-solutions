@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Train, Ruler, Camera, Wrench, CheckCircle, AlertTriangle, Download, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
@@ -290,9 +291,12 @@ export default function FerroviarioPage() {
                                 </div>
 
                                 <div className="mt-6 flex gap-4">
-                                    <button className="px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
-                                        Solicitar Cotización
-                                    </button>
+                                    <Link
+                                        to="/contact"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
+                                    >
+                                        Solicitar Asesoría Técnica <ArrowRight className="h-4 w-4" />
+                                    </Link>
                                     <button className="px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                         Descargar Ficha Técnica
                                     </button>
@@ -384,9 +388,12 @@ export default function FerroviarioPage() {
                                     <p className="text-xs text-muted-foreground"><span className="font-semibold text-foreground">Ideal para:</span> {vehicle.ideal}</p>
                                 </div>
 
-                                <button className="w-full px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
-                                    Solicitar Información
-                                </button>
+                                <Link
+                                    to="/contact"
+                                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
+                                >
+                                    Solicitar Ficha Técnica <ArrowRight className="h-4 w-4" />
+                                </Link>
                             </motion.div>
                         ))}
                     </div>

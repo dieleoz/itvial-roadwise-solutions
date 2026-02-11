@@ -11,6 +11,7 @@ const contactSchema = z.object({
   company: z.string().trim().max(100).optional(),
   email: z.string().trim().email("Email inválido").max(255),
   phone: z.string().trim().max(20).optional(),
+  location: z.string().trim().max(200).optional(),
   queryType: z.string().min(1, "Seleccione un tipo de consulta"),
   message: z.string().trim().min(1, "Mensaje requerido").max(2000),
 });
@@ -18,10 +19,11 @@ const contactSchema = z.object({
 type ContactForm = z.infer<typeof contactSchema>;
 
 const queryTypes = [
-  "Cotización de productos",
-  "Información técnica",
-  "Oportunidades de negocio",
-  "Soporte técnico",
+  "Solicitud de Asesoría Técnica",
+  "Análisis Normativo / Especificaciones",
+  "Cotización de Proyecto Integral",
+  "Soporte y Garantías",
+  "Alianza Comercial / Distribución",
   "Otro",
 ];
 
@@ -38,6 +40,7 @@ export default function Contact() {
     company: "",
     email: "",
     phone: "",
+    location: "",
     queryType: "",
     message: "",
   });
@@ -108,6 +111,10 @@ export default function Contact() {
                 </div>
               </div>
             ))}
+            <h3 className="text-2xl font-bold mb-2">Consulta de Especialista</h3>
+            <p className="text-sm text-muted-foreground mb-8">
+              Describa sus requerimientos técnicos o el alcance de su proyecto para brindarle un análisis detallado según la normativa vigente.
+            </p>
           </motion.div>
 
           {/* Form */}
@@ -158,12 +165,23 @@ export default function Contact() {
                     {errors.email && <p className="text-xs text-destructive mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-1.5 block">Teléfono</label>
+                    <label className="text-sm font-medium mb-1.5 block">Teléfono / WhatsApp</label>
                     <input
                       type="tel"
                       value={form.phone}
                       onChange={(e) => update("phone", e.target.value)}
                       className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="+57..."
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-1.5 block">Ubicación del Proyecto</label>
+                    <input
+                      type="text"
+                      value={form.location}
+                      onChange={(e) => update("location", e.target.value)}
+                      className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="Ciudad / Tramo Vial"
                     />
                   </div>
                 </div>
@@ -190,6 +208,7 @@ export default function Contact() {
                     value={form.message}
                     onChange={(e) => update("message", e.target.value)}
                     className="w-full px-4 py-3 rounded-lg bg-secondary border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                    placeholder="Especifique el alcance técnico, normas aplicables (ej. Manual de Señalización 2024) y cualquier requerimiento especial..."
                   />
                   {errors.message && <p className="text-xs text-destructive mt-1">{errors.message}</p>}
                 </div>

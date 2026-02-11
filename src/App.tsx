@@ -6,8 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
-import FloatingQuoteButton from "./components/FloatingQuoteButton";
-import { QuoteProvider } from "./context/QuoteContext";
 import { WhatsAppProvider } from "./context/WhatsAppContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -32,13 +30,13 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <WhatsAppProvider>
-      <QuoteProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className="min-h-screen">
+            <main className="flex-grow">
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />
@@ -61,10 +59,9 @@ const App = () => (
             </main>
             <Footer />
             <WhatsAppButton />
-            <FloatingQuoteButton />
-          </BrowserRouter>
-        </TooltipProvider>
-      </QuoteProvider>
+          </div>
+        </BrowserRouter>
+      </TooltipProvider>
     </WhatsAppProvider>
   </QueryClientProvider>
 );

@@ -1,13 +1,13 @@
 # 🗺️ IT VIAL - ROADMAP DE IMPLEMENTACIÓN
 
-## 📊 Estado Actual: FASE 1 - En Progreso
+## 📊 Estado Actual: FASE 2 - En Progreso (Optimización Multimedia)
 
 **Última actualización:** 2026-02-11  
-**Completitud General:** 55-60% → Objetivo: 100%
+**Completitud General:** 90% → Objetivo: 100% (Go-Live)
 
 ---
 
-## ✅ FASE 0: BASE COMPLETADA (55-60%)
+## ✅ FASE 0: BASE COMPLETADA (85%)
 
 ### Estructura y Navegación ✅
 - [x] Configuración inicial del proyecto (React + TypeScript + Vite)
@@ -48,7 +48,7 @@
 **Objetivo:** Agregar todo el contenido detallado del portafolio real de IT VIAL  
 **Prioridad:** ALTA  
 **Estimado:** 2-3 semanas  
-**Estado:** ✅ COMPLETADO
+**Estado:** ✅ FINALIZADO (Pivote a Consultoría de Ingeniería)
 
 ### 1.1 Actualización del Menú de Navegación ✅
 - [x] Reorganizar submenú "Soluciones" según estructura real:
@@ -187,12 +187,10 @@
 **Estimado:** 2 semanas  
 **Estado:** ✅ COMPLETADO (75% del Roadmap General)
 
-### 3.1 Sistema de Cotizaciones
-- [ ] Formulario modal por producto
-- [ ] Producto pre-seleccionado
-- [ ] Validación completa
-- [ ] Envío por email
-- [ ] Confirmación al usuario
+### 3.1 Canal de Asesoría Técnica
+- [ ] Botón de contacto directo con ingenieros especialistas.
+- [ ] Formulario de requerimientos técnicos avanzados.
+- [ ] Integración de EmailJS para recepción de memorias descriptivas.
 
 ### 3.2 Integración Avanzada de WhatsApp
 - [ ] Conectar botón flotante con número real
@@ -203,10 +201,11 @@
 - [x] FAQ Section en Home
 - [ ] Sección de Soporte en Contacto
 
-### 3.4 Integración WhatsApp
-- [ ] Conectar botón flotante con número real
-- [ ] Mensaje pre-configurado por producto
-- [ ] Tracking de conversiones
+### 3.4 Lead Generation de Ingeniería ✅
+- [x] Eliminar remanentes de "Carrito de Cotización" (Retail-Legacy).
+- [x] Formulario especializado en Contacto para capturar Ubicación y Normas.
+- [x] CTAs de "Solicitar Asesoría Técnica" en todas las verticales.
+- [x] Eliminación física de componentes de Quote (Context, Modal, Button).
 
 ### 3.5 Google Maps ✅
 - [x] Embeber mapa en página de contacto

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, Download, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useWhatsApp } from "@/context/WhatsAppContext";
-import AddToQuoteButton from "@/components/AddToQuoteButton";
 import SEO from "@/components/SEO";
 
 const structuralEquipment = [
@@ -482,9 +482,12 @@ export default function AuscultacionPage() {
                                 )}
 
                                 <div className="mt-6 flex gap-4">
-                                    <button className="px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
-                                        Solicitar Cotización
-                                    </button>
+                                    <Link
+                                        to="/contact"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
+                                    >
+                                        Consultar Disponibilidad <ArrowRight className="h-4 w-4" />
+                                    </Link>
                                     <button className="px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                         Descargar Ficha Técnica
                                     </button>
@@ -712,9 +715,12 @@ export default function AuscultacionPage() {
                                 )}
 
                                 <div className="flex gap-4">
-                                    <button className="px-6 py-3 rounded-lg bg-gradient-accent text-accent-foreground font-semibold hover:opacity-90 transition-opacity">
-                                        Solicitar Cotización
-                                    </button>
+                                    <Link
+                                        to="/contact"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
+                                    >
+                                        Solicitar Evaluación <ArrowRight className="h-4 w-4" />
+                                    </Link>
                                     <button className="px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                         Descargar Ficha Técnica
                                     </button>

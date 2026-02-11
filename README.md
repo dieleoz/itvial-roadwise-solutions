@@ -13,12 +13,11 @@
 
 Sitio web corporativo para **IT VIAL SAS**, empresa colombiana líder en soluciones tecnológicas para infraestructura vial. El proyecto incluye:
 
-- ✅ **5 páginas de productos completas** cubriendo 23 productos/servicios
-- ✅ **Navegación completa** con Mega Menú (7 categorías)
-- ✅ **11 páginas de contenido** técnico detallado
-- ✅ **Sistema de Cotización** (Carrito + Formulario Multi-paso)
-- ✅ **Optimización SEO** en el 100% de las páginas
-- ✅ **Integración Google Maps** (Modo Oscuro)
+- ✅ **8 verticales de productos completas** cubriendo todo el portafolio de ingeniería
+- ✅ **Lead Generation Especializado** para capturar requerimientos técnicos (B2B)
+- ✅ **Arquitectura de 5 Capas** para robustez y mantenibilidad
+- ✅ **Optimización SEO Técnico** (Sitemap, Robots, Meta tags dinámicos)
+- ✅ **Integración WhatsApp Contextual** según el producto/servicio
 - 🔄 **En progreso:** Generación de multimedia final y auditoría de performance
 
 ---
@@ -60,8 +59,20 @@ Sitio web corporativo para **IT VIAL SAS**, empresa colombiana líder en solucio
 - Señalización vertical y horizontal
 - Servicios de instalación y mantenimiento
 
-**Ubicación:** Calle 75 #69h-33, Bogotá D.C., Colombia  
-**Contacto:** +57 (1) 6940493 | contactenos@itvial.com
+## 🏗️ Arquitectura del Sistema (5 Capas)
+
+El proyecto sigue una estructura modular diseñada para escalabilidad técnica:
+
+1.  **Capa 1: UI Components (shadcn/ui + Framer Motion)**
+    - Componentes atómicos y animaciones fluidas para experiencia premium.
+2.  **Capa 2: Business Logic (Context API)**
+    - Gestión de estado para WhatsApp dinámico y preferencias de usuario.
+3.  **Capa 3: Routing & Navigation (React Router)**
+    - Estructura de URLs amigable para SEO y navegación profunda en verticales.
+4.  **Capa 4: Data Validation & Forms (Zod + React Hook Form)**
+    - Captura precisa de metadata de proyectos (Ubicación, Normas, Alcance).
+5.  **Capa 5: SEO & Analytics (Sitemap + Open Graph)**
+    - Indexación optimizada para el mercado de ingeniería vial en Colombia.
 
 ---
 

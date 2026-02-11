@@ -451,9 +451,9 @@ export default function SenalizacionPage() {
                                 <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-border">
                                     <Link
                                         to="/contact"
-                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                                     >
-                                        Solicitar Cotización <ArrowRight className="h-4 w-4" />
+                                        Solicitar Asesoría Técnica <ArrowRight className="h-4 w-4" />
                                     </Link>
                                     <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                         <Download className="h-4 w-4" />

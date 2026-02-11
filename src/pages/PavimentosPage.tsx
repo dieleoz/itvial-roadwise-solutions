@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Truck, Wrench, TreePine, Download, ArrowRight, CheckCircle } from "lucide-react";
 import { useEffect } from "react";
 import { useWhatsApp } from "@/context/WhatsAppContext";
-import AddToQuoteButton from "@/components/AddToQuoteButton";
 import SEO from "@/components/SEO";
 
 const products = [
@@ -366,10 +365,12 @@ export default function PavimentosPage() {
 
                                 {/* CTA Buttons */}
                                 <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-border">
-                                    <AddToQuoteButton
-                                        item={{ id: product.id, name: product.name, category: "Pavimentos" }}
-                                        className="py-3 px-8"
-                                    />
+                                    <Link
+                                        to="/contact"
+                                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-bold text-sm transition-colors"
+                                    >
+                                        Consultar Especificaciones <ArrowRight className="h-4 w-4" />
+                                    </Link>
                                     <Link
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/20 hover:bg-primary/5 transition-colors text-primary font-semibold"
