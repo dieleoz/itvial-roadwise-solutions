@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { z } from "zod";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
 const contactSchema = z.object({
@@ -24,6 +26,13 @@ const queryTypes = [
 ];
 
 export default function Contact() {
+  const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+  useEffect(() => {
+    setWAMessage("Hola, deseo ponerme en contacto con un asesor comercial de IT VIAL.");
+    return () => resetWAMessage();
+  }, []);
+
   const [form, setForm] = useState<ContactForm>({
     name: "",
     company: "",

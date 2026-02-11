@@ -4,6 +4,8 @@ import {
     Monitor, Radar, Radio, Wind, AlertTriangle, ShieldAlert,
     TowerControl, TrafficCone, Download, FileText, ArrowRight
 } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import AddToQuoteButton from "@/components/AddToQuoteButton";
 import SEO from "@/components/SEO";
 
@@ -174,6 +176,13 @@ const products = [
 ];
 
 export default function ITSPage() {
+    const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+    useEffect(() => {
+        setWAMessage("Hola, deseo solicitar asesoría técnica sobre sus Sistemas Inteligentes de Transporte (ITS) y Seguridad Vial.");
+        return () => resetWAMessage();
+    }, []);
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO

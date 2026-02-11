@@ -38,7 +38,7 @@ export default function SEO({
             <meta name="robots" content="index, follow" />
             <meta name="language" content="Spanish" />
             <meta name="author" content="IT VIAL SAS" />
-            <link rel="canonical" href={window.location.href} />
+            <link rel="canonical" href={typeof window !== "undefined" ? window.location.origin + window.location.pathname : ""} />
         </Helmet>
     );
 }

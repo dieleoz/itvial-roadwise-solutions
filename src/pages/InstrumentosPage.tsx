@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Ruler, Eye, Download, ArrowRight, Smartphone, MapPin, FileText } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
 const products = [
@@ -73,6 +75,13 @@ const products = [
 ];
 
 export default function InstrumentosPage() {
+    const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+    useEffect(() => {
+        setWAMessage("Hola, deseo información sobre el Retroreflectómetro SAT-LUX y sus instrumentos de medición vial.");
+        return () => resetWAMessage();
+    }, []);
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO

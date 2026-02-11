@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { TowerControl, SignpostBig, DiscAlbum, Download, ArrowRight, CheckCircle, FileText } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
 const products = [
@@ -174,6 +176,13 @@ const products = [
 ];
 
 export default function SenalizacionPage() {
+    const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+    useEffect(() => {
+        setWAMessage("Hola, me gustaría cotizar servicios de señalización vial elevada, vertical u horizontal.");
+        return () => resetWAMessage();
+    }, []);
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO

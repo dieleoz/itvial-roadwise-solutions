@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Truck, Wrench, TreePine, Download, ArrowRight, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import AddToQuoteButton from "@/components/AddToQuoteButton";
 import SEO from "@/components/SEO";
 
@@ -128,6 +130,13 @@ const products = [
 ];
 
 export default function PavimentosPage() {
+    const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+    useEffect(() => {
+        setWAMessage("Hola, me gustaría recibir más información sobre sus equipos para pavimentos y camiones demarcadores.");
+        return () => resetWAMessage();
+    }, []);
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Target, Telescope, Shield, Users, Award, Wrench, Building2, Factory, Globe2, CheckCircle2, FlaskConical, ArrowRight } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
 const timeline = [
@@ -56,6 +58,13 @@ const certifications = [
 ];
 
 export default function About() {
+  const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+  useEffect(() => {
+    setWAMessage("Hola, me gustaría conocer más sobre la trayectoria y capacidades de IT VIAL SAS.");
+    return () => resetWAMessage();
+  }, []);
+
   return (
     <div className="pt-20 lg:pt-24 pb-24">
       <SEO

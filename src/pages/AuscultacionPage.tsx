@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, Download, ArrowRight } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import AddToQuoteButton from "@/components/AddToQuoteButton";
 import SEO from "@/components/SEO";
 
@@ -262,6 +264,13 @@ const functionalEquipment = [
 ];
 
 export default function AuscultacionPage() {
+    const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+    useEffect(() => {
+        setWAMessage("Hola, deseo información técnica sobre sus equipos de auscultación estructural y funcional de pavimentos.");
+        return () => resetWAMessage();
+    }, []);
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO

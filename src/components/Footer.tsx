@@ -98,8 +98,8 @@ export default function Footer() {
             © {new Date().getFullYear()} IT VIAL SAS. Todos los derechos reservados.
           </p>
           <div className="flex gap-6 text-xs text-muted-foreground">
-            <Link to="/contact" className="hover:text-primary transition-colors">Política de Privacidad</Link>
-            <Link to="/contact" className="hover:text-primary transition-colors">Términos y Condiciones</Link>
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Política de Privacidad</Link>
+            <Link to="/terms-conditions" className="hover:text-primary transition-colors">Términos y Condiciones</Link>
           </div>
         </div>
       </div>

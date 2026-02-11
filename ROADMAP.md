@@ -194,23 +194,14 @@
 - [ ] Envío por email
 - [ ] Confirmación al usuario
 
-### 3.2 Buscador Inteligente
-- [ ] Barra de búsqueda en header
-- [ ] Búsqueda por:
-  - [ ] Productos
-  - [ ] Categorías
-  - [ ] Casos de éxito
-  - [ ] Documentos
-- [ ] Resultados con preview
+### 3.2 Integración Avanzada de WhatsApp
+- [ ] Conectar botón flotante con número real
+- [ ] Mensaje pre-configurado por producto (Contextual)
+- [ ] Tracking de clics para analíticas
 
-### 3.3 Buscador Inteligente
-- [ ] Barra de búsqueda en header
-- [ ] Búsqueda por:
-  - [ ] Productos
-  - [ ] Categorías
-  - [ ] Casos de éxito
-  - [ ] Documentos
-- [ ] Resultados con preview
+### 3.3 Soporte Técnico & FAQ
+- [x] FAQ Section en Home
+- [ ] Sección de Soporte en Contacto
 
 ### 3.4 Integración WhatsApp
 - [ ] Conectar botón flotante con número real
@@ -234,11 +225,11 @@
 - [x] Meta descripciones optimizadas
 - [x] Heading structure (H1, H2, H3)
 - [ ] Alt text descriptivo en imágenes
-- [x] URLs amigables (slugs)
 
-### 4.2 SEO Técnico
-- [ ] Sitemap.xml
-- [ ] Robots.txt
+### 🟢 Fase 5: Conversión & Legal (Prioridad: ALTA)
+- [x] WhatsApp Contextual (mensajes dinámicos por producto).
+- [x] Páginas Legales obligatorias (Política de Datos, Términos, Cookies).
+- [x] SEO Técnico (Sitemap.xml, Robots.txt).
 - [ ] Schema markup para:
   - [ ] Organization
   - [ ] Products

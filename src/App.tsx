@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import FloatingQuoteButton from "./components/FloatingQuoteButton";
 import { QuoteProvider } from "./context/QuoteContext";
+import { WhatsAppProvider } from "./context/WhatsAppContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Solutions from "./pages/Solutions";
@@ -21,42 +22,50 @@ import ServiciosPage from "./pages/ServiciosPage";
 import Projects from "./pages/Projects";
 import Downloads from "./pages/Downloads";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import CookiesPolicy from "./pages/CookiesPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <QuoteProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Navbar />
-          <main className="min-h-screen">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/solutions" element={<Solutions />} />
-              <Route path="/solutions/its" element={<ITSPage />} />
-              <Route path="/solutions/pavimentos" element={<PavimentosPage />} />
-              <Route path="/solutions/instrumentos" element={<InstrumentosPage />} />
-              <Route path="/solutions/senalizacion" element={<SenalizacionPage />} />
-              <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
-              <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
-              <Route path="/solutions/servicios" element={<ServiciosPage />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/downloads" element={<Downloads />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-          <WhatsAppButton />
-          <FloatingQuoteButton />
-        </BrowserRouter>
-      </TooltipProvider>
-    </QuoteProvider>
+    <WhatsAppProvider>
+      <QuoteProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Navbar />
+            <main className="min-h-screen">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/solutions" element={<Solutions />} />
+                <Route path="/solutions/its" element={<ITSPage />} />
+                <Route path="/solutions/pavimentos" element={<PavimentosPage />} />
+                <Route path="/solutions/instrumentos" element={<InstrumentosPage />} />
+                <Route path="/solutions/senalizacion" element={<SenalizacionPage />} />
+                <Route path="/solutions/ferroviario" element={<FerroviarioPage />} />
+                <Route path="/solutions/auscultacion" element={<AuscultacionPage />} />
+                <Route path="/solutions/servicios" element={<ServiciosPage />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/downloads" element={<Downloads />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-conditions" element={<TermsConditions />} />
+                <Route path="/cookies-policy" element={<CookiesPolicy />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+            <Footer />
+            <WhatsAppButton />
+            <FloatingQuoteButton />
+          </BrowserRouter>
+        </TooltipProvider>
+      </QuoteProvider>
+    </WhatsAppProvider>
   </QueryClientProvider>
 );
 

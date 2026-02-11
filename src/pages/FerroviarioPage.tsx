@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Train, Ruler, Camera, Wrench, CheckCircle, AlertTriangle, Download, ArrowRight } from "lucide-react";
+import { useEffect } from "react";
+import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
 const portableEquipment = [
@@ -146,6 +148,13 @@ const hiRailAnalysis = {
 };
 
 export default function FerroviarioPage() {
+    const { setWAMessage, resetWAMessage } = useWhatsApp();
+
+    useEffect(() => {
+        setWAMessage("Hola, estoy interesado en sus soluciones ferroviarias y vehículos de inspección de vía.");
+        return () => resetWAMessage();
+    }, []);
+
     return (
         <div className="pt-20 lg:pt-24 pb-24">
             <SEO
