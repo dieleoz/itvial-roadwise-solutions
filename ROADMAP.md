@@ -103,6 +103,7 @@
 **Estado:** 🔄 EN PROGRESO (65% completado)
 
 ### 2.1 Galería de Imágenes
+- [x] **Generado: `promop_lovable.md`** (Guía de prompts para la creación de activos faltantes)
 - [ ] **⏳ PENDIENTE - Cuota de generación agotada hasta 22:27 (11 Feb 2026)**
 - [ ] Optimizar imágenes existentes (WebP, lazy loading)
 - [ ] Agregar imágenes faltantes del portafolio:
