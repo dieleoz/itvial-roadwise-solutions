@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
     BatteryCharging, Zap, Sun, Plug, ArrowRight, CheckCircle,
-    Leaf, Globe, TrendingUp, Shield
+    Leaf, Globe, TrendingUp, Shield, ParkingSquare, Lightbulb
 } from "lucide-react";
 import { useEffect } from "react";
 import { useWhatsApp } from "@/context/WhatsAppContext";
@@ -102,6 +102,63 @@ const products = [
             "Estaciones de peaje",
             "Centros de atencion al usuario en carreteras",
             "Campus corporativos y universitarios"
+        ]
+    },
+    {
+        id: "parqueo-inteligente",
+        name: "Parqueo Inteligente",
+        icon: ParkingSquare,
+        description: "Sistemas inteligentes de gestion de estacionamientos con sensores IoT, senalizacion dinamica y plataformas de monitoreo en tiempo real para optimizar la ocupacion y mejorar la experiencia del usuario.",
+        features: [
+            "Sensores de deteccion de ocupacion por plaza (magneticos, ultrasonicos o vision)",
+            "Senalizacion LED dinamica de disponibilidad por nivel y zona",
+            "Plataforma cloud de monitoreo y analitica en tiempo real",
+            "App movil para localizacion de plazas disponibles",
+            "Integracion con sistemas de cobro automatico y tarifas dinamicas",
+            "Conteo vehicular en accesos y salidas"
+        ],
+        advantages: [
+            "Reduccion de hasta un 30% en tiempo de busqueda de estacionamiento",
+            "Mejora del flujo vehicular en zonas urbanas",
+            "Datos de ocupacion para planificacion urbana",
+            "Reduccion de emisiones por menor circulacion",
+            "Incremento de ingresos por tarifas dinamicas"
+        ],
+        applications: [
+            "Centros comerciales y grandes superficies",
+            "Aeropuertos y terminales de transporte",
+            "Zonas de estacionamiento en via publica",
+            "Edificios corporativos y hospitalarios",
+            "Estaciones de transporte masivo (park & ride)"
+        ]
+    },
+    {
+        id: "iluminacion-led",
+        name: "Iluminacion LED Solar",
+        icon: Lightbulb,
+        description: "Sistemas de iluminacion vial y urbana con tecnologia LED de alta eficiencia alimentados por paneles solares, ideales para zonas sin red electrica o como complemento de eficiencia energetica.",
+        features: [
+            "Luminarias LED de 30W a 150W con optica vial certificada",
+            "Panel solar monocristalino de alta eficiencia",
+            "Bateria de litio-fosfato de hierro (LiFePO4) de larga vida",
+            "Controlador inteligente con programacion crepuscular",
+            "Estructura de poste en acero galvanizado",
+            "Autonomia de 3 a 5 noches consecutivas sin sol"
+        ],
+        advantages: [
+            "Cero costo de energia electrica",
+            "Instalacion sin cableado ni obras civiles mayores",
+            "Vida util superior a 50,000 horas (LED)",
+            "Mantenimiento minimo",
+            "Reduccion de huella de carbono"
+        ],
+        applications: [
+            "Vias rurales y terciarias sin red electrica",
+            "Parques, senderos peatonales y ciclorrutas",
+            "Estacionamientos y zonas de carga EV",
+            "Accesos a tuneles y puentes",
+            "Zonas escolares y residenciales",
+            "Alumbrado de emergencia en carreteras"
         ]
     }
 ];

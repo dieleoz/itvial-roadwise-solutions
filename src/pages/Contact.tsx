@@ -130,7 +130,18 @@ export default function Contact() {
                   <Send className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl font-bold mb-3">¡Mensaje Enviado!</h3>
-                <p className="text-muted-foreground">Nos pondremos en contacto con usted pronto.</p>
+                <p className="text-muted-foreground mb-4">Nos pondremos en contacto con usted pronto.</p>
+                <p className="text-sm text-muted-foreground mb-6">Tambien puede escribirnos por WhatsApp al +57 318 8200400</p>
+                <button
+                  onClick={() => {
+                    setSubmitted(false);
+                    setForm({ name: "", company: "", email: "", phone: "", location: "", queryType: "", message: "" });
+                    setErrors({});
+                  }}
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-secondary/50 border border-border text-foreground font-medium hover:bg-secondary transition-colors text-sm"
+                >
+                  Enviar otra consulta
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="glass-card rounded-xl p-8 space-y-5">

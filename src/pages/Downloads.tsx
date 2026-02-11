@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { FileText, Download, FileCheck, BookOpen, Newspaper, Award } from "lucide-react";
+import { Link } from "react-router-dom";
+import { toast } from "sonner";
 import SEO from "@/components/SEO";
 
 const categories = [
@@ -271,11 +273,13 @@ export default function Downloads() {
                       {/* Download Button */}
                       <button
                         onClick={() => {
-                          const toast = document.createElement('div');
-                          toast.className = 'fixed bottom-20 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-lg bg-card border border-border text-sm text-muted-foreground shadow-lg';
-                          toast.textContent = 'Documento en preparacion - Contactenos para solicitar este archivo';
-                          document.body.appendChild(toast);
-                          setTimeout(() => toast.remove(), 4000);
+                          toast("Documento en preparacion", {
+                            description: "Contactenos para solicitar este archivo: contactenos@itvial.com",
+                            action: {
+                              label: "Contactar",
+                              onClick: () => window.location.href = "/contact",
+                            },
+                          });
                         }}
                         className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all"
                       >
@@ -303,12 +307,12 @@ export default function Downloads() {
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Contáctenos y con gusto le enviaremos la información específica que necesita
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-accent text-accent-foreground font-semibold shadow-glow-accent hover:opacity-90 transition-opacity"
           >
             Solicitar Información
-          </a>
+          </Link>
         </motion.div>
       </div>
     </div>

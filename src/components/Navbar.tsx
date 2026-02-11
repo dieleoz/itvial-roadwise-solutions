@@ -3,65 +3,74 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const solutionsMenu = [
+interface MenuItem {
+  label: string;
+  hash: string;
+}
+
+interface SolutionMenuCategory {
+  title: string;
+  path: string;
+  items: MenuItem[];
+  badge?: string;
+}
+
+const solutionsMenu: SolutionMenuCategory[] = [
   {
     title: "ITS y Seguridad Vial",
     path: "/solutions/its",
     items: [
-      "Paneles de Mensaje Variable (PMV Fijos y Móviles)",
-      "Radares Disuasivos",
-      "Radares de Conteo y Categorización",
-      "Estaciones Meteorológicas",
-      "Gálibos y Señales Ocultas",
-      "Sistemas SOS",
-      "Estructuras Metálicas (Pórticos, Banderas, Gabinetes)",
-      "Semaforización Convencional",
+      { label: "Paneles de Mensaje Variable (PMV)", hash: "pmv" },
+      { label: "Radares Disuasivos", hash: "radares-disuasivos" },
+      { label: "Radares de Conteo", hash: "radares-conteo" },
+      { label: "Estaciones Meteorologicas", hash: "estaciones-meteo" },
+      { label: "Galibos y Senales Ocultas", hash: "galibos" },
+      { label: "Sistemas SOS", hash: "sos" },
+      { label: "Estructuras Metalicas", hash: "estructuras" },
+      { label: "Semaforizacion", hash: "semaforos" },
     ],
   },
   {
     title: "Equipos para Pavimentos",
     path: "/solutions/pavimentos",
     items: [
-      "Equipos para Demarcación Vial",
-      "Selladoras de Fisuras",
-      "Equipos de Reciclaje de Asfaltos",
+      { label: "Equipos para Demarcacion Vial", hash: "demarcacion" },
+      { label: "Selladoras de Fisuras", hash: "selladoras" },
+      { label: "Equipos de Reciclaje de Asfaltos", hash: "reciclaje" },
     ],
   },
   {
-    title: "Instrumentos para las Vías",
+    title: "Instrumentos para las Vias",
     path: "/solutions/instrumentos",
     items: [
-      "Retroreflectómetros Horizontales",
-      "Retroreflectómetros Verticales",
+      { label: "Retroreflectometros Horizontales", hash: "horizontal" },
+      { label: "Retroreflectometros Verticales", hash: "vertical" },
     ],
   },
   {
-    title: "Señalización Vial",
+    title: "Senalizacion Vial",
     path: "/solutions/senalizacion",
     items: [
-      "Señalización Elevada",
-      "Señalización Vertical",
-      "Demarcación Horizontal",
+      { label: "Senalizacion Elevada", hash: "elevada" },
+      { label: "Senalizacion Vertical", hash: "vertical" },
+      { label: "Demarcacion Horizontal", hash: "horizontal" },
     ],
   },
   {
     title: "Soluciones Ferroviarias",
     path: "/solutions/ferroviario",
     items: [
-      "Equipos Portátiles (Auscultador, Perfil Carril, Soldaduras)",
-      "Vehículos M10/M100/M1200",
-      "Remolques Adaptadores",
-      "Conversión Hi-Rail",
+      { label: "Equipos Portatiles", hash: "equipos" },
+      { label: "Vehiculos M10/M100/M1200", hash: "vehiculos" },
     ],
     badge: "NUEVO"
   },
   {
-    title: "Auscultación de Pavimentos",
+    title: "Auscultacion de Pavimentos",
     path: "/solutions/auscultacion",
     items: [
-      "Equipos Estructurales (FWD, FastFWD, GPR)",
-      "Equipos Funcionales (IRI, LCMS, SCRIM)",
-      "Sistemas WIM (Pesaje en Movimiento)",
+      { label: "Equipos Estructurales (FWD, GPR)", hash: "estructural" },
+      { label: "Equipos Funcionales (IRI, LCMS, SCRIM)", hash: "funcional" },
     ],
     badge: "NUEVO"
   },
@@ -69,17 +78,17 @@ const solutionsMenu = [
     title: "Servicios Adicionales",
     path: "/solutions/servicios",
     items: [
-      "Alquiler de Grua de Canastilla",
-      "Aplicacion de Marcas Viales",
+      { label: "Alquiler de Grua de Canastilla", hash: "grua" },
+      { label: "Aplicacion de Marcas Viales", hash: "demarcacion-servicio" },
     ],
   },
   {
     title: "Electromovilidad",
     path: "/solutions/electromovilidad",
     items: [
-      "Cargadores para Vehiculos Electricos",
-      "Infraestructura de Carga",
-      "Estaciones de Carga Solar",
+      { label: "Cargadores para Vehiculos Electricos", hash: "cargadores-ev" },
+      { label: "Infraestructura de Carga", hash: "infraestructura-carga" },
+      { label: "Estaciones de Carga Solar", hash: "estaciones-solares" },
     ],
     badge: "NUEVO"
   },
@@ -87,8 +96,8 @@ const solutionsMenu = [
     title: "Seguridad en Zona de Trabajo",
     path: "/solutions/delineadores",
     items: [
-      "Delineadores Rebotables",
-      "Atenuadores de Impacto Remolcables",
+      { label: "Delineadores Rebotables", hash: "delineador-flexible" },
+      { label: "Atenuadores de Impacto", hash: "" },
     ],
   },
 ];
@@ -164,9 +173,12 @@ export default function Navbar() {
                         <ul className="space-y-2">
                           {category.items.map((item, i) => (
                             <li key={i}>
-                              <span className="text-xs text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-                                {item}
-                              </span>
+                              <Link
+                                to={item.hash ? `${category.path}#${item.hash}` : category.path}
+                                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                              >
+                                {item.label}
+                              </Link>
                             </li>
                           ))}
                         </ul>

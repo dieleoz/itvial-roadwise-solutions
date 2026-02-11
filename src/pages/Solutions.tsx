@@ -118,6 +118,8 @@ const categories: SolutionCategory[] = [
       { name: "Cargadores para Vehiculos Electricos (AC/DC)", icon: BatteryCharging },
       { name: "Infraestructura de Carga", icon: Zap },
       { name: "Estaciones de Carga Solar", icon: Lightbulb },
+      { name: "Parqueo Inteligente", icon: ParkingSquare },
+      { name: "Iluminacion LED Solar", icon: Lightbulb },
     ],
   },
   {
