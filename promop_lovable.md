@@ -1,5 +1,8 @@
 # Prompt de Generación Multimedia: Fase 2 (IT VIAL)
 
+> **🤖 PARA EL AGENTE LOVABLE / EXTENSION:**  
+> Este archivo contiene tu **Misión Principal**. Usa los prompts detallados a continuación para generar los activos visuales faltantes y completar la Fase 2 del Roadmap.
+
 Este documento sirve como guía para la generación de activos visuales faltantes del proyecto IT VIAL, asegurando consistencia estética y técnica con la arquitectura actual de la plataforma (React + Tailwind + Glassmorphism).
 
 ## 🛠️ Arquitectura de la Fase Multimedia (Fase 2)
