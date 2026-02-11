@@ -289,9 +289,14 @@ INICIO | CONÓZCANOS | SOLUCIONES ▾ | PROYECTOS | DESCARGABLES | CONTACTO
 - Producto pre-seleccionado
 - Validación con Zod
 
-### 3. Comparador de Productos
-- Hasta 3 productos
-- Tabla comparativa de características
+### 3. Buscador Inteligente
+- Barra de búsqueda en header
+- Búsqueda por:
+  - Productos
+  - Categorías
+  - Casos de éxito
+  - Documentos
+- Resultados con preview
 
 ---
 

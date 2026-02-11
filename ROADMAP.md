@@ -194,10 +194,14 @@
 - [ ] Envío por email
 - [ ] Confirmación al usuario
 
-### 3.2 Comparador de Productos
-- [ ] Selección de hasta 3 productos
-- [ ] Tabla comparativa de características
-- [ ] Exportar comparación (PDF)
+### 3.2 Buscador Inteligente
+- [ ] Barra de búsqueda en header
+- [ ] Búsqueda por:
+  - [ ] Productos
+  - [ ] Categorías
+  - [ ] Casos de éxito
+  - [ ] Documentos
+- [ ] Resultados con preview
 
 ### 3.3 Buscador Inteligente
 - [ ] Barra de búsqueda en header
