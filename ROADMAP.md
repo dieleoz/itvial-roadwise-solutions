@@ -103,21 +103,22 @@
 **Estado:** 🔄 EN PROGRESO
 
 ### 2.1 Galería de Imágenes
+- [ ] **⏳ PENDIENTE - Cuota de generación agotada hasta 22:27 (11 Feb 2026)**
 - [ ] Optimizar imágenes existentes (WebP, lazy loading)
 - [ ] Agregar imágenes faltantes del portafolio:
-  - [ ] PMV nocturno activo
-  - [ ] PMV móviles en plataforma
-  - [ ] Radar "SU VELOCIDAD" instalado
-  - [ ] Taller de fabricación
-  - [ ] Instalación de pórticos
-  - [ ] Señales elevadas
-  - [ ] Camión demarcador operando
-  - [ ] Controlador IT-V4.0
-  - [ ] Retroreflectómetros (amarillo y naranja)
-  - [ ] App RTH_IoT en smartphone
-  - [ ] Demarcación vial terminada
-  - [ ] Sellado de fisuras
-  - [ ] Grúa de canastilla trabajando
+  - [ ] ⏳ PMV nocturno activo
+  - [ ] ⏳ PMV móviles en plataforma
+  - [ ] ⏳ Radar "SU VELOCIDAD" instalado
+  - [ ] ⏳ Taller de fabricación
+  - [ ] ⏳ Instalación de pórticos
+  - [ ] ⏳ Señales elevadas
+  - [ ] ⏳ Camión demarcador operando
+  - [ ] ⏳ Controlador IT-V4.0
+  - [ ] ⏳ Retroreflectómetros (amarillo y naranja)
+  - [ ] ⏳ App RTH_IoT en smartphone
+  - [ ] ⏳ Demarcación vial terminada
+  - [ ] ⏳ Sellado de fisuras
+  - [ ] ⏳ Grúa de canastilla trabajando
 
 ### 2.2 Videos
 - [ ] Video corporativo en Hero Section
@@ -127,7 +128,8 @@
   - [ ] Retroreflectómetro con app
   - [ ] Instalación de estructuras
 
-### 2.3 Página de Descargables (Completar)
+### 2.3 Página de Descargables (En Progreso)
+- [/] Estructura de página implementada
 - [ ] Catálogos por categoría (PDFs):
   - [ ] ITS y Seguridad Vial
   - [ ] Equipos para Pavimentos
@@ -138,7 +140,10 @@
 - [ ] Casos de estudio descargables
 - [ ] Boletines y noticias
 
-### 2.4 Galería de Proyectos
+### 2.4 Mejoras en Home (Completadas Parcialmente)
+- [x] Sección de Clientes con carrusel animado
+- [x] Sección de Testimonios con casos reales
+- [ ] Hero Section mejorado (pendiente imágenes)
 - [ ] Expandir casos de éxito con galerías (6-8 imágenes cada uno)
 - [ ] Agregar más proyectos:
   - [ ] Autopista al Mar
