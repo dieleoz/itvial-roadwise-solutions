@@ -150,16 +150,17 @@ export default function Solutions() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {cat.products.map((prod) => (
-                  <div
+                  <Link
                     key={prod.name}
-                    className="glass-card rounded-xl p-5 hover:border-primary/30 transition-colors group cursor-pointer"
+                    to={`/solutions/${cat.id}`}
+                    className="glass-card rounded-xl p-5 hover:border-primary/30 transition-colors group"
                   >
                     <prod.icon className="h-5 w-5 text-primary mb-3" />
                     <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">{prod.name}</h3>
                     <span className="text-xs text-muted-foreground mt-2 inline-block group-hover:text-primary/70 transition-colors">
-                      Ver detalles →
+                      Ver solución técnica →
                     </span>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </motion.section>
@@ -168,9 +169,9 @@ export default function Solutions() {
 
         {/* CTA */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-20 text-center">
-          <p className="text-muted-foreground mb-6">¿Necesita una solución personalizada?</p>
+          <p className="text-muted-foreground mb-6">¿Necesita una asesoría técnica personalizada?</p>
           <Link to="/contact" className="inline-block px-8 py-4 text-base font-semibold rounded-lg bg-gradient-primary text-primary-foreground shadow-glow-primary hover:opacity-90 transition-opacity">
-            Solicitar Cotización
+            Solicitar Evaluación Técnica
           </Link>
         </motion.div>
       </div>

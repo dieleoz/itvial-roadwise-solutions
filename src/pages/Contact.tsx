@@ -21,7 +21,7 @@ type ContactForm = z.infer<typeof contactSchema>;
 const queryTypes = [
   "Solicitud de Asesoría Técnica",
   "Análisis Normativo / Especificaciones",
-  "Cotización de Proyecto Integral",
+  "Análisis de Costos de Proyecto Integral",
   "Soporte y Garantías",
   "Alianza Comercial / Distribución",
   "Otro",

@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
     {
         question: "¿Qué productos y servicios ofrece IT VIAL?",
-        answer: "Ofrecemos soluciones completas en 5 categorías: Sistemas Inteligentes de Transporte (ITS) con PMV, radares y estaciones SOS; Equipos para Pavimentos incluyendo camiones demarcadores; Instrumentos de Medición con tecnología IoT; Señalización Vial completa; y Servicios Adicionales como alquiler de grúa y aplicación de marcas viales."
+        answer: "Ofrecemos soluciones completas en 5 categorías: Sistemas Inteligentes de Transporte (ITS) con PMV, radares y estaciones SOS; Equipos para Pavimentos incluyendo camiones demarcadores; Instrumentos de Medición con tecnología IoT; Señalización Vial completa; y Servicios Adicionales como alquiler de grúa y Análisis de Costos de Proyecto Integral."
     },
     {
         question: "¿Fabrican los productos en Colombia?",
@@ -25,7 +25,7 @@ const faqs = [
     },
     {
         question: "¿Cuánto tiempo toma la entrega de un proyecto?",
-        answer: "Los tiempos varían según la complejidad: productos estándar como señales verticales toman 2-3 semanas; equipos especializados como PMV o camiones demarcadores entre 4-8 semanas; y proyectos llave en mano con instalación pueden tomar 2-4 meses. Siempre establecemos cronogramas claros desde la cotización."
+        answer: "Los tiempos varían según la complejidad: productos estándar como señales verticales toman 2-3 semanas; equipos especializados como PMV o camiones demarcadores entre 4-8 semanas; y proyectos llave en mano con instalación pueden tomar 2-4 meses. Siempre establecemos cronogramas claros desde la propuesta técnica inicial."
     },
     {
         question: "¿Ofrecen capacitación para el uso de los equipos?",

@@ -81,7 +81,7 @@ const services = [
             },
             {
                 plan: "Por Proyecto",
-                price: "Cotización personalizada",
+                price: "Propuesta técnica personalizada",
                 ideal: "Contratos de largo plazo",
                 includes: ["Tarifa preferencial", "Disponibilidad garantizada", "Soporte técnico"]
             }
@@ -132,7 +132,7 @@ const services = [
             },
             {
                 step: "Diseño y Presupuesto",
-                description: "Plano de demarcación y cotización detallada"
+                description: "Plano de demarcación y propuesta técnica detallada"
             },
             {
                 step: "Preparación de Superficie",
@@ -503,7 +503,7 @@ export default function ServiciosPage() {
                         ¿Necesita Nuestros <span className="text-gradient-primary">Servicios</span>?
                     </h3>
                     <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                        Contáctenos para una cotización personalizada o para verificar disponibilidad inmediata
+                        Contáctenos para una propuesta técnica personalizada o para verificar disponibilidad inmediata
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
                         <Link
