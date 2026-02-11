@@ -100,7 +100,7 @@
 
 **Prioridad:** ALTA  
 **Estimado:** 1-2 semanas  
-**Estado:** 🔄 EN PROGRESO (40% completado)
+**Estado:** 🔄 EN PROGRESO (55% completado)
 
 ### 2.1 Galería de Imágenes
 - [ ] **⏳ PENDIENTE - Cuota de generación agotada hasta 22:27 (11 Feb 2026)**
@@ -141,6 +141,7 @@
   - [x] Grid de estadísticas (50+ proyectos, 15+ años, 23 productos, 98% satisfacción)
 - [x] **Sección de Clientes** con carrusel animado (8 clientes)
 - [x] **Sección de Testimonios** con 3 casos reales
+- [x] **FAQ Section** con 8 preguntas frecuentes
 - [ ] Carrusel de logos de clientes (pendiente imágenes)
 
 ### 2.5 Componentes y Optimizaciones ✅
@@ -155,6 +156,23 @@
   - [ ] Autopista al Mar
   - [ ] Vías departamentales
   - [ ] Proyectos municipales
+
+### 2.6 Nuevas Secciones de Soluciones ✅
+- [x] **Soluciones Ferroviarias** (FerroviarioPage.tsx - 650 líneas)
+  - [x] Equipos portátiles (Auscultador, Perfil Carril, Soldaduras)
+  - [x] Vehículos M10/M100/M1200 con tablas comparativas
+  - [x] Remolques adaptadores (40-60% ahorro)
+  - [x] Conversión Hi-Rail con análisis costo-beneficio
+- [x] **Auscultación de Pavimentos** (AuscultacionPage.tsx - 900 líneas)
+  - [x] Equipos estructurales (FWD, FastFWD, GPR)
+  - [x] Equipos funcionales (IRI, LCMS, SCRIM, SPB/CPX, WIM)
+  - [x] Caso de uso integrado (inspección 100 km)
+  - [x] Especificaciones técnicas completas
+- [x] **Navegación actualizada**
+  - [x] Mega menú con 7 categorías
+  - [x] Badges "NUEVO" en secciones ferroviarias y auscultación
+  - [x] Rutas agregadas a App.tsx
+  - [x] Solutions page actualizada
 
 ---
 
