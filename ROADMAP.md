@@ -97,30 +97,31 @@
 
 ---
 
-## 🎨 FASE 2: MULTIMEDIA Y RECURSOS (En Progreso 🔄)
+## 🎨 FASE 2: MULTIMEDIA Y RECURSOS (90% ✅)
 
 **Prioridad:** ALTA  
 **Estimado:** 1-2 semanas  
-**Estado:** 🔄 EN PROGRESO (65% completado)
+**Estado:** ✅ IMÁGENES GENERADAS (90% completado - Pendiente: videos, lazy loading, PDFs)
 
-### 2.1 Galería de Imágenes
+### 2.1 Galería de Imágenes ✅
 - [x] **Generado: `promop_lovable.md`** (Guía de prompts para la creación de activos faltantes)
-- [ ] **🚀 SIGUIENTE PASO: Ejecutar generación con Agente Lovable**
+- [x] **✅ Ejecutada generación con Agente Lovable (2026-02-12)**
 - [ ] Optimizar imágenes existentes (WebP, lazy loading)
-- [ ] Agregar imágenes faltantes del portafolio:
-  - [ ] ⏳ PMV nocturno activo
-  - [ ] ⏳ PMV móviles en plataforma
-  - [ ] ⏳ Radar "SU VELOCIDAD" instalado
-  - [ ] ⏳ Taller de fabricación
-  - [ ] ⏳ Instalación de pórticos
-  - [ ] ⏳ Señales elevadas
-  - [ ] ⏳ Camión demarcador operando
-  - [ ] ⏳ Controlador IT-V4.0
-  - [ ] ⏳ Retroreflectómetros (amarillo y naranja)
-  - [ ] ⏳ App RTH_IoT en smartphone
-  - [ ] ⏳ Demarcación vial terminada
-  - [ ] ⏳ Sellado de fisuras
-  - [ ] ⏳ Grúa de canastilla trabajando
+- [x] Agregar imágenes faltantes del portafolio:
+  - [x] ✅ PMV nocturno activo (`pmv-nocturno.webp`)
+  - [x] ✅ PMV móviles en plataforma (`pmv-movil.webp`)
+  - [x] ✅ Radar "SU VELOCIDAD" instalado (`radar-su-velocidad.webp`)
+  - [x] ✅ Taller de fabricación (`taller-fabricacion.webp`)
+  - [x] ✅ Instalación de pórticos / Señales elevadas (`senale-elevada-portico.webp`)
+  - [x] ✅ Camión demarcador operando (`camion-demarcador-operando.webp`)
+  - [x] ✅ Controlador IT-V4.0 (`controlador-itv4.webp`)
+  - [x] ✅ Retroreflectómetros amarillo y naranja (`retroreflectometros.webp`)
+  - [x] ✅ App RTH_IoT en smartphone (`app-rth-iot.webp`)
+  - [x] ✅ Sellado de fisuras (`selladora-fisuras.webp`)
+  - [x] ✅ Grúa de canastilla trabajando (`grua-canastilla.webp`)
+  - [x] ✅ Centro de control ITS (`centro-control-its.webp`)
+  - [x] ✅ Túnel inteligente (`tunel-inteligente.webp`)
+  - [x] ✅ Electrolinera pública (`electrolinera-publica.webp`)
 
 ### 2.2 Videos
 - [ ] Video corporativo en Hero Section
