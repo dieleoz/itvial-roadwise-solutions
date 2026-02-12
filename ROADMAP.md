@@ -101,12 +101,12 @@
 
 **Prioridad:** ALTA  
 **Estimado:** 1-2 semanas  
-**Estado:** 🔄 EN PROGRESO (90% - Imágenes listas, iniciando integración en código)
+**Estado:** ✅ COMPLETADO (Imágenes integradas en todas las verticales)
 
 ### 2.1 Galería de Imágenes ✅
 - [x] **Generado: `promop_lovable.md`** (Guía de prompts para la creación de activos faltantes)
 - [x] **✅ Ejecutada generación con Agente Lovable (2026-02-12)**
-- [ ] 🔄 **Integración en componentes React (ITS, Pavimentos, etc.)** <!-- New Item -->
+- [x] **Integración en componentes React (ITS, Pavimentos, etc.)** <!-- Completed -->
 - [ ] Optimizar imágenes existentes (WebP, lazy loading)
 - [x] Agregar imágenes faltantes del portafolio:
   - [x] ✅ PMV nocturno activo (`pmv-nocturno.webp`)
@@ -361,8 +361,8 @@
 ### Próximos Pasos Inmediatos
 1. ✅ Crear README.md con prompt completo
 2. ✅ Crear ROADMAP.md con plan de trabajo
-3. ⏳ Actualizar menú de navegación con estructura real
-4. ⏳ Crear página completa de ITS y Seguridad Vial
+3. ✅ Actualizar menú de navegación con estructura real
+4. ✅ Crear página completa de ITS y Seguridad Vial
 5. ⏳ Agregar sección "Nuestros Números" en Home
 
 ---

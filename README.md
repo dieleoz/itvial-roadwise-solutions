@@ -18,7 +18,8 @@ Sitio web corporativo para **IT VIAL SAS**, empresa colombiana líder en solucio
 - ✅ **Arquitectura de 5 Capas** para robustez y mantenibilidad
 - ✅ **SEO Técnico & Estructurado** (Sitemap, Robots, Meta tags, JSON-LD Schema)
 - ✅ **Integración WhatsApp Contextual** según el producto/servicio
-- 🔄 **En progreso:** Integración de imágenes (Fase 2) y optimización de carga.
+- ✅ **Integración de Imágenes** (Fase 2) completada en todas las verticales.
+- 🔄 **En progreso:** Optimización de carga y generación de activos multimedia (Videos/PDFs).
 
 ---
 
