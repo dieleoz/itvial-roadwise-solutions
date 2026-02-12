@@ -21,6 +21,7 @@ El sitio ha evolucionado significativamente desde la evaluación inicial (55%), 
 ### 2. Contenido Técnico y Multimedia
 - [x] **Detalle de Productos**: Transición de simples listados a especificaciones técnicas completas (Specs, Normas, ROI, Casos de Uso).
 - [x] **Activos Lovable**: Integración de 14 imágenes fotorrealistas de alta fidelidad.
+- [x] **Optimización Visual**: Corrección global de recorte de imágenes (cropping fix) usando `object-contain` y fondos ambientales.
 - [x] **Sección de Clientes**: Carrusel animado con 8 clientes estratégicos (ANI, INVIAS, etc.).
 - [x] **Dashboard Interno**: Implementación de la Capa 4 de gestión (Financiero, Técnico, WBS).
 

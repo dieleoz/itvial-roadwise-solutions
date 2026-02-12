@@ -107,7 +107,7 @@
 - [x] **Generado: `promop_lovable.md`** (Guía de prompts para la creación de activos faltantes)
 - [x] **✅ Ejecutada generación con Agente Lovable (2026-02-12)**
 - [x] **Integración en componentes React (ITS, Pavimentos, etc.)** <!-- Completed -->
-- [ ] Optimizar imágenes existentes (WebP, lazy loading)
+- [x] Optimizar imágenes existentes (WebP, lazy loading, object-contain fix)
 - [x] Agregar imágenes faltantes del portafolio:
   - [x] ✅ PMV nocturno activo (`pmv-nocturno.webp`)
   - [x] ✅ PMV móviles en plataforma (`pmv-movil.webp`)
