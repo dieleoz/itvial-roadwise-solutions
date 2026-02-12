@@ -162,6 +162,14 @@ Uso: Carrusel de clientes en Home page
    - Formato: MP4, 1080p mínimo
    - Uso: Página ITS, Projects
 
+
+5. **Video Hero Web (Loop)**
+   - Nombre archivo: `hero-video-loop.mp4`
+   - Duración: 10-15 segundos (Loop)
+   - Descripción: Vista aérea cinemática de autopista moderna con flujo vehicular, estilo "Smart City" o infraestructura moderna. Sin audio o ambiental suave.
+   - Formato: MP4, 1080p mínimo
+   - Uso: Home Page (Hero Section), ITS Page
+
 ## 📄 INFORMACIÓN DE PROYECTOS
 ### 🏗️ Casos de Éxito Detallados (6-8 proyectos)
 Para cada proyecto, solicitar:
@@ -203,6 +211,12 @@ Para cada proyecto, solicitar:
    - Nombre archivo: `catalogo-soluciones-ferroviarias.pdf`
    - Contenido: Equipos portátiles, vehículos M10/M100/M1200, conversión hi-rail
    - Páginas estimadas: 25-35 páginas
+
+
+6. **Catálogo Auscultación de Pavimentos**
+   - Nombre archivo: `catalogo-auscultacion-pavimentos.pdf`
+   - Contenido: FWD, Perfilómetros láser, Georradar, SCRIM, WIM
+   - Páginas estimadas: 30-40 páginas
 
 ### 📋 Fichas Técnicas (10-15 PDFs)
 Solicitar fichas técnicas individuales para productos principales:
