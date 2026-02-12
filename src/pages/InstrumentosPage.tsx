@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Ruler, Eye, ArrowRight, Smartphone, MapPin, FileText } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { getWhatsAppLink } from "@/utils/whatsapp";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
@@ -269,14 +270,22 @@ export default function InstrumentosPage() {
                                 )}
 
                                 {/* CTA Buttons */}
-                                <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-border">
+                                <div className="mt-8 flex flex-wrap gap-4 pt-6 border-t border-border">
                                     <Link
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
                                     >
-                                        Solicitar Demo <ArrowRight className="h-4 w-4" />
+                                        Solicitar Cotización <ArrowRight className="h-4 w-4" />
                                     </Link>
 
+                                    <a
+                                        href={getWhatsAppLink(`Hola, estoy interesado en el producto: ${product.name}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-green-500/20 bg-green-500/10 text-green-500 font-semibold hover:bg-green-500/20 transition-colors"
+                                    >
+                                        Consultar por WhatsApp
+                                    </a>
                                     {product.id === "horizontal" && (
                                         <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-secondary transition-colors">
                                             <FileText className="h-4 w-4" />

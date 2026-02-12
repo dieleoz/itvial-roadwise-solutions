@@ -4,7 +4,8 @@ import {
     Monitor, Radar, Radio, Wind, AlertTriangle, ShieldAlert,
     TowerControl, TrafficCone, FileText, ArrowRight
 } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { getWhatsAppLink } from "@/utils/whatsapp";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
@@ -445,9 +446,17 @@ export default function ITSPage() {
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/20 hover:bg-primary/5 transition-colors text-primary font-semibold"
                                     >
-                                        Contacto Directo <ArrowRight className="h-4 w-4" />
+                                        Contáctenos <ArrowRight className="h-4 w-4" />
                                     </Link>
 
+                                    <a
+                                        href={getWhatsAppLink(`Hola, estoy interesado en el producto: ${product.name}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 text-sm font-semibold text-green-500 hover:text-green-400 transition-colors"
+                                    >
+                                        Consultar por WhatsApp <ArrowRight className="h-4 w-4" />
+                                    </a>
                                 </div>
                             </div>
                         </motion.section>

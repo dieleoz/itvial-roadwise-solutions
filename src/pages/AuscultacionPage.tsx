@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Activity, Gauge, Camera, Waves, Volume2, Scale, CheckCircle, ArrowRight } from "lucide-react";
-import { useEffect } from "react";
+import { useRef, useEffect } from "react";
+import { getWhatsAppLink } from "@/utils/whatsapp";
 import { Link } from "react-router-dom";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
@@ -503,9 +504,17 @@ export default function AuscultacionPage() {
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                                     >
-                                        Consultar Disponibilidad <ArrowRight className="h-4 w-4" />
+                                        Solicitar Cotización <ArrowRight className="h-4 w-4" />
                                     </Link>
 
+                                    <a
+                                        href={getWhatsAppLink(`Hola, estoy interesado en el producto: ${equipment.name}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-green-500/20 bg-green-500/10 text-green-500 font-semibold hover:bg-green-500/20 transition-colors"
+                                    >
+                                        Consultar por WhatsApp
+                                    </a>
                                 </div>
                             </motion.div>
                         ))}
@@ -734,9 +743,16 @@ export default function AuscultacionPage() {
                                         to="/contact"
                                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold shadow-glow-primary hover:opacity-90 transition-opacity"
                                     >
-                                        Solicitar Evaluación <ArrowRight className="h-4 w-4" />
+                                        Solicitar Cotización <ArrowRight className="h-4 w-4" />
                                     </Link>
-
+                                    <a
+                                        href={getWhatsAppLink(`Hola, estoy interesado en el producto: ${equipment.name}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-green-500/20 bg-green-500/10 text-green-500 font-semibold hover:bg-green-500/20 transition-colors"
+                                    >
+                                        Consultar por WhatsApp
+                                    </a>
                                 </div>
                             </motion.div>
                         ))}

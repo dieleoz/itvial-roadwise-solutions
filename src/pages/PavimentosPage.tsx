@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Truck, Wrench, TreePine, ArrowRight, CheckCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useRef, useEffect } from "react";
+import { getWhatsAppLink } from "@/utils/whatsapp";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
 
@@ -31,96 +32,103 @@ const products = [
                     "Tachas y botones reflectivos",
                     "Control de espesor y ancho"
                 ],
-                "Municipios y departamentos"
+                ideal: [
+                    "Vías nacionales",
+                    "Concesiones",
+                    "Municipios y departamentos"
                 ],
-        image: "/images/solutions/pavimentos/camion-demarcador-operando.webp"
-    },
-    {
-        title: "Máquinas Autopropulsadas",
-        description: "Demarcadoras autopropulsadas ideales para trabajos de precisión en espacios reducidos.",
-        ideal: [
-            "Parqueaderos",
-            "Vías urbanas",
-            "Aeropuertos",
-            "Zonas peatonales"
-        ],
-        advantages: [
-            "Operación por un solo trabajador",
-            "Alta precisión en trazado",
-            "Menor costo operativo que camiones",
-            "Fácil transporte"
+                image: "/images/solutions/pavimentos/camion-demarcador-operando.webp"
+            },
+            {
+                title: "Máquinas Autopropulsadas",
+                description: "Demarcadoras autopropulsadas ideales para trabajos de precisión en espacios reducidos.",
+                ideal: [
+                    "Parqueaderos",
+                    "Vías urbanas",
+                    "Aeropuertos",
+                    "Zonas peatonales"
+                ],
+                advantages: [
+                    "Operación por un solo trabajador",
+                    "Alta precisión en trazado",
+                    "Menor costo operativo que camiones",
+                    "Fácil transporte"
+                ]
+            },
+            {
+                title: "Equipos Manuales",
+                description: "Demarcadores portátiles para trabajos pequeños y detallados.",
+                applications: [
+                    "Pasos peatonales",
+                    "Parqueaderos pequeños",
+                    "Correcciones y retoques",
+                    "Acceso a áreas estrechas"
+                ],
+                features: [
+                    "Motor a gasolina",
+                    "Tanque de pintura en frío",
+                    "Sistema de aire comprimido",
+                    "Pistolas intercambiables",
+                    "Portátil y ligero"
+                ]
+            }
         ]
     },
     {
-        title: "Equipos Manuales",
-        description: "Demarcadores portátiles para trabajos pequeños y detallados.",
-        applications: [
-            "Pasos peatonales",
-            "Parqueaderos pequeños",
-            "Correcciones y retoques",
-            "Acceso a áreas estrechas"
+        id: "selladoras",
+        name: "Selladoras de Fisuras",
+        icon: Wrench,
+        description: "Prevención de daños mayores mediante sellado oportuno de grietas en pavimento.",
+        equipment: [
+            "Caldera de asfalto caliente",
+            "Sistema de aplicación directa",
+            "Control de temperatura",
+            "Boquillas de diferentes anchos"
         ],
-        features: [
-            "Motor a gasolina",
-            "Tanque de pintura en frío",
-            "Sistema de aire comprimido",
-            "Pistolas intercambiables",
-            "Portátil y ligero"
+        process: [
+            "Limpieza de fisura",
+            "Aplicación de emulsión",
+            "Relleno con asfalto caliente",
+            "Compactación"
+        ],
+        benefits: [
+            "Extiende vida útil del pavimento",
+            "Previene baches mayores",
+            "Bajo costo de mantenimiento",
+            "Aplicación rápida"
+        ],
+        image: "/images/solutions/pavimentos/selladora-fisuras.webp"
+    },
+    {
+        id: "reciclaje",
+        name: "Equipos de Reciclaje de Asfaltos",
+        icon: TreePine,
+        description: "Soluciones sostenibles para reutilización de materiales asfálticos.",
+        options: [
+            {
+                title: "Reciclaje In Situ",
+                features: [
+                    "Recuperación directa en la vía",
+                    "Mezcla en caliente o en frío",
+                    "Reducción de transporte de materiales"
+                ]
+            },
+            {
+                title: "Planta Móvil de Recuperación",
+                features: [
+                    "Procesamiento de RAP (Reclaimed Asphalt Pavement)",
+                    "Producción de mezcla asfáltica reciclada",
+                    "Cumplimiento especificaciones técnicas"
+                ]
+            }
+        ],
+        environmental: [
+            "Reducción de uso de agregados vírgenes",
+            "Menor emisión de CO2",
+            "Ahorro económico hasta 40%",
+            "Sostenibilidad en proyectos viales"
         ]
     }
-]
-    },
-{
-    id: "selladoras",
-        name: "Selladoras de Fisuras",
-            icon: Wrench,
-                description: "Prevención de daños mayores mediante sellado oportuno de grietas en pavimento.",
-                    equipment: [
-                        "Caldera de asfalto caliente",
-                        "Sistema de aplicación directa",
-                        "Control de temperatura",
-                        "Boquillas de diferentes anchos"
-                    ],
-                        process: [
-                            "Limpieza de fisura",
-                            "Aplicación de emulsión",
-                            "Relleno con asfalto caliente",
-                            "Compactación"
-                        ],
-                            "Mantenimiento preventivo efectivo"
-        ],
-    image: "/images/solutions/pavimentos/selladora-fisuras.webp"
-},
-{
-    id: "reciclaje",
-        name: "Equipos de Reciclaje de Asfaltos",
-            icon: TreePine,
-                description: "Soluciones sostenibles para reutilización de materiales asfálticos.",
-                    options: [
-                        {
-                            title: "Reciclaje In Situ",
-                            features: [
-                                "Recuperación directa en la vía",
-                                "Mezcla en caliente o en frío",
-                                "Reducción de transporte de materiales"
-                            ]
-                        },
-                        {
-                            title: "Planta Móvil de Recuperación",
-                            features: [
-                                "Procesamiento de RAP (Reclaimed Asphalt Pavement)",
-                                "Producción de mezcla asfáltica reciclada",
-                                "Cumplimiento especificaciones técnicas"
-                            ]
-                        }
-                    ],
-                        environmental: [
-                            "Reducción de uso de agregados vírgenes",
-                            "Menor emisión de CO2",
-                            "Ahorro económico hasta 40%",
-                            "Sostenibilidad en proyectos viales"
-                        ]
-}
 ];
 
 export default function PavimentosPage() {
@@ -409,11 +417,19 @@ export default function PavimentosPage() {
                                     </Link>
                                     <Link
                                         to="/contact"
-                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/20 hover:bg-primary/5 transition-colors text-primary font-semibold"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
                                     >
-                                        Contacto Directo <ArrowRight className="h-4 w-4" />
+                                        Solicitar Ficha Técnica <ArrowRight className="h-4 w-4" />
                                     </Link>
 
+                                    <a
+                                        href={getWhatsAppLink(`Hola, estoy interesado en el producto: ${product.name}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-green-500/20 bg-green-500/10 text-green-500 font-semibold hover:bg-green-500/20 transition-colors"
+                                    >
+                                        Consultar por WhatsApp
+                                    </a>
                                 </div>
                             </div>
                         </motion.section>
