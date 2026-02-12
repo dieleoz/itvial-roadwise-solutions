@@ -73,13 +73,31 @@ Reemplazar placeholders y rutas temporales en los siguientes componentes:
 
 ---
 
-## ⏳ 3. Pendientes (Fase 2.2 - Futuro)
+## ⏳ 3. Pendientes (Solicitar al Cliente)
 
-Estos activos se generarán en una etapa posterior.
+> **NOTA:** Los siguientes elementos (Videos y PDFs específicos) deben ser solicitados directamente al cliente ya que requieren información técnica precisa o metraje real. Se han movido a `informacion_faltante.md`.
 
 - [ ] **Videos**:
-    - Hero Video (Loop autopista)
-    - Demostración PMV Móvil
+    - Hero Video (Loop autopista) - *Solicitar Cliente*
+    - Demostración PMV Móvil - *Solicitar Cliente*
 - [ ] **PDFs (Descargables)**:
-    - Fichas técnicas de productos
-    - Catálogo general 2026
+    - Fichas técnicas de productos - *Solicitar Cliente*
+    - Catálogo general 2026 - *Solicitar Cliente*
+
+### 📍 Soluciones Ferroviarias (`public/images/solutions/ferroviario/`)
+- [x] `auscultador-geometria-portatil.webp` (Equipo manual en vía)
+- [x] `carro-medicion-perfil-carril.webp` (Carro de medición en rieles)
+- [x] `regla-electronica-soldaduras.webp` (Instrumento de medición de soldadura)
+- [x] `vehiculo-m10.webp` (Vehículo ferroviario ligero M10)
+- [x] `vehiculo-m100.webp` (Vehículo ferroviario avanzado M100)
+- [x] `vehiculo-m1200.webp` (Vehículo ferroviario alta velocidad M1200)
+
+### 📍 Auscultación (`public/images/solutions/auscultacion/`)
+- [x] `fwd-deflectometro.webp` (Deflectómetro de Impacto FWD en operación)
+- [x] `fastfwd-tsd.webp` (Vehículo FastFWD o TSD a velocidad de tráfico)
+- [x] `georradar-gpr.webp` (Equipo GPR montado en vehículo)
+- [x] `perfilometro-laser-iri.webp` (Perfilómetro láser midiendo rugosidad)
+- [x] `sistema-lcms.webp` (Vehículo con sistema de escaneo 3D LCMS)
+- [x] `scrim-friccion.webp` (Equipo SCRIM midiendo fricción con agua)
+- [x] `medicion-ruido-cp.webp` (Equipo de medición de ruido rueda-pavimento)
+- [x] `sistemas-wim.webp` (Estación de pesaje en movimiento WIM)

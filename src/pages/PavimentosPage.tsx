@@ -210,6 +210,7 @@ export default function PavimentosPage() {
                                                     src={product.image}
                                                     alt={product.name}
                                                     className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         )}
@@ -235,6 +236,7 @@ export default function PavimentosPage() {
                                                             src={type.image}
                                                             alt={type.title}
                                                             className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                                            loading="lazy"
                                                         />
                                                     </div>
                                                 )}
@@ -310,18 +312,7 @@ export default function PavimentosPage() {
                                                     )}
                                                 </div>
 
-                                                {type.clients && (
-                                                    <div className="mt-6 pt-6 border-t border-border">
-                                                        <h4 className="font-semibold mb-3">Clientes Destacados:</h4>
-                                                        <div className="flex flex-wrap gap-3">
-                                                            {type.clients?.map((client, idx) => (
-                                                                <span key={idx} className="px-4 py-2 rounded-lg bg-accent/10 text-accent text-sm font-medium">
-                                                                    ✓ {client}
-                                                                </span>
-                                                            ))}
-                                                        </div>
-                                                    </div>
-                                                )}
+
                                             </div>
                                         ))}
                                     </div>

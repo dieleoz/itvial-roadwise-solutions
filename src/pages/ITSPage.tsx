@@ -218,6 +218,8 @@ export default function ITSPage() {
                         src="/images/solutions/its/smart-work-zone-concept.webp"
                         alt="Smart Work Zone"
                         className="w-full h-full object-cover opacity-20"
+                        fetchPriority="high"
+                        loading="eager"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transpose to-transparent" />
                 </div>
@@ -272,6 +274,7 @@ export default function ITSPage() {
                                                     src={product.image}
                                                     alt={product.name}
                                                     className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         )}
@@ -295,6 +298,7 @@ export default function ITSPage() {
                                                             src={type.image}
                                                             alt={type.title}
                                                             className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                                            loading="lazy"
                                                         />
                                                     </div>
                                                 )}

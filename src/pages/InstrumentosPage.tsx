@@ -156,6 +156,7 @@ export default function InstrumentosPage() {
                                                     src={product.image}
                                                     alt={product.name}
                                                     className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         )}
@@ -233,6 +234,7 @@ export default function InstrumentosPage() {
                                                         src={product.appImage}
                                                         alt="App Interface"
                                                         className="w-full object-cover transform hover:scale-105 transition-transform duration-500"
+                                                        loading="lazy"
                                                     />
                                                 </div>
                                             )}

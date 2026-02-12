@@ -38,7 +38,8 @@ const structuralEquipment = [
             "Evaluación de capacidad estructural",
             "Control de calidad de construcción",
             "Priorización de mantenimiento"
-        ]
+        ],
+        image: "/images/solutions/auscultacion/fwd-deflectometro.webp"
     },
     {
         icon: Activity,
@@ -69,7 +70,8 @@ const structuralEquipment = [
             "Evaluaciones a nivel de red",
             "Proyectos de concesiones"
         ],
-        roi: "Inspección de 500 km en 5 días vs. 3+ meses con FWD convencional"
+        roi: "Inspección de 500 km en 5 días vs. 3+ meses con FWD convencional",
+        image: "/images/solutions/auscultacion/fastfwd-tsd.webp"
     },
     {
         icon: Waves,
@@ -99,7 +101,8 @@ const structuralEquipment = [
             "Control de calidad de construcción",
             "Detección de fallas ocultas",
             "Diseño de rehabilitación"
-        ]
+        ],
+        image: "/images/solutions/auscultacion/georradar-gpr.webp"
     }
 ];
 
@@ -132,7 +135,8 @@ const functionalEquipment = [
             "Evaluación de red vial",
             "Priorización de intervenciones",
             "Sistemas de gestión de pavimentos (PMS)"
-        ]
+        ],
+        image: "/images/solutions/auscultacion/perfilometro-laser-iri.webp"
     },
     {
         icon: Camera,
@@ -173,7 +177,8 @@ const functionalEquipment = [
             "Trazabilidad completa",
             "Productividad 100+ km/día",
             "Base de datos histórica"
-        ]
+        ],
+        image: "/images/solutions/auscultacion/sistema-lcms.webp"
     },
     {
         icon: Gauge,
@@ -201,7 +206,8 @@ const functionalEquipment = [
             "Ranurado de pavimento",
             "Aplicación de slurry seal",
             "Tratamientos superficiales con agregados duros"
-        ]
+        ],
+        image: "/images/solutions/auscultacion/scrim-friccion.webp"
     },
     {
         icon: Volume2,
@@ -228,7 +234,8 @@ const functionalEquipment = [
             "Diseño de mezclas asfálticas",
             "Mapeo de ruido en áreas urbanas"
         ],
-        result: "Niveles de ruido en dB(A) y clasificación de pavimentos por desempeño acústico"
+        result: "Niveles de ruido en dB(A) y clasificación de pavimentos por desempeño acústico",
+        image: "/images/solutions/auscultacion/medicion-ruido-cp.webp"
     },
     {
         icon: Scale,
@@ -260,7 +267,8 @@ const functionalEquipment = [
             "Cobertura del 100% de vehículos",
             "Reducción de daño a pavimentos",
             "Generación de ingresos por multas"
-        ]
+        ],
+        image: "/images/solutions/auscultacion/sistemas-wim.webp"
     }
 ];
 
@@ -362,6 +370,19 @@ export default function AuscultacionPage() {
                                         <p className="text-muted-foreground">{equipment.description}</p>
                                     </div>
                                 </div>
+
+                                {/* @ts-ignore */}
+                                {equipment.image && (
+                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-2xl">
+                                        <img
+                                            /* @ts-ignore */
+                                            src={equipment.image}
+                                            alt={equipment.name}
+                                            className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                )}
 
                                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                                     {equipment.specs && Object.entries(equipment.specs).map(([key, value]) => (
@@ -558,6 +579,19 @@ export default function AuscultacionPage() {
                                         <p className="text-muted-foreground">{equipment.description}</p>
                                     </div>
                                 </div>
+
+                                {/* @ts-ignore */}
+                                {equipment.image && (
+                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-2xl">
+                                        <img
+                                            /* @ts-ignore */
+                                            src={equipment.image}
+                                            alt={equipment.name}
+                                            className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                )}
 
                                 {equipment.specs && (
                                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">

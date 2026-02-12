@@ -216,6 +216,10 @@ Solicitar fichas técnicas individuales para productos principales:
 - `ficha-tecnica-retroreflectometro-rtv.pdf`
 - `ficha-tecnica-portico-metalico.pdf`
 - `ficha-tecnica-semaforo.pdf`
+- `ficha-tecnica-vehiculo-ferroviario-m100.pdf`
+- `ficha-tecnica-fwd-deflectometro.pdf`
+- `ficha-tecnica-perfilometro-laser.pdf`
+- `ficha-tecnica-georradar-gpr.pdf`
 
 ## 👥 INFORMACIÓN DE EMPRESA
 ### 📞 Datos de Contacto (Verificar/Actualizar)

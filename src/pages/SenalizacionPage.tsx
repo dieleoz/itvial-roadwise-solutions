@@ -284,6 +284,7 @@ export default function SenalizacionPage() {
                                                     src={product.image}
                                                     alt={product.name}
                                                     className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                         )}
@@ -343,6 +344,7 @@ export default function SenalizacionPage() {
                                                                 src={type.image}
                                                                 alt={type.category}
                                                                 className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
+                                                                loading="lazy"
                                                             />
                                                         </div>
                                                     )}

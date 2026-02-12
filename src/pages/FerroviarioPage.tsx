@@ -26,7 +26,8 @@ const portableEquipment = [
             "Peralte (cant)",
             "Escuadre"
         ],
-        compliance: ["EN 13848", "UIC", "Normas ferroviarias colombianas"]
+        compliance: ["EN 13848", "UIC", "Normas ferroviarias colombianas"],
+        image: "/images/solutions/ferroviario/auscultador-geometria-portatil.webp"
     },
     {
         icon: Camera,
@@ -47,7 +48,8 @@ const portableEquipment = [
             "Defectos superficiales",
             "Desgaste ondulatoria (OOR)"
         ],
-        compliance: ["UIC60", "UIC54", "EN standards"]
+        compliance: ["UIC60", "UIC54", "EN standards"],
+        image: "/images/solutions/ferroviario/carro-medicion-perfil-carril.webp"
     },
     {
         icon: Wrench,
@@ -66,7 +68,8 @@ const portableEquipment = [
             "Escalón vertical",
             "Deformación lateral"
         ],
-        compliance: ["EN 13231-3", "EN 14730", "Vossloh/Pandrol"]
+        compliance: ["EN 13231-3", "EN 14730", "Vossloh/Pandrol"],
+        image: "/images/solutions/ferroviario/regla-electronica-soldaduras.webp"
     }
 ];
 
@@ -85,7 +88,8 @@ const vehicles = [
             clearance: false
         },
         price: "$",
-        ideal: "Tramos cortos (<100 km), vías de carga ligera, mantenimiento local"
+        ideal: "Tramos cortos (<100 km), vías de carga ligera, mantenimiento local",
+        image: "/images/solutions/ferroviario/vehiculo-m10.webp"
     },
     {
         model: "M100",
@@ -101,7 +105,8 @@ const vehicles = [
             clearance: false
         },
         price: "$$",
-        ideal: "Ferrocarriles de pasajeros, líneas de metro, inspecciones preventivas"
+        ideal: "Ferrocarriles de pasajeros, líneas de metro, inspecciones preventivas",
+        image: "/images/solutions/ferroviario/vehiculo-m100.webp"
     },
     {
         model: "M1200",
@@ -117,7 +122,8 @@ const vehicles = [
             clearance: true
         },
         price: "$$$",
-        ideal: "Líneas de alta velocidad (>160 km/h), auditorías integrales, ferrocarriles nacionales"
+        ideal: "Líneas de alta velocidad (>160 km/h), auditorías integrales, ferrocarriles nacionales",
+        image: "/images/solutions/ferroviario/vehiculo-m1200.webp"
     }
 ];
 
@@ -366,6 +372,19 @@ export default function FerroviarioPage() {
                                     <div className="text-sm text-muted-foreground mb-2">{vehicle.level}</div>
                                     <div className="text-3xl font-bold text-gradient-primary mb-1">{vehicle.price}</div>
                                 </div>
+
+                                {/* @ts-ignore */}
+                                {vehicle.image && (
+                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg">
+                                        <img
+                                            /* @ts-ignore */
+                                            src={vehicle.image}
+                                            alt={vehicle.model}
+                                            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                )}
 
                                 <div className="space-y-3 mb-6">
                                     <div className="flex justify-between text-sm">
