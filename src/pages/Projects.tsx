@@ -16,6 +16,7 @@ interface Project {
   investment?: string;
   duration?: string;
   featured?: boolean;
+  image?: string;
 }
 
 const projects: Project[] = [
@@ -45,6 +46,7 @@ const projects: Project[] = [
       "Monitoreo 24/7 de condiciones meteorológicas",
       "Satisfacción del 95% en encuestas a usuarios",
     ],
+    image: "/images/solutions/its/pmv-nocturno.webp"
   },
   {
     title: "Concesión Ruta del Sol - Sector 2",
@@ -70,6 +72,7 @@ const projects: Project[] = [
       "Datos de tráfico en tiempo real para planificación",
       "Cumplimiento 100% normativa INVIAS",
     ],
+    image: "/images/solutions/its/radar-su-velocidad.webp"
   },
   {
     title: "Vía Bogotá - Villavicencio",
@@ -94,6 +97,7 @@ const projects: Project[] = [
       "Durabilidad estimada de 3+ años",
       "Certificación de calidad INVIAS",
     ],
+    image: "/images/solutions/pavimentos/camion-demarcador-operando.webp"
   },
   {
     title: "Gobernación de Cundinamarca - Red Vial Departamental",
@@ -190,6 +194,7 @@ const projects: Project[] = [
       "Incremento del 25% en uso de telepeaje",
       "Monitoreo en tiempo real de 180 km de corredor",
     ],
+    image: "/images/solutions/its/centro-control-its.webp"
   },
   {
     title: "Alcaldía de Medellín - Túneles de Oriente",
@@ -214,6 +219,7 @@ const projects: Project[] = [
       "Reducción del 90% en tiempos de respuesta a emergencias",
       "Certificación de seguridad internacional",
     ],
+    image: "/images/solutions/its/tunel-inteligente.webp"
   },
 ];
 
@@ -299,80 +305,92 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`glass-card rounded-xl p-8 md:p-10 ${project.featured ? "border-2 border-primary/30" : ""
-                }`}
+              className={`glass-card rounded-xl overflow-hidden ${project.featured ? "border-2 border-primary/30" : ""}`}
             >
-              {/* Header */}
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary">
-                  {project.category}
-                </span>
-                {project.featured && (
-                  <span className="px-3 py-1 text-xs font-semibold rounded-full bg-accent/10 text-accent">
-                    ⭐ Destacado
-                  </span>
-                )}
-                <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <Calendar className="h-3 w-3" />
-                  {project.year}
-                </span>
-                <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <MapPin className="h-3 w-3" />
-                  {project.region}
-                </span>
-              </div>
-
-              {/* Title and Client */}
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">{project.title}</h2>
-              <p className="text-sm text-muted-foreground mb-1">Cliente: <span className="text-foreground font-medium">{project.client}</span></p>
-
-              {/* Investment and Duration */}
-              {(project.investment || project.duration) && (
-                <div className="flex flex-wrap gap-4 mb-4 text-sm">
-                  {project.investment && (
-                    <span className="text-muted-foreground">
-                      Inversión: <span className="text-primary font-semibold">{project.investment}</span>
-                    </span>
-                  )}
-                  {project.duration && (
-                    <span className="text-muted-foreground">
-                      Duración: <span className="text-foreground font-medium">{project.duration}</span>
-                    </span>
-                  )}
+              {project.image && (
+                <div className="w-full h-48 md:h-64 overflow-hidden relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
                 </div>
               )}
 
-              <p className="text-muted-foreground leading-relaxed mb-8">{project.description}</p>
-
-              {/* Scope and Results */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-display font-semibold text-sm mb-4 text-primary flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4" />
-                    Alcance del Proyecto
-                  </h3>
-                  <ul className="space-y-2">
-                    {project.scope.map((s) => (
-                      <li key={s} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
+              <div className="p-8 md:p-10 relative">
+                {/* Header */}
+                <div className="flex flex-wrap items-center gap-3 mb-4">
+                  <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary">
+                    {project.category}
+                  </span>
+                  {project.featured && (
+                    <span className="px-3 py-1 text-xs font-semibold rounded-full bg-accent/10 text-accent">
+                      ⭐ Destacado
+                    </span>
+                  )}
+                  <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <Calendar className="h-3 w-3" />
+                    {project.year}
+                  </span>
+                  <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <MapPin className="h-3 w-3" />
+                    {project.region}
+                  </span>
                 </div>
-                <div>
-                  <h3 className="font-display font-semibold text-sm mb-4 text-accent flex items-center gap-2">
-                    <TrendingUp className="h-4 w-4" />
-                    Resultados Obtenidos
-                  </h3>
-                  <ul className="space-y-2">
-                    {project.results.map((r) => (
-                      <li key={r} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                        {r}
-                      </li>
-                    ))}
-                  </ul>
+
+                {/* Title and Client */}
+                <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">{project.title}</h2>
+                <p className="text-sm text-muted-foreground mb-1">Cliente: <span className="text-foreground font-medium">{project.client}</span></p>
+
+                {/* Investment and Duration */}
+                {(project.investment || project.duration) && (
+                  <div className="flex flex-wrap gap-4 mb-4 text-sm">
+                    {project.investment && (
+                      <span className="text-muted-foreground">
+                        Inversión: <span className="text-primary font-semibold">{project.investment}</span>
+                      </span>
+                    )}
+                    {project.duration && (
+                      <span className="text-muted-foreground">
+                        Duración: <span className="text-foreground font-medium">{project.duration}</span>
+                      </span>
+                    )}
+                  </div>
+                )}
+
+                <p className="text-muted-foreground leading-relaxed mb-8">{project.description}</p>
+
+                {/* Scope and Results */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="font-display font-semibold text-sm mb-4 text-primary flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4" />
+                      Alcance del Proyecto
+                    </h3>
+                    <ul className="space-y-2">
+                      {project.scope.map((s) => (
+                        <li key={s} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          {s}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-display font-semibold text-sm mb-4 text-accent flex items-center gap-2">
+                      <TrendingUp className="h-4 w-4" />
+                      Resultados Obtenidos
+                    </h3>
+                    <ul className="space-y-2">
+                      {project.results.map((r) => (
+                        <li key={r} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                          {r}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </motion.div>

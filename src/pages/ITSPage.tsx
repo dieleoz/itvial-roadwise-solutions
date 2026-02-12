@@ -32,7 +32,8 @@ const products = [
                     "Información de obras en la vía",
                     "Gestión de tráfico en tiempo real",
                     "Campañas de seguridad vial"
-                ]
+                ],
+                image: "/images/solutions/its/pmv-nocturno.webp"
             },
             {
                 title: "PMV Móviles",
@@ -49,7 +50,8 @@ const products = [
                     "Desvíos de tráfico",
                     "Eventos especiales",
                     "Respuesta ante emergencias"
-                ]
+                ],
+                image: "/images/solutions/its/pmv-movil.webp"
             }
         ]
     },
@@ -69,7 +71,8 @@ const products = [
             "Reducción de velocidad promedio en 15-25%",
             "Disminución de accidentes en zonas escolares",
             "Mayor conciencia de conductores"
-        ]
+        ],
+        image: "/images/solutions/its/radar-su-velocidad.webp"
     },
     {
         id: "radares-conteo",
@@ -113,7 +116,8 @@ const products = [
             "Señales LED de alerta",
             "Activación automática de PMV",
             "Registro fotográfico de infracciones"
-        ]
+        ],
+        image: "/images/solutions/its/tunel-inteligente.webp"
     },
     {
         id: "sos",
@@ -151,7 +155,8 @@ const products = [
             "Banderas simples y dobles",
             "Gabinetes metálicos para equipos",
             "Estructuras personalizadas"
-        ]
+        ],
+        image: "/images/solutions/senalizacion/senale-elevada-portico.webp"
     },
     {
         id: "semaforos",
@@ -206,8 +211,17 @@ export default function ITSPage() {
                 schema={itsSchema}
             />
             {/* Hero Section */}
-            <section className="relative py-20 bg-gradient-dark-section overflow-hidden">
-                <div className="container mx-auto px-4">
+            <section className="relative py-20 bg-gradient-dark-section overflow-hidden min-h-[60vh] flex items-center">
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="/images/solutions/its/smart-work-zone-concept.webp"
+                        alt="Smart Work Zone"
+                        className="w-full h-full object-cover opacity-20"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transpose to-transparent" />
+                </div>
+
+                <div className="container mx-auto px-4 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -236,15 +250,30 @@ export default function ITSPage() {
                             transition={{ delay: 0.1 }}
                             className="scroll-mt-24"
                         >
-                            <div className="glass-card rounded-2xl p-8 md:p-12">
+                            <div className="glass-card rounded-2xl p-8 md:p-12 overflow-hidden relative">
                                 {/* Product Header */}
-                                <div className="flex items-start gap-6 mb-8">
-                                    <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                        <product.icon className="h-8 w-8 text-primary" />
-                                    </div>
+                                <div className="flex flex-col md:flex-row items-start gap-8 mb-8">
                                     <div className="flex-1">
-                                        <h2 className="font-display text-3xl font-bold mb-3">{product.name}</h2>
-                                        <p className="text-lg text-muted-foreground">{product.description}</p>
+                                        <div className="flex items-center gap-4 mb-4">
+                                            <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                                                <product.icon className="h-8 w-8 text-primary" />
+                                            </div>
+                                            <h2 className="font-display text-3xl font-bold">{product.name}</h2>
+                                        </div>
+                                        <p className="text-lg text-muted-foreground mb-6">{product.description}</p>
+
+                                        {/* Main Product Image if available and no subtypes */}
+                                        {/* @ts-ignore */}
+                                        {product.image && !product.types && (
+                                            <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-2xl">
+                                                <img
+                                                    /* @ts-ignore */
+                                                    src={product.image}
+                                                    alt={product.name}
+                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
@@ -255,6 +284,19 @@ export default function ITSPage() {
                                             <div key={i} className="border-l-4 border-primary pl-6">
                                                 <h3 className="font-display text-2xl font-semibold mb-3">{type.title}</h3>
                                                 <p className="text-muted-foreground mb-4">{type.description}</p>
+
+                                                {/* Subtype Image */}
+                                                {/* @ts-ignore */}
+                                                {type.image && (
+                                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg">
+                                                        <img
+                                                            /* @ts-ignore */
+                                                            src={type.image}
+                                                            alt={type.title}
+                                                            className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                                        />
+                                                    </div>
+                                                )}
 
                                                 <div className="grid md:grid-cols-2 gap-6">
                                                     <div>

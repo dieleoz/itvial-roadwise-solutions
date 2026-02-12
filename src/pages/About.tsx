@@ -192,10 +192,10 @@ export default function About() {
             viewport={{ once: true }}
             className="relative aspect-video rounded-2xl overflow-hidden glass-card p-2"
           >
-            <div className="absolute inset-0 bg-cover bg-center rounded-xl opacity-20" style={{ backgroundImage: "url('/placeholder.svg')" }} />
-            <div className="relative z-10 w-full h-full flex items-center justify-center border-2 border-dashed border-border rounded-xl">
-              <span className="text-muted-foreground italic text-sm text-center px-6">
-                Espacio reservado para foto de la planta IT VIAL / Equipo de trabajo
+            <div className="absolute inset-0 bg-cover bg-center rounded-xl opacity-50" style={{ backgroundImage: "url('/images/solutions/its/centro-control-its.webp')" }} />
+            <div className="relative z-10 w-full h-full flex items-center justify-center border-2 border-dashed border-border/50 rounded-xl">
+              <span className="text-white/80 font-bold text-lg md:text-xl text-center px-6 drop-shadow-md">
+                Planta de Fabricación y Desarrollo Tecnológico
               </span>
             </div>
             <div className="absolute bottom-6 right-6 px-4 py-2 bg-background/80 backdrop-blur-md border border-border rounded-lg text-xs font-bold text-primary">

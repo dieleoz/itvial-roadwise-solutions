@@ -41,7 +41,9 @@ const products = [
             "Exportación de datos (PDF, Excel)",
             "Mapas de calor de retroreflectividad",
             "Alertas de valores bajo mínimos"
-        ]
+        ],
+        image: "/images/solutions/instrumentos/retroreflectometros.webp",
+        appImage: "/images/solutions/instrumentos/app-rth-iot.webp"
     },
     {
         id: "vertical",
@@ -144,6 +146,18 @@ export default function InstrumentosPage() {
                                     <div className="flex-1">
                                         <h2 className="font-display text-3xl font-bold mb-3">{product.name}</h2>
                                         <p className="text-lg text-muted-foreground">{product.description}</p>
+
+                                        {/* @ts-ignore */}
+                                        {product.image && (
+                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl">
+                                                <img
+                                                    /* @ts-ignore */
+                                                    src={product.image}
+                                                    alt={product.name}
+                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
@@ -195,18 +209,33 @@ export default function InstrumentosPage() {
                                 {/* App Features (for Horizontal) */}
                                 {product.appFeatures && (
                                     <div className="mb-8 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg p-6 border border-blue-500/20">
-                                        <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
-                                            <Smartphone className="h-5 w-5 text-blue-500" />
-                                            App Móvil RTH_IoT
-                                        </h4>
-                                        <ul className="grid md:grid-cols-2 gap-3">
-                                            {product.appFeatures.map((feature, idx) => (
-                                                <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                                    <span className="text-blue-500 mt-1">📱</span>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        <div className="flex flex-col md:flex-row gap-6 items-center">
+                                            <div className="flex-1">
+                                                <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                                                    <Smartphone className="h-5 w-5 text-blue-500" />
+                                                    App Móvil RTH_IoT
+                                                </h4>
+                                                <ul className="grid md:grid-cols-2 gap-3">
+                                                    {product.appFeatures.map((feature, idx) => (
+                                                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                                            <span className="text-blue-500 mt-1">📱</span>
+                                                            {feature}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            {/* @ts-ignore */}
+                                            {product.appImage && (
+                                                <div className="w-full md:w-1/3 rounded-lg overflow-hidden shadow-lg border border-white/10">
+                                                    <img
+                                                        /* @ts-ignore */
+                                                        src={product.appImage}
+                                                        alt="App Interface"
+                                                        className="w-full object-cover transform hover:scale-105 transition-transform duration-500"
+                                                    />
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 )}
 

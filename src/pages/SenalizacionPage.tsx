@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { TowerControl, SignpostBig, DiscAlbum, ArrowRight, CheckCircle, FileText } from "lucide-react";
+import { TowerControl, SignpostBig, DiscAlbum, ArrowRight, CheckCircle, FileText, ShieldCheck } from "lucide-react";
 import { useEffect } from "react";
 import { useWhatsApp } from "@/context/WhatsAppContext";
 import SEO from "@/components/SEO";
@@ -58,7 +58,8 @@ const products = [
             "Peajes",
             "Túneles",
             "Zonas urbanas"
-        ]
+        ],
+        image: "/images/solutions/senalizacion/senale-elevada-portico.webp"
     },
     {
         id: "vertical",
@@ -172,6 +173,33 @@ const products = [
             "Verificación de color",
             "Cumplimiento NTC 1360, 4744"
         ]
+    },
+    {
+        id: "contencion",
+        name: "Sistemas de Contención Vehicular",
+        icon: ShieldCheck,
+        description: "Barreras de seguridad y amortiguadores de impacto certificados para protección de usuarios en la vía.",
+        types: [
+            {
+                category: "Defensas Metálicas",
+                description: "Barreras de contención lateral certificadas bajo norma NCHRP-350 y MASH.",
+                examples: ["Defensa semirrígida", "Terminales de impacto", "Transiciones"],
+                image: "/images/solutions/senalizacion/defensa-metalica-vial.webp"
+            },
+            {
+                category: "Amortiguadores de Impacto",
+                description: "Dispositivos diseñados para atenuar impactos frontales en bifurcaciones y obstáculos rígidos.",
+                examples: ["Redireccionables", "No redireccionables", "Móviles"],
+                image: "/images/solutions/senalizacion/amortiguador-impacto.webp"
+            }
+        ],
+        features: [
+            "Certificación Internacional (MASH / EN1317)",
+            "Galvanizado en caliente de alta durabilidad",
+            "Sistemas colapsables para absorción de energía",
+            "Rápida instalación y reparación",
+            "Protección para motociclistas disponible"
+        ]
     }
 ];
 
@@ -245,6 +273,18 @@ export default function SenalizacionPage() {
                                     <div className="flex-1">
                                         <h2 className="font-display text-3xl font-bold mb-3">{product.name}</h2>
                                         <p className="text-lg text-muted-foreground">{product.description}</p>
+
+                                        {/* @ts-ignore */}
+                                        {product.image && (
+                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl">
+                                                <img
+                                                    /* @ts-ignore */
+                                                    src={product.image}
+                                                    alt={product.name}
+                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
@@ -292,6 +332,19 @@ export default function SenalizacionPage() {
                                                 <div key={idx} className="border border-border rounded-lg p-5">
                                                     <h5 className="font-semibold mb-2">{type.category}</h5>
                                                     <p className="text-sm text-muted-foreground mb-3">{type.description}</p>
+
+                                                    {/* @ts-ignore */}
+                                                    {type.image && (
+                                                        <div className="rounded-lg overflow-hidden mb-4 border border-white/10">
+                                                            <img
+                                                                /* @ts-ignore */
+                                                                src={type.image}
+                                                                alt={type.category}
+                                                                className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
+                                                            />
+                                                        </div>
+                                                    )}
+
                                                     <div className="space-y-1">
                                                         {type.examples.map((ex, i) => (
                                                             <div key={i} className="text-xs text-muted-foreground flex items-center gap-1">

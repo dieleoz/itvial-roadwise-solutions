@@ -31,101 +31,96 @@ const products = [
                     "Tachas y botones reflectivos",
                     "Control de espesor y ancho"
                 ],
-                clients: [
-                    "Concesión Neiva-Girardot",
-                    "Concesión Pacífico Tres",
-                    "Municipios y departamentos"
-                ]
-            },
-            {
-                title: "Máquinas Autopropulsadas",
-                description: "Demarcadoras autopropulsadas ideales para trabajos de precisión en espacios reducidos.",
-                ideal: [
-                    "Parqueaderos",
-                    "Vías urbanas",
-                    "Aeropuertos",
-                    "Zonas peatonales"
+                "Municipios y departamentos"
                 ],
-                advantages: [
-                    "Operación por un solo trabajador",
-                    "Alta precisión en trazado",
-                    "Menor costo operativo que camiones",
-                    "Fácil transporte"
-                ]
-            },
-            {
-                title: "Equipos Manuales",
-                description: "Demarcadores portátiles para trabajos pequeños y detallados.",
-                applications: [
-                    "Pasos peatonales",
-                    "Parqueaderos pequeños",
-                    "Correcciones y retoques",
-                    "Acceso a áreas estrechas"
-                ],
-                features: [
-                    "Motor a gasolina",
-                    "Tanque de pintura en frío",
-                    "Sistema de aire comprimido",
-                    "Pistolas intercambiables",
-                    "Portátil y ligero"
-                ]
-            }
+        image: "/images/solutions/pavimentos/camion-demarcador-operando.webp"
+    },
+    {
+        title: "Máquinas Autopropulsadas",
+        description: "Demarcadoras autopropulsadas ideales para trabajos de precisión en espacios reducidos.",
+        ideal: [
+            "Parqueaderos",
+            "Vías urbanas",
+            "Aeropuertos",
+            "Zonas peatonales"
+        ],
+        advantages: [
+            "Operación por un solo trabajador",
+            "Alta precisión en trazado",
+            "Menor costo operativo que camiones",
+            "Fácil transporte"
         ]
     },
     {
-        id: "selladoras",
-        name: "Selladoras de Fisuras",
-        icon: Wrench,
-        description: "Prevención de daños mayores mediante sellado oportuno de grietas en pavimento.",
-        equipment: [
-            "Caldera de asfalto caliente",
-            "Sistema de aplicación directa",
-            "Control de temperatura",
-            "Boquillas de diferentes anchos"
+        title: "Equipos Manuales",
+        description: "Demarcadores portátiles para trabajos pequeños y detallados.",
+        applications: [
+            "Pasos peatonales",
+            "Parqueaderos pequeños",
+            "Correcciones y retoques",
+            "Acceso a áreas estrechas"
         ],
-        process: [
-            "Limpieza de fisura",
-            "Aplicación de emulsión",
-            "Relleno con asfalto caliente",
-            "Compactación"
-        ],
-        benefits: [
-            "Extiende vida útil del pavimento",
-            "Previene infiltración de agua",
-            "Reduce costos de rehabilitación",
-            "Mantenimiento preventivo efectivo"
-        ]
-    },
-    {
-        id: "reciclaje",
-        name: "Equipos de Reciclaje de Asfaltos",
-        icon: TreePine,
-        description: "Soluciones sostenibles para reutilización de materiales asfálticos.",
-        options: [
-            {
-                title: "Reciclaje In Situ",
-                features: [
-                    "Recuperación directa en la vía",
-                    "Mezcla en caliente o en frío",
-                    "Reducción de transporte de materiales"
-                ]
-            },
-            {
-                title: "Planta Móvil de Recuperación",
-                features: [
-                    "Procesamiento de RAP (Reclaimed Asphalt Pavement)",
-                    "Producción de mezcla asfáltica reciclada",
-                    "Cumplimiento especificaciones técnicas"
-                ]
-            }
-        ],
-        environmental: [
-            "Reducción de uso de agregados vírgenes",
-            "Menor emisión de CO2",
-            "Ahorro económico hasta 40%",
-            "Sostenibilidad en proyectos viales"
+        features: [
+            "Motor a gasolina",
+            "Tanque de pintura en frío",
+            "Sistema de aire comprimido",
+            "Pistolas intercambiables",
+            "Portátil y ligero"
         ]
     }
+]
+    },
+{
+    id: "selladoras",
+        name: "Selladoras de Fisuras",
+            icon: Wrench,
+                description: "Prevención de daños mayores mediante sellado oportuno de grietas en pavimento.",
+                    equipment: [
+                        "Caldera de asfalto caliente",
+                        "Sistema de aplicación directa",
+                        "Control de temperatura",
+                        "Boquillas de diferentes anchos"
+                    ],
+                        process: [
+                            "Limpieza de fisura",
+                            "Aplicación de emulsión",
+                            "Relleno con asfalto caliente",
+                            "Compactación"
+                        ],
+                            "Mantenimiento preventivo efectivo"
+        ],
+    image: "/images/solutions/pavimentos/selladora-fisuras.webp"
+},
+{
+    id: "reciclaje",
+        name: "Equipos de Reciclaje de Asfaltos",
+            icon: TreePine,
+                description: "Soluciones sostenibles para reutilización de materiales asfálticos.",
+                    options: [
+                        {
+                            title: "Reciclaje In Situ",
+                            features: [
+                                "Recuperación directa en la vía",
+                                "Mezcla en caliente o en frío",
+                                "Reducción de transporte de materiales"
+                            ]
+                        },
+                        {
+                            title: "Planta Móvil de Recuperación",
+                            features: [
+                                "Procesamiento de RAP (Reclaimed Asphalt Pavement)",
+                                "Producción de mezcla asfáltica reciclada",
+                                "Cumplimiento especificaciones técnicas"
+                            ]
+                        }
+                    ],
+                        environmental: [
+                            "Reducción de uso de agregados vírgenes",
+                            "Menor emisión de CO2",
+                            "Ahorro económico hasta 40%",
+                            "Sostenibilidad en proyectos viales"
+                        ]
+}
 ];
 
 export default function PavimentosPage() {
@@ -198,6 +193,18 @@ export default function PavimentosPage() {
                                     <div className="flex-1">
                                         <h2 className="font-display text-3xl font-bold mb-3">{product.name}</h2>
                                         <p className="text-lg text-muted-foreground">{product.description}</p>
+
+                                        {/* @ts-ignore */}
+                                        {product.image && (
+                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl">
+                                                <img
+                                                    /* @ts-ignore */
+                                                    src={product.image}
+                                                    alt={product.name}
+                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
@@ -211,6 +218,18 @@ export default function PavimentosPage() {
                                                     <p className="text-sm text-primary font-semibold mb-3">{type.subtitle}</p>
                                                 )}
                                                 <p className="text-muted-foreground mb-6">{type.description}</p>
+
+                                                {/* @ts-ignore */}
+                                                {type.image && (
+                                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg">
+                                                        <img
+                                                            /* @ts-ignore */
+                                                            src={type.image}
+                                                            alt={type.title}
+                                                            className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                                        />
+                                                    </div>
+                                                )}
 
                                                 <div className="grid md:grid-cols-2 gap-6">
                                                     {type.features && (

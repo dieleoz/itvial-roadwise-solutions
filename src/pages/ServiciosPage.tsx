@@ -92,7 +92,8 @@ const services = [
             "Inspección diaria del equipo",
             "Póliza de seguro actualizada",
             "Cumplimiento Resolución 1409 de 2012"
-        ]
+        ],
+        image: "/images/solutions/servicios/grua-canastilla.webp"
     },
     {
         id: "demarcacion-servicio",
@@ -173,7 +174,8 @@ const services = [
             "Cumplimiento Manual de Señalización Vial",
             "Materiales certificados NTC",
             "Póliza de responsabilidad civil"
-        ]
+        ],
+        image: "/images/solutions/pavimentos/camion-demarcador-operando.webp"
     }
 ];
 
@@ -219,6 +221,18 @@ export default function ServiciosPage() {
                                     <div className="flex-1">
                                         <h2 className="font-display text-3xl font-bold mb-3">{service.name}</h2>
                                         <p className="text-lg text-muted-foreground">{service.description}</p>
+
+                                        {/* @ts-ignore */}
+                                        {service.image && (
+                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl">
+                                                <img
+                                                    /* @ts-ignore */
+                                                    src={service.image}
+                                                    alt={service.name}
+                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
