@@ -278,12 +278,12 @@ export default function SenalizacionPage() {
 
                                         {/* @ts-ignore */}
                                         {product.image && (
-                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl">
+                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl bg-white/5 flex items-center justify-center">
                                                 <img
                                                     /* @ts-ignore */
                                                     src={product.image}
                                                     alt={product.name}
-                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                    className="w-full h-80 md:h-[400px] object-contain hover:scale-105 transition-transform duration-700"
                                                     loading="lazy"
                                                 />
                                             </div>
@@ -338,12 +338,12 @@ export default function SenalizacionPage() {
 
                                                     {/* @ts-ignore */}
                                                     {type.image && (
-                                                        <div className="rounded-lg overflow-hidden mb-4 border border-white/10">
+                                                        <div className="rounded-lg overflow-hidden mb-4 border border-white/10 bg-white/5 flex items-center justify-center">
                                                             <img
                                                                 /* @ts-ignore */
                                                                 src={type.image}
                                                                 alt={type.category}
-                                                                className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
+                                                                className="w-full h-48 object-contain hover:scale-105 transition-transform duration-500"
                                                                 loading="lazy"
                                                             />
                                                         </div>

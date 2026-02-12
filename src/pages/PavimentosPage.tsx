@@ -204,12 +204,12 @@ export default function PavimentosPage() {
 
                                         {/* @ts-ignore */}
                                         {product.image && (
-                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl">
+                                            <div className="rounded-xl overflow-hidden mt-6 border border-white/10 shadow-2xl bg-white/5 flex items-center justify-center">
                                                 <img
                                                     /* @ts-ignore */
                                                     src={product.image}
                                                     alt={product.name}
-                                                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+                                                    className="w-full h-80 md:h-[400px] object-contain hover:scale-105 transition-transform duration-700"
                                                     loading="lazy"
                                                 />
                                             </div>
@@ -230,12 +230,12 @@ export default function PavimentosPage() {
 
                                                 {/* @ts-ignore */}
                                                 {type.image && (
-                                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg">
+                                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg bg-white/5 flex items-center justify-center">
                                                         <img
                                                             /* @ts-ignore */
                                                             src={type.image}
                                                             alt={type.title}
-                                                            className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                                            className="w-full h-80 object-contain hover:scale-105 transition-transform duration-500"
                                                             loading="lazy"
                                                         />
                                                     </div>

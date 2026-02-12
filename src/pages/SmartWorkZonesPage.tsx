@@ -145,13 +145,13 @@ export default function SmartWorkZonesPage() {
                         Evolucionamos el control de obra tradicional hacia un modelo activo de monitoreo, detección y alerta basado en datos.
                     </p>
 
-                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 mb-12">
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 mb-12 bg-white/5 flex items-center justify-center">
                         <img
                             src="/images/solutions/its/smart-work-zone-concept.webp"
                             alt="Concepto de Zona de Obra Inteligente con dispositivos conectados"
-                            className="object-cover w-full h-full"
+                            className="object-contain w-full h-full hover:scale-105 transition-transform duration-700"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
                     </div>
                 </motion.div>
             </section>

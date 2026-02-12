@@ -308,13 +308,13 @@ export default function Projects() {
               className={`glass-card rounded-xl overflow-hidden ${project.featured ? "border-2 border-primary/30" : ""}`}
             >
               {project.image && (
-                <div className="w-full h-48 md:h-64 overflow-hidden relative">
+                <div className="w-full h-64 md:h-80 lg:h-[450px] overflow-hidden relative bg-white/5 flex items-center justify-center">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent pointer-events-none" />
                 </div>
               )}
 

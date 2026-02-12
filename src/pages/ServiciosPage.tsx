@@ -163,11 +163,11 @@ export default function ServiciosPage() {
 
                                 {/* Service Image */}
                                 {service.image && (
-                                    <div className="mb-8 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                                    <div className="mb-8 rounded-xl overflow-hidden border border-white/10 shadow-lg bg-white/5 flex items-center justify-center">
                                         <img
                                             src={service.image}
                                             alt={service.name}
-                                            className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-700"
+                                            className="w-full h-80 md:h-[400px] object-contain hover:scale-105 transition-transform duration-700"
                                         />
                                     </div>
                                 )}
