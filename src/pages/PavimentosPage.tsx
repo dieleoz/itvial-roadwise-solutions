@@ -312,7 +312,18 @@ export default function PavimentosPage() {
                                                     )}
                                                 </div>
 
-
+                                                {'clients' in type && type.clients && (
+                                                    <div className="mt-6 pt-6 border-t border-border">
+                                                        <h4 className="font-semibold mb-3">Clientes Destacados:</h4>
+                                                        <div className="flex flex-wrap gap-3">
+                                                            {(type.clients as string[])?.map((client: string, idx: number) => (
+                                                                <span key={idx} className="px-4 py-2 rounded-lg bg-accent/10 text-accent text-sm font-medium">
+                                                                    ✓ {client}
+                                                                </span>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                )}
                                             </div>
                                         ))}
                                     </div>
