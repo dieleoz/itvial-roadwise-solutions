@@ -582,12 +582,12 @@ export default function AuscultacionPage() {
 
                                 {/* @ts-ignore */}
                                 {equipment.image && (
-                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-2xl">
+                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-2xl bg-white/5 flex items-center justify-center">
                                         <img
                                             /* @ts-ignore */
                                             src={equipment.image}
                                             alt={equipment.name}
-                                            className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"
+                                            className="w-full h-80 object-contain hover:scale-105 transition-transform duration-700"
                                             loading="lazy"
                                         />
                                     </div>

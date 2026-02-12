@@ -375,12 +375,12 @@ export default function FerroviarioPage() {
 
                                 {/* @ts-ignore */}
                                 {vehicle.image && (
-                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg">
+                                    <div className="rounded-xl overflow-hidden mb-6 border border-white/10 shadow-lg bg-white/5 flex items-center justify-center">
                                         <img
                                             /* @ts-ignore */
                                             src={vehicle.image}
                                             alt={vehicle.model}
-                                            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                                            className="w-full h-64 object-contain hover:scale-105 transition-transform duration-500"
                                             loading="lazy"
                                         />
                                     </div>
